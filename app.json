@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Aadhi000/Ajax",
-    "repository": "https://github.com/Aadhi000/Ajax.git",
+    "website": "https://github.com/Aadhi000/Ajax-V3",
+    "repository": "https://github.com/Aadhi000/Ajax-V3.git",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -90,10 +90,12 @@
         },
         "SINGLE_BUTTON": {
             "description": "choose b/w single or double buttons https://github.com/Aadhi000/Ajax/issues/22",
+            "value": "True",
             "required": false
         },
         "P_TTI_SHOW_OFF": {
             "description": "Customize Result Buttons to Callback or Url by (True = url / False = callback)",
+            "value": "True",
             "required": false
         }
     },
