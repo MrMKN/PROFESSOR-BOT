@@ -1,6 +1,7 @@
 {
     "name": "ᗩᒍᗩ᙭",
-    "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
+    "description": "This Bot Will Help You To Store Files In Cloud Storage. You Can Add Files To The Bot By Forward the last file from a public channel to your bot and Press Yes Button.. If The Files Channl Is Private Make the bot admin on the channel and forward the last file to bot. Then Add the bot to you group and send the movie name The Bot Will Give the file in Bot PM..✮✮",
+    "logo": "https://telegra.ph/file/1b837a8df2670b0097aaf.jpg",
     "stack": "container",
     "keywords": [
       "telegram",
@@ -15,8 +16,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Aadhi000/Ajax-V3",
-    "repository": "https://github.com/Aadhi000/Ajax-V3.git",
+    "website": "https://github.com/Aadhi000/Ajax",
+    "repository": "https://github.com/Aadhi000/Ajax",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -46,6 +47,10 @@
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
             "required": true
         },
+        "INDEX_REQ_CHANNEL": {
+            "description": "Same Logs channel id with -100xxxxxxx",
+            "required": true
+        },
         "SUPPORT_CHAT": {
             "description": "Username of a Support Group / ADMIN. ( Should be username without @ and not ID)",
             "required": false
@@ -67,16 +72,16 @@
             "required": false
         },
         "DATABASE_URI": {
-            "description": "mongoDB URI. Get this value from https://www.mongodb.com",
+            "description": "mongoDB URI.",
             "required": true
         },
         "DATABASE_NAME": {
-            "description": "Name of the database in mongoDB",
+            "description": "Name of the database in mongoDB.",
             "required": false
         },
         "COLLECTION_NAME": {
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
-            "value": "Ajax_files",
+            "value": "Ajax_Files",
             "required": false
         },
         "CACHE_TIME": {
@@ -85,8 +90,12 @@
             "required": false
         },
         "IMDB": {
-            "description": "Imdb, the view of information when making True/False ",
-            "required": false
+            "description": "Imdb, the view of information when making True/False",
+            "required": false     
+        },
+        "IMDB_TEMPLATE": {
+            "description": "Custom IMDB Template",        
+            "required": false  
         },
         "SINGLE_BUTTON": {
             "description": "choose b/w single or double buttons https://github.com/Aadhi000/Ajax/issues/22",
