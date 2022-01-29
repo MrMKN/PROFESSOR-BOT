@@ -2,7 +2,6 @@ from googletrans import Translator
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from plugins.admemes.list import list
-import find_one
 
 @Client.on_message(filters.command(["tr"]))
 async def left(client,message):
