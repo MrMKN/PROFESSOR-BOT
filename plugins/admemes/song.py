@@ -15,21 +15,25 @@ from youtubesearchpython import SearchVideos
 from yt_dlp import YoutubeDL
 import youtube_dl
 from youtube_search import YoutubeSearch
+import requests
 
-#====================Commands============================#
+## Extra Fns -------------------------------
 
+# Convert hh:mm:ss to seconds
 def time_to_seconds(time):
     stringt = str(time)
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
-@Client.on_message(filters.command("song") & ~filters.channel & ~filters.edited)
+## Commands --------------------------------
+
+@Client.on_message(filters.command(["song", "mp3"]) & ~filters.channel & ~filters.edited)
 def a(client, message):
     query = ''
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('ѕєαrchíng чσur ѕσng...')
+    m = message.reply('`🎧𝐅𝐢𝐧𝐝𝐢𝐧𝐠 𝐲𝐨𝐮𝐫 𝐬𝐨𝐧𝐠..... 𝐩𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭𝐞🎸`')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -43,38 +47,38 @@ def a(client, message):
         try:
             link = f"https://youtube.com{results[0]['url_suffix']}"
             # print(results)
-            𝚃𝙸𝚃𝙻𝙴 = results[0]["title"]
-            𝚃𝙷𝚄𝙼𝙱𝙽𝙰𝙸𝙻 = results[0]["thumbnails"][0]
-            𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽 = results[0]["duration"]
-            𝚅𝙸𝙴𝚆𝚂 = results[0]["views"]
+            title = results[0]["title"]
+            thumbnail = results[0]["thumbnails"][0]
+            duration = results[0]["duration"]
+            views = results[0]["views"]
 
             ## UNCOMMENT THIS IF YOU WANT A LIMIT ON DURATION. CHANGE 1800 TO YOUR OWN PREFFERED DURATION AND EDIT THE MESSAGE (30 minutes cap) LIMIT IN SECONDS
             # if time_to_seconds(duration) >= 1800:  # duration limit
             #     m.edit("Exceeded 30mins cap")
             #     return
 
-            performer = f"[ᗩᒍᗩ᙭]"
+            performer = f"[ᏒΞᎠFOX M𝚞𝚜𝚒𝚌]" 
             thumb_name = f'thumb{message.message_id}.jpg'
             thumb = requests.get(thumbnail, allow_redirects=True)
             open(thumb_name, 'wb').write(thumb.content)
 
         except Exception as e:
             print(e)
-            m.edit('𝐅𝐨𝐮𝐧𝐝 𝐍𝐨𝐭𝐡𝐢𝐧𝐠. 𝐓𝐫𝐲 𝐂𝐡𝐚𝐧𝐠𝐢𝐧𝐠 𝐓𝐡𝐞 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐀 𝐋𝐢𝐭𝐭𝐥𝐞 😐')
+            m.edit('**𝐅𝐨𝐮𝐧𝐝 𝐋𝐢𝐭𝐞𝐫𝐚𝐫𝐫𝐲 𝐍𝐨𝐭𝐢𝐧𝐠. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐓𝐫𝐲 𝐀𝐧𝐨𝐭𝐡𝐞𝐫 𝐒𝐨𝐧𝐠 𝐨𝐫 𝐔𝐬𝐞 𝐂𝐨𝐫𝐫𝐞𝐜𝐭 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠.**')
             return
     except Exception as e:
         m.edit(
-            "❎ 𝐹𝑜𝑢𝑛𝑑 𝑁𝑜𝑡ℎ𝑖𝑛𝑔. 𝐒𝐨𝐫𝐫𝐲.\n\n𝖯𝗅𝖾𝖺𝗌𝖾 𝖳𝗋𝗒 𝖠𝗀𝖺𝗂𝗇 𝖮𝗋 𝖲𝖾𝖺𝗋𝖼𝗁 𝖺𝗍 Google.com 𝖥𝗈𝗋 𝖢𝗈𝗋𝗋𝖾𝖼𝗍 𝖲𝗉𝖾𝗅𝗅𝗂𝗇𝗀 𝗈𝖿 𝗍𝗁𝖾 𝙎𝙤𝙣𝙜.\n\nEg.`/song Believer`"
+            "**𝐄𝐧𝐭𝐞𝐫 𝐒𝐨𝐧𝐠 𝐍𝐚𝐦𝐞  𝐰𝐢𝐭𝐡 𝐂𝐨𝐦𝐦𝐚𝐧𝐝**❗\n𝐅𝐨𝐫 𝐄𝐱𝐚𝐦𝐩𝐥𝐞: `/song Alone marshmellow`"
         )
         print(str(e))
         return
-    m.edit("`Uploading Your File,Please Wait for Some Seconds...`")
+    m.edit("`🎸𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠.....💞𝐏𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭𝐞`")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep =  f'🎧 𝚃𝙸𝚃𝙻𝙴 : <a href="{link}">{title}</a>\n⏳ 𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽 : {duration}\n👀 𝚅𝙸𝙴𝚆𝚂 : {views}\n\n👩🏻‍💻 𝚁𝙴𝚀𝚄𝙴𝚂𝚃𝙴𝙳 𝙱𝚈 : {message.from_user.mention()}'
+        rep = f'🎸 <b>𝐓𝐢𝐭𝐥𝐞:</b> <a href="{link}">{title}</a>\n🎙️ <b>𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧:</b> <code>{duration}</code>\n🎧 <b>𝐕𝐢𝐞𝐰𝐬:</b> <code>{views}</code>\n🎷 <b>𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲:</b> {message.from_user.mention()}'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -83,7 +87,7 @@ def a(client, message):
         m.delete()
         message.delete()
     except Exception as e:
-        m.edit('**An Error Occured. Please Report This To Support Channel!!**')
+        m.edit('**An Error Occured. Please Report This To** @jospsupport !!')
         print(e)
     try:
         os.remove(audio_file)
