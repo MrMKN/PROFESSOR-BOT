@@ -26,7 +26,7 @@ async def save_group(bot, message):
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
-                text='<b>CHAT NOT ALLOWED 🐞\n\nMy admins has restricted me from working here ! If you want to know more about it contact support..</b>',
+                text='<b>CHAT NOT ALLOWED 🐞\n\n𝙼𝚈 𝙰𝙳𝙼𝙸𝙽𝚂 𝙷𝙰𝚂 𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙴𝙳 𝙼𝙴 𝙵𝚁𝙾𝙼 𝚆𝙾𝚁𝙺𝙸𝙽𝙶 𝙷𝙴𝚁𝙴 !𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙺𝙽𝙾𝚆 𝙼𝙾𝚁𝙴 𝙰𝙱𝙾𝚄𝚃 𝙸𝚃 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙾𝚆𝙽𝙴𝚁..</b>',
                 reply_markup=reply_markup,
             )
 
@@ -36,10 +36,14 @@ async def save_group(bot, message):
                 pass
             await bot.leave_chat(message.chat.id)
             return
-        buttons = [[
-            InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/Latest_Movie_Mediaa')
-        ]]
+        buttons = [
+            [
+                InlineKeyboardButton('⚡ HΞLᎮ ⚡', url=f"https://t.me/{temp.U_NAME}?start=help")
+            ],
+            [
+                InlineKeyboardButton('💠 GᏒԾUᎮ 💠', url='https://t.me/+EqhXLhL3T1w4Zjc1')
+            ]
+            ]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
             text=f"<b>Thankyou For Adding Me In {message.chat.title}മച്ചാനെ ഗ്രൂപ്പിൽ എല്ലാവേരയും add ആക്കിട്ടു power വരട്ടെ ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
@@ -65,7 +69,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('Support', url=f'https://t.me/{SUPPORT_CHAT}')
+            InlineKeyboardButton('𝗢𝗪𝗡𝗘𝗥', url=f'https://t.me/{SUPPORT_CHAT}')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
@@ -103,7 +107,7 @@ async def disable_chat(bot, message):
     await message.reply('Chat Succesfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('Support', url=f'https://t.me/{SUPPORT_CHAT}')
+            InlineKeyboardButton('𝗢𝗪𝗡𝗘𝗥', url=f'https://t.me/{SUPPORT_CHAT}')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
