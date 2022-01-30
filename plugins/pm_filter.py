@@ -806,7 +806,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('♥️ SԾUᏒCΞ ♥️', url='https://github.com/Aadhi000/Ajax-V3')
+            InlineKeyboardButton('♥️ SԾUᏒCΞ ♥️', url='https://github.com/Aadhi000/Ajax')
             ],[
             InlineKeyboardButton('🏠 𝗛𝗼𝗺𝗲 🏠', callback_data='start'),
             InlineKeyboardButton('🔐 𝗖𝗹𝗼𝘀𝗲 🔐', callback_data='close_data')
