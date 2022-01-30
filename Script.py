@@ -149,7 +149,7 @@ Delete A Lot Of Messages From Groups!
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/Aadhi011)</code>
+<code>[Button Text](buttonurl:https://t.me/+veUIdIW2CQ5mOGU5)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
@@ -224,9 +224,9 @@ This module only works for my admins
 
 ➪/report 𝗈𝗋 @admins - 𝖳𝗈 𝗋𝖾𝗉𝗈𝗋𝗍 𝖺 𝗎𝗌𝖾𝗋 𝗍𝗈 𝗍𝗁𝖾 𝖺𝖽𝗆𝗂𝗇𝗌 (𝗋𝖾𝗉𝗅𝗒 𝗍𝗈 𝖺 𝗆𝖾𝗌𝗌𝖺𝗀𝖾)."""
 
-    CORONA_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖢𝗈𝗏𝗂𝖽𝖾
+    CORONA_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖢𝗈𝗏𝗂𝖽
 
-𝚃𝚑𝚒𝚜 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚔𝚗𝚘𝚠 𝚍𝚊𝚢𝚒𝚕 𝚒𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗 𝚊𝚋𝚘𝚞𝚝 𝚌𝚘𝚟𝚒𝚍𝚎
+𝚃𝚑𝚒𝚜 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚔𝚗𝚘𝚠 𝚍𝚊𝚒𝚕𝚢 𝚒𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗 𝚊𝚋𝚘𝚞𝚝 𝚌𝚘𝚟𝚒𝚍 
 
 ➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
 
@@ -244,9 +244,9 @@ This module only works for my admins
 ➪ /short: 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌
 
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
-/short https://t.me/Don_Sflix"""
+/short https://t.me/+veUIdIW2CQ5mOGU5"""
 
-    VIDEO_TXT ="""𝙃𝙚𝙡𝙥 𝙁𝙤𝙧 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝘼𝙣𝙮 𝙑𝙞𝙙𝙚𝙤 𝙁𝙧𝙤𝙢 𝙔𝙏.
+    VIDEO_TXT ="""𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝚅𝙸𝙳𝙴𝙾 𝙵𝚁𝙾𝙼 𝚈𝙾𝚄𝚃𝚄𝙱𝙴.
 
 • 𝘜𝘴𝘢𝘨𝘦
 𝘠𝘰𝘶 𝘊𝘢𝘯 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘈𝘯𝘺 𝘝𝘪𝘥𝘦𝘰 𝘍𝘳𝘰𝘮 𝘠𝘰𝘶𝘵𝘶𝘣𝘦
@@ -256,7 +256,7 @@ This module only works for my admins
 • 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
 /𝘮𝘱4 https://youtu.be/Your Link"""
 
-    ZOMBIES_TXT = """𝙃𝙚𝙡𝙥 𝙁𝙤𝙧 𝙆𝙞𝙘𝙠
+    ZOMBIES_TXT = """𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙺𝙸𝙲𝙺 𝚄𝚂𝙴𝚁𝚂
 
 <b>Kick incative members from group. Add me as admin with ban users permission in group.</b>
 
@@ -277,15 +277,15 @@ This module only works for my admins
 
 𝖬𝖺𝖽𝖾 𝖻𝗒 <a href=https://t.me/+veUIdIW2CQ5mOGU5>𝐌𝐖 𝐔𝐩𝐝𝐚𝐭𝐞𝐬</a>"""
 
-    STICKER_TXT = """𝙃𝙚𝙡𝙥 𝙁𝙤𝙧 𝙎𝙩𝙞𝙘𝙠𝙚𝙧 𝙄𝙙
-• 𝙐𝙨𝙖𝙜𝙚
+    STICKER_TXT = """𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚃𝙾 𝙵𝙸𝙽𝙳 𝙰𝙽𝚈 𝚂𝚃𝙸𝙲𝙺𝙴𝚁𝚂 𝙸𝙳.
+• 𝐔𝐒𝐀𝐆𝐄
 To Get Sticker ID
  
   ⭕ 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
  
 ◉ Reply To Any Sticker [/stickerid]"""
 
-    YTTHUMB_TXT = """𝙃𝙚𝙡𝙥 𝙁𝙤𝙧 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙔𝙤𝙪𝙩𝙪𝙗𝙚 𝙑𝙞𝙙𝙚𝙤 𝙏𝙝𝙪𝙢𝙗𝙣𝙖𝙞𝙡
+    YTTHUMB_TXT = """𝙷𝙴𝙻𝙿𝚂 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚈𝙾𝚄𝚃𝚄𝙱𝙴 𝚅𝙸𝙳𝙴𝙾 𝚃𝙷𝚄𝙼𝙱𝙽𝙰𝙸𝙻
     
 ⭕𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
 𝘛𝘺𝘱𝘦 /ytthumb 𝘈𝘯𝘥 𝘝𝘪𝘥𝘦𝘰 𝘓𝘪𝘯𝘬
@@ -344,11 +344,11 @@ To Get Sticker ID
       
     START_KICK = """🚮 Removing Inactive Members This May Take A While..."""
       
-    ADMIN_REQUIRED = """❗<b>I Am Not An Admin Here\n__Leaving This Chat, Add Me Again As Admin With Ban User Permission.</b>"""
+    ADMIN_REQUIRED = """❗<b>എന്നെ Admin ആക്കത്ത സ്ഥലത്ത് ഞാൻ നിക്കില്ല പോകുവാ Bii..Add Me Again with all admin rights.</b>"""
       
     DKICK = """✔️ Kicked {} Deleted Accounts Successfully."""
       
-    FETCHING_INFO = """<b>Collecting Users Information...</b>"""
+    FETCHING_INFO = """<b>ഇപ്പൊ എല്ലാം അടിച്ചുമാറ്റി തരാം...</b>"""
       
     STATUS = """{}\n<b>Chat Member Status</b>**\n\n```<i>Recently``` - {}\n```Within Week``` - {}\n```Within Month``` - {}\n```Long Time Ago``` - {}\nDeleted Account - {}\nBot - {}\nUnCached - {}</i>
 """
