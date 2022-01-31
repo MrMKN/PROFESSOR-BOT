@@ -712,17 +712,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('⚜️ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚜️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('💠 GᏒԾUᎮ 💠', url='https://t.me/+EqhXLhL3T1w4Zjc1'),
-            InlineKeyboardButton('💠 CHAИИΞL 💠', url='https://t.me/+veUIdIW2CQ5mOGU5')
+            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/+veUIdIW2CQ5mOGU5')
             ],[
-            InlineKeyboardButton('💰 𝗗𝗢𝗡𝗔𝗧𝗘 〄 𝗣𝗔𝗜𝗗 𝗣𝗥𝗢𝗠𝗢𝗧𝗜𝗢𝗡 💰', callback_data='donation')
+            InlineKeyboardButton('💰 ᎮΛIᎠ ᎮᏒᎧᎷᎧϮIᎧИ 💰', callback_data='donation')
             ],[
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
             ],[
-            InlineKeyboardButton('💠 SΞARCH HΞRΞ 💠', switch_inline_query_current_chat='')
+            InlineKeyboardButton('💠 SΞΛᏒCH HΞᏒΞ 💠', switch_inline_query_current_chat='')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
