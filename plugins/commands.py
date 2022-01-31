@@ -42,7 +42,7 @@ async def start(client, message):
             InlineKeyboardButton('💠 GᏒԾUᎮ 💠', url='https://t.me/+EqhXLhL3T1w4Zjc1'),
             InlineKeyboardButton('💠 CHAИИΞL 💠', url='https://t.me/+veUIdIW2CQ5mOGU5')
             ],[
-            InlineKeyboardButton('💰 𝗗𝗢𝗡𝗔𝗧𝗘 💰', callback_data='source')
+            InlineKeyboardButton('💰 𝗗𝗢𝗡𝗔𝗧𝗘 〄 𝗣𝗔𝗜𝗗 𝗣𝗥𝗢𝗠𝗢𝗧𝗜𝗢𝗡 💰', callback_data='donation')
             ],[
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
