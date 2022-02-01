@@ -33,11 +33,9 @@ ytthumb
 pypdf2
 PyPDF2
 pyshorteners
-# --- For-Bot-Working --------- #
 pyrogram
 TgCrypto
 Pyromod
-# --- For-Database ------------ #
 sqlalchemy~=1.3.23
 psycopg2-binary
 feedparser
