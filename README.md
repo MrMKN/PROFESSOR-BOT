@@ -27,7 +27,7 @@
 - [x] Entertainment
 - [x] Sticker ID Generator
 - [x] COVID Information
-
+- [x] File Store
 
 ## Variables
 
