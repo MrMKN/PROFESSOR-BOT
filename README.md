@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/logo.jpg" alt="Ajax-V3-Logo">
+  <img src="assets/logo.jpg" alt="Ajax-Extra-FeaturesLogo">
 </p>
 <h1 align="center">
-  <b>ᗩᒍᗩ᙭ Iᗰᗪᗷ ᗷOT ᐯ3</b>
+  <b>𝙰𝙹𝙰𝚇-𝙴𝚇𝚃𝚁𝙰-𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂</b>
 </h1>
 
 
@@ -28,6 +28,7 @@
 - [x] Sticker ID Generator
 - [x] COVID Information
 
+
 ## Variables
 
 ### Required Variables
@@ -50,7 +51,7 @@ You can deploy this bot anywhere.
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/Aadhi000/Test-Ajax-V3">
+<a href="https://heroku.com/deploy?template=https://github.com/Aadhi000/Ajax-Extra-Features">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
