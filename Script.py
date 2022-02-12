@@ -68,7 +68,7 @@ t𝗋𝗒 𝗍𝗁𝗂𝗌 𝖮𝗎𝗍:
 3. /Runs - Jokes 
 4. /Goal or /Shoot - To Make A Goal Or Shoot
 5. /luck or /cownd - Spin the Lucky"""
-   DEPLOY_TXT ="""<b>𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?</b> 
+   DEPLOY_TXT = """<b>𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?</b> 
   
 It's a very simple process.. Follow the below note to  DEPLOY the Bot without any errors like ᗩᒍᗩ᙭.
 
