@@ -70,8 +70,7 @@ t𝗋𝗒 𝗍𝗁𝗂𝗌 𝖮𝗎𝗍:
 5. /luck or /cownd - Spin the Lucky"""
     DEPLOY_TXT = """<b>𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?</b> 
   
-It's a very simple process.. Follow the below note to  DEPLOY the Bot without any errors like ᗩᒍᗩ᙭.
-
+Follow the below note to DEPLOY the Bot without any errors like ᗩᒍᗩ᙭.
 ✮ Source Code 1 ›› https://github.com/Aadhi000/Ajax
 ✮ Source Code 2 ›› https://github.com/Aadhi000/Ajax-Extra-Features
 
