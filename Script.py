@@ -75,8 +75,7 @@ Follow the below note to DEPLOY the Bot without any errors like ᗩᒍᗩ᙭.
 ✮ Source Code 2 ›› https://github.com/Aadhi000/Ajax-Extra-Features
 
 ➜ <i><b>Steps...</b></i>
-• First Open Source Code 1.
-• Then Click The Star Button.
+• First Open Source Code 1. Then Click The Star Button.
 • Then Make Your Browser In Desktop Mode. Now You Can See A Fork Button. Click On It And Wait Until Complet It.
 • Then Now You See A New Repo On Your GitHub Account With Your GitHub ID. Eg- GitHub Username/Ajax.
 • Then Copy The Forked Link.
@@ -85,8 +84,7 @@ Follow the below note to DEPLOY the Bot without any errors like ᗩᒍᗩ᙭.
 • Now You Can See That Your Bot Is Working..
 
 ➜ <i><b>Adding Extra Features.</b></i>
-• Now We Are Going To Add Extra Features.
-• First Open And Fork The Souce Code 2.
+• Now We Are Going To Add Extra Features. First Open And Fork The Souce Code 2.
 • Then Open Your Heruko account And Select Your Deployed Bot .
 • Then Go To Settings.. There You Can See The Button Reveal Config Vars.
 • Click The Button And Add Key Named <code>UPSTREAM_REPO</code>.
