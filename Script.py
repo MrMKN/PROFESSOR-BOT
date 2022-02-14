@@ -81,7 +81,7 @@ It's a very simple process.. Follow the below note to  DEPLOY the Bot without an
 • Then Make Your Browser In Desktop Mode. Now You Can See A Fork Button. Click On It And Wait Until Complet It.
 • Then Now You See A New Repo On Your GitHub Account With Your GitHub ID. Eg- GitHub Username/Ajax.
 • Then Copy The Forked Link.
-•﹝https://heroku.com/deploy?template=your link﹞ Paste Your Forked Link On The Your Link Area The Copy The Whole Link And Paste On Any Browser..
+•﹝https://heroku.com/deploy?template=your link﹞ Paste Your Forked Link On The Your Link Area Then Copy The Whole Link And Paste On Any Browser..
 • Then Provide Necessary Information And Deploy Your Bot..
 • Now You Can See That Your Bot Is Working..
 
@@ -94,8 +94,7 @@ It's a very simple process.. Follow the below note to  DEPLOY the Bot without an
 • On The Value Side Your New Second Forked Link Of Extra Features..
 • After Restarting The Bot.. It will perfectly work for you...
 
-Credits ›› <a href=https://t.me/+veUIdIW2CQ5mOGU5><b>𝐌𝐖 𝐔𝐩𝐝𝐚𝐭𝐞𝐳™</b></a>
-𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃"""
+Credits ›› <a href=https://t.me/+veUIdIW2CQ5mOGU5><b>𝐌𝐖 𝐔𝐩𝐝𝐚𝐭𝐞𝐳™</b></a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and ᗩᒍᗩ᙭  will respond whenever a keyword is found the message
