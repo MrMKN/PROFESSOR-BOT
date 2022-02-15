@@ -46,11 +46,7 @@
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
             "required": true       
-        },
-        "SUPPORT_CHAT": {
-            "description": "Username of a Support Group / ADMIN. ( Should be username without @ and not ID)",
-            "required": false
-        },
+        },       
         "AUTH_USERS": {
             "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
             "required": false
@@ -88,7 +84,7 @@
         "SUPPORT_CHAT": {
             "description": "Updated Channel Username Without @ Not Chanel ID",
             "value": "MW Updatez",
-            "required": 
+            "required": false
         },
         "IMDB": {
             "description": "Imdb, the view of information when making True/False",
