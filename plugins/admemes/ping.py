@@ -8,9 +8,12 @@ from info import COMMAND_HAND_LER
 from plugins.helper_functions.cust_p_filters import f_onw_fliter
 
 # -- Constants -- #
-ALIVE = "ചത്തിട്ടില്ല മുത്തേ ഇവിടെ തന്നെ ഉണ്ട്.. നിനക്ക് ഇപ്പൊ എന്നോട് ഒരു സ്നേഹവും ഇല്ല. കൊള്ളാം.. നീ പാഴെ പോലെയേ അല്ല മാറിപോയി..😔 ഇടക്ക് എങ്കിലും ചുമ്മാ ഒന്ന് Start ചെയ്തു നോക്ക്..🙂" 
+ALIVE = "ചത്തിട്ടില്ല മുത്തേ ഇവിടെ തന്നെ ഉണ്ട്.. നിനക്ക് ഇപ്പൊ എന്നോട് ഒരു സ്നേഹവും ഇല്ല. കൊള്ളാം.. നീ പാഴെ പോലെയേ അല്ല മാറിപോയി..😔 ഇടക്ക് എങ്കിലും ചുമ്മാ ഒന്ന് /start ചെയ്തു നോക്ക്..🙂" 
 HELP = "Help ഒന്നും ഇല്ല ഓടിക്കോ......"
 REPO = "https://github.com/Aadhi000/Ajax"
+GROUP = "https://t.me/+EqhXLhL3T1w4Zjc1"
+CHANNEL = "https://t.me/+veUIdIW2CQ5mOGU5"
+AJAX = "https://t.me/Devil0Bot_Bot"
 # -- Constants End -- #
 
 
@@ -36,3 +39,20 @@ async def ping(_, message):
 @Client.on_message(filters.command("repo", COMMAND_HAND_LER) & f_onw_fliter)
 async def repo(_, message):
     await message.reply_text(REPO)
+
+
+@Client.on_message(filters.command("group", COMMAND_HAND_LER) & f_onw_fliter)
+async def group(_, message):
+    await message.reply_text(GROUP)
+
+
+@Client.on_message(filters.command("channel", COMMAND_HAND_LER) & f_onw_fliter)
+async def channel(_, message):
+    await message.reply_text(CHANNEL)
+
+
+@Client.on_message(filters.command("ajax", COMMAND_HAND_LER) & f_onw_fliter)
+async def ajax(_, message):
+    await message.reply_text(AJAX)
+
+
