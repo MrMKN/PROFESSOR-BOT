@@ -85,6 +85,11 @@
             "value": "300",
             "required": false
         },
+        "SUPPORT_CHAT": {
+            "description": "Updated Channel Username Without @ Not Chanel ID",
+            "value": "MW Updatez",
+            "required": 
+        },
         "IMDB": {
             "description": "Imdb, the view of information when making True/False",
             "required": false     
