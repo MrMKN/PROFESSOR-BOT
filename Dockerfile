@@ -6,7 +6,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /EvaMaria
-WORKDIR /EvaMaria
+RUN mkdir /Ajax-Extra-Features
+WORKDIR /Ajax-Extra-Features
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
