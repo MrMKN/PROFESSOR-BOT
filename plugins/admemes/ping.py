@@ -12,7 +12,7 @@ ALIVE = "ചത്തിട്ടില്ല മുത്തേ ഇവിടെ
 HELP = "Help ഒന്നും ഇല്ല ഓടിക്കോ......"
 REPO = "<b>𝙰𝙹𝙰𝚇 ›› https://github.com/Aadhi000/Ajax</b>"
 GROUP = "<b>𝙶𝚁𝙾𝚄𝙿 ›› https://t.me/+EqhXLhL3T1w4Zjc1</b>"
-CHANNEL = "<b>𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ›› https://t.me/+veUIdIW2CQ5mOGU5</b>"
+CHANNEL = "<b>𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ›› https://t.me/MWUpdatez</b>"
 AJAX = "<b>𝙱𝙾𝚃 ›› https://t.me/Devil0Bot_Bot</b>"
 # -- Constants End -- #
 
