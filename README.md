@@ -2,7 +2,7 @@
   <img src="assets/logo.jpg" alt="Ajax-Extra-FeaturesLogo">
 </p>
 <h1 align="center">
-  <b>𝙰𝙹𝙰𝚇-𝙴𝚇𝚃𝚁𝙰-𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂</b>
+   <b>𝙰𝙹𝙰𝚇-𝙴𝚇𝚃𝚁𝙰-𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂</b>
 </h1>
 
 
@@ -48,7 +48,7 @@
 You can deploy this bot anywhere.
 
 
-<summary> ›› Deploy To Heroku</summary>
+<summary>Deploy To Heroku</summary>
 <br>
 <p>
 <a href="https://heroku.com/deploy?template=https://github.com/Aadhi000/Ajax-Extra-Features">
@@ -71,8 +71,8 @@ python3 bot.py
 
 ## Commands
 ```
-• /logs - to get the rescent errors
-• /stats - to get status of files in db.
+* /logs - to get the rescent errors
+* /stats - to get status of files in db.
 * /filter - add manual filters
 * /filters - view filters
 * /connect - connect to PM.
@@ -86,17 +86,17 @@ python3 bot.py
 * /video - Download Video
 * /song - Download Song
 * /imdb - fetch info from imdb.
-• /users - to get list of my users and ids.
-• /chats - to get list of the my chats and ids 
-• /index  - to add files from a channel
-• /leave  - to leave from a chat.
-• /disable  -  do disable a chat.
+* /users - to get list of my users and ids.
+* /chats - to get list of the my chats and ids 
+* /index  - to add files from a channel
+* /leave  - to leave from a chat.
+* /disable  -  do disable a chat.
 * /enable - re-enable chat.
-• /ban  - to ban a user.
-• /unban  - to unban a user.
-• /channel - to get list of total connected channels
-• /broadcast - to broadcast a message to all Ajax users
+* /ban  - to ban a user.
+* /unban  - to unban a user.
+* /channel - to get list of total connected channels
+* /broadcast - to broadcast a message to all Ajax users
 ```
 
-𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 ›› [𝐀𝐚𝐝𝐡𝐢](https://t.me/Aadhi011)                                                                                                                                                                                     
-𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ›› [𝐌𝐖 𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/MWUpdatez)
+<b>›› 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 ›› [𝐀𝐚𝐝𝐡𝐢](https://t.me/Aadhi011)</b>                                                                                                                                                                                     
+<b>›› 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ›› [𝐌𝐖 𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/MWUpdatez)</b>
