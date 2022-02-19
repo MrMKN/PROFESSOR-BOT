@@ -40,9 +40,9 @@
 * `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com).
 * `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this 
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
-### Optional Variables
+* `SUPPORT_CHAT` : @MWUpdatez
 * `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
-
+### Optional Variables
 
 ## Deploy
 You can deploy this bot anywhere.
@@ -84,6 +84,8 @@ python3 bot.py
 * /delete - delete a specific file from index.
 * /info - get user info
 * /id - get tg ids.
+* /video - Download Video
+* /song - Download Song
 * /imdb - fetch info from imdb.
 • /users - to get list of my users and ids.
 • /chats - to get list of the my chats and ids 
@@ -94,9 +96,8 @@ python3 bot.py
 • /ban  - to ban a user.
 • /unban  - to unban a user.
 • /channel - to get list of total connected channels
-• /broadcast - to broadcast a message to all Eva Maria users
+• /broadcast - to broadcast a message to all Ajax users
 ```
 
-𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 ›› [𝐀𝐚𝐝𝐡𝐢](https://t.me/Aadhi011)                                                                                                                                        
-𝙶𝚁𝙾𝚄𝙿 ›› [𝐌𝐨𝐯𝐢𝐞𝐬 𝐖𝐨𝐫𝐥𝐝](https://t.me/+EqhXLhL3T1w4Zjc1)                                             
-𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ›› [𝐌𝐖 𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/+veUIdIW2CQ5mOGU5)
+𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 ›› [𝐀𝐚𝐝𝐡𝐢](https://t.me/Aadhi011)                                                                                                                                                                                     
+𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ›› [𝐌𝐖 𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/MWUpdatez)
