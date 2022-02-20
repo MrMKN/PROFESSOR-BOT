@@ -130,7 +130,7 @@ Paste some texts or documents on a website!
 
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
-    GTRANS_TXT = """Help: <b> TTS 🎤 module:</b>
+    TTS_TXT = """Help: <b> TTS 🎤 module:</b>
 
 Translate text to speech
 
