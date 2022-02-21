@@ -5,7 +5,11 @@
   <b>𝙰𝙹𝙰𝚇-𝙴𝚇𝚃𝚁𝙰-𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂</b>
 </h1>
 
-
+[![Stars](https://img.shields.io/github/Stars/Aadhi000/Ajax-Extra-Features?style=flat-square&color=green)](https://github.com/Aadhi000/Ajax-Extra-Features/stargazers)
+[![Forks](https://img.shields.io/github/Forks/Aadhi000/Ajax?style=flat-square&color=blue)](https://github.com/Aadhi000/Ajax-Extra-Features/fork)
+[![Size](https://img.shields.io/github/Repo-Size/Aadhi000/Ajax-Extra-Features?style=flat-square&color=red)](https://github.com/Aadhi000/Ajax-Extra-Features)   
+[![Open Source happy ](https://badges.frapsoft.com/os/v2/Open-Source.svg?v=103)](https://github.com/Aadhi000/Ajax-Extra-Features)   
+[![Contributors](https://img.shields.io/github/Contributors/Aadhi000/Ajax-Extra-Features?style=flat-square&color=green)](https://github.com/Aadhi000/Ajax-Extra-Features/graphs/contributors)
 ## Features
 
 - [x] Auto Filter
