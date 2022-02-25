@@ -768,36 +768,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⚚ 𝙱𝙰𝙲𝙺 ⚚', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="𝙾"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉"
-        )
+        await query.message.edit_text(          
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode='html'
