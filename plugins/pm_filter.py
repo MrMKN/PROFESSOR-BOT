@@ -769,22 +769,36 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="▣▢▢▢▢▢"
+            text=<b>"𝙾"</b>
         )
         await query.message.edit_text(
-            text="▣▣▢▢▢▢"
+            text=<b>"𝙿"</b>
         )
         await query.message.edit_text(
-            text="▣▣▣▢▢▢"
+            text=<b>"𝚄"</b>
         )
         await query.message.edit_text(
-            text="▣▣▣▣▢▢"
+            text=<b>"𝚂"</b>
         )
         await query.message.edit_text(
-            text="▣▣▣▣▣▢"
+            text="ㅤ"
         )
         await query.message.edit_text(
-            text="▣▣▣▣▣▣"
+            text=<b>"𝚃"</b>
+        )
+        await query.message.edit_text(
+            text=<b>"𝙴"</b>
+        )
+        await query.message.edit_text(
+            text=<b>"𝙲"</b>
+        )
+        await query.message.edit_text(
+            text=<b>"𝙷"</b>
+        )
+        await query.message.edit_text(
+            text=<b>"𝚉"</b>
+        )await query.message.edit_text(
+            text="𝚉"
         )
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
