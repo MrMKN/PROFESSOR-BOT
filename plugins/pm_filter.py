@@ -811,6 +811,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉"
         )
+        await query.message.edit_text(
             text=script.ABOUT_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
