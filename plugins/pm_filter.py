@@ -768,35 +768,28 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⚚ 𝙱𝙰𝙲𝙺 ⚚', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await query.answer("𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝗍𝗈 𝗆𝗒 𝖧𝖾𝗅𝗉 𝗆𝗈𝖽𝗎𝗅𝖾")
         await query.message.edit_text(
-            text="𝙾"
+            text=script.HELP_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "about":
+        buttons= [[
+            InlineKeyboardButton('♥️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ♥️', url='https://github.com/Aadhi000/Ajax')
+            ],[
+            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
+            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="▣▢▢"
         )
         await query.message.edit_text(
-            text="𝙾𝙿"
+            text="▣▣▢"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉"
+            text="▣▣▣"
         )
         await query.message.edit_text(
             text=script.ABOUT_TXT,
@@ -813,7 +806,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
-        )
+        )parse_mode='html
     elif query.data == "image":
         buttons= [[
             InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='help')
