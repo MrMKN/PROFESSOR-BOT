@@ -783,34 +783,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="𝙾"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉"
+            text=script.ABOUT_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode='html'
         )
     elif query.data == "restric":
         buttons = [[
