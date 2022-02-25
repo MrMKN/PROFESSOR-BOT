@@ -866,22 +866,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="▣▢▢▢▢▢"
+            text="𐄪"
         )
         await query.message.edit_text(
-            text="▣▣▢▢▢▢"
+            text="𐄪𐄪"
         )
         await query.message.edit_text(
-            text="▣▣▣▢▢▢"
+            text="𐄪𐄪𐄪"
         )
         await query.message.edit_text(
-            text="▣▣▣▣▢▢"
+            text="𐄪𐄪𐄪𐄪"
         )
         await query.message.edit_text(
-            text="▣▣▣▣▣▢"
+            text="𐄪𐄪𐄪𐄪𐄪"
         )
         await query.message.edit_text(
-            text="▣▣▣▣▣▣"
+            text="𐄪𐄪𐄪𐄪𐄪𐄪"
         )
         await query.message.edit_text(
             text=script.ABOUT_TXT,
