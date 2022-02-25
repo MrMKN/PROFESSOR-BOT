@@ -769,35 +769,33 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=<b>"𝙾"</b>
+            text="𝙾"
         )
         await query.message.edit_text(
-            text=<b>"𝙿"</b>
+            text="𝙿"
         )
         await query.message.edit_text(
-            text=<b>"𝚄"</b>
+            text="𝚄"
         )
         await query.message.edit_text(
-            text=<b>"𝚂"</b>
+            text="𝚂"
         )
         await query.message.edit_text(
             text="ㅤ"
         )
         await query.message.edit_text(
-            text=<b>"𝚃"</b>
+            text="𝚃"
         )
         await query.message.edit_text(
-            text=<b>"𝙴"</b>
+            text="𝙴"
         )
         await query.message.edit_text(
-            text=<b>"𝙲"</b>
+            text="𝙲"
         )
         await query.message.edit_text(
-            text=<b>"𝙷"</b>
+            text="𝙷"
         )
         await query.message.edit_text(
-            text=<b>"𝚉"</b>
-        )await query.message.edit_text(
             text="𝚉"
         )
         await query.message.edit_text(
@@ -849,53 +847,34 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="▣▢▢▢▢▢"
+            text="𝙾"
         )
         await query.message.edit_text(
-            text="▣▣▢▢▢▢"
+            text="𝙿"
         )
         await query.message.edit_text(
-            text="▣▣▣▢▢▢"
+            text="𝚄"
         )
         await query.message.edit_text(
-            text="▣▣▣▣▢▢"
+            text="𝚂"
         )
         await query.message.edit_text(
-            text="▣▣▣▣▣▢"
+            text="ㅤ"
         )
         await query.message.edit_text(
-            text="▣▣▣▣▣▣"
+            text="𝚃"
         )
         await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "about":
-        buttons= [[
-            InlineKeyboardButton('♥️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ♥️', url='https://github.com/Aadhi000/Ajax')
-            ],[
-            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
-            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="𐄪"
+            text="𝙴"
         )
         await query.message.edit_text(
-            text="𐄪𐄪"
+            text="𝙲"
         )
         await query.message.edit_text(
-            text="𐄪𐄪𐄪"
+            text="𝙷"
         )
         await query.message.edit_text(
-            text="𐄪𐄪𐄪𐄪"
-        )
-        await query.message.edit_text(
-            text="𐄪𐄪𐄪𐄪𐄪"
-        )
-        await query.message.edit_text(
-            text="𐄪𐄪𐄪𐄪𐄪𐄪"
+            text="𝚉"
         )
         await query.message.edit_text(
             text=script.ABOUT_TXT,
