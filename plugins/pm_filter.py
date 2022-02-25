@@ -720,36 +720,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton(text="𝖢𝗅𝗈𝗌𝖾", callback_data="close_data")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="𝙾"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷"
-        )
-        await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉"
-        )
+        await query.message.edit_text(        
             text="Select your required mode from below!",
             reply_markup=reply_markup,
             parse_mode='html'
