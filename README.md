@@ -60,6 +60,10 @@ You can deploy this bot anywhere.
 </a>
 </p>
 
+<a href="https://youtu.be/kB9TkCs8cX0">
+  <img src="https://img.shields.io/badge/How%20to-Deploy-red?logo=youtube" width="147">
+</a><br>
+
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
