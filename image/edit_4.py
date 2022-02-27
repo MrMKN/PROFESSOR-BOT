@@ -17,12 +17,12 @@ async def rotate_90(client, message):
         edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "rotate_90.jpg"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
-                "Downloading image", quote=True
+                "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
             )
             a = await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...")
+            await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
             src = cv2.imread(a)
             image = cv2.rotate(src, cv2.cv2.ROTATE_90_CLOCKWISE)
             cv2.imwrite(edit_img_loc, image)
@@ -57,12 +57,12 @@ async def rotate_180(client, message):
         edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "rotate_180.jpg"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
-                "Downloading image", quote=True
+                "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
             )
             a = await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...")
+            await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
             src = cv2.imread(a)
             image = cv2.rotate(src, cv2.ROTATE_180)
             cv2.imwrite(edit_img_loc, image)
@@ -97,12 +97,12 @@ async def rotate_270(client, message):
         edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "rotate_270.jpg"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
-                "Downloading image", quote=True
+                "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
             )
             a = await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...")
+            await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
             src = cv2.imread(a)
             image = cv2.rotate(src, cv2.ROTATE_90_COUNTERCLOCKWISE)
             cv2.imwrite(edit_img_loc, image)
@@ -149,12 +149,12 @@ async def round_sticker(client, message):
         edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "rounded.webp"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
-                "Downloading image", quote=True
+                "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
             )
             a = await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...")
+            await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
             resized = resize_photo(a, userid)
             img = Image.open(resized).convert("RGB")
             npImage = np.array(img)
@@ -196,12 +196,12 @@ async def inverted(client, message):
         edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "inverted.png"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
-                "Downloading image", quote=True
+                "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
             )
             a = await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...")
+            await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
             image = Image.open(a)
             inverted_image = ImageOps.invert(image)
             inverted_image.save(edit_img_loc)
@@ -237,12 +237,12 @@ async def removebg_plain(client, message):
             edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "nobgplain.png"
             if not message.reply_to_message.empty:
                 msg = await message.reply_to_message.reply_text(
-                    "Downloading image", quote=True
+                    "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
                 )
                 await client.download_media(
                     message=message.reply_to_message, file_name=download_location
                 )
-                await msg.edit("Processing Image...")
+                await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
 
                 response = requests.post(
                     "https://api.remove.bg/v1.0/removebg",
@@ -297,12 +297,12 @@ async def removebg_white(client, message):
             edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "nobgwhite.png"
             if not message.reply_to_message.empty:
                 msg = await message.reply_to_message.reply_text(
-                    "Downloading image", quote=True
+                    "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
                 )
                 await client.download_media(
                     message=message.reply_to_message, file_name=download_location
                 )
-                await msg.edit("Processing Image...")
+                await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
 
                 response = requests.post(
                     "https://api.remove.bg/v1.0/removebg",
@@ -357,12 +357,12 @@ async def removebg_sticker(client, message):
             edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "nobgsticker.webp"
             if not message.reply_to_message.empty:
                 msg = await message.reply_to_message.reply_text(
-                    "Downloading image", quote=True
+                    "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
                 )
                 await client.download_media(
                     message=message.reply_to_message, file_name=download_location
                 )
-                await msg.edit("Processing Image...")
+                await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
 
                 response = requests.post(
                     "https://api.remove.bg/v1.0/removebg",
