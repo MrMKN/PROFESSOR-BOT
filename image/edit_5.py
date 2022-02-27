@@ -12,12 +12,12 @@ async def normalglitch_1(client, message):
         edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "normalglitch_1.jpg"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
-                "Downloading image", quote=True
+                "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
             )
             await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...")
+            await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
             cd = ["glitch_this", "-c", "-o", edit_img_loc, download_location, "1"]
             process = await asyncio.create_subprocess_exec(
                 *cd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
@@ -54,12 +54,12 @@ async def normalglitch_2(client, message):
         edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "normalglitch_2.jpg"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
-                "Downloading image", quote=True
+                "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
             )
             await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...")
+            await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
             cd = ["glitch_this", "-c", "-o", edit_img_loc, download_location, "2"]
             process = await asyncio.create_subprocess_exec(
                 *cd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
@@ -96,12 +96,12 @@ async def normalglitch_3(client, message):
         edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "normalglitch_3.jpg"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
-                "Downloading image", quote=True
+                "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
             )
             await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...")
+            await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
             cd = ["glitch_this", "-c", "-o", edit_img_loc, download_location, "3"]
             process = await asyncio.create_subprocess_exec(
                 *cd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
@@ -138,12 +138,12 @@ async def normalglitch_4(client, message):
         edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "normalglitch_4.jpg"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
-                "Downloading image", quote=True
+                "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
             )
             await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...")
+            await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
             cd = ["glitch_this", "-c", "-o", edit_img_loc, download_location, "4"]
             process = await asyncio.create_subprocess_exec(
                 *cd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
@@ -180,12 +180,12 @@ async def normalglitch_5(client, message):
         edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "normalglitch_5.jpg"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
-                "Downloading image", quote=True
+                "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
             )
             await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...")
+            await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
             cd = ["glitch_this", "-c", "-o", edit_img_loc, download_location, "5"]
             process = await asyncio.create_subprocess_exec(
                 *cd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
@@ -222,12 +222,12 @@ async def scanlineglitch_1(client, message):
         edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "scanlineglitch_1.jpg"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
-                "Downloading image", quote=True
+                "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
             )
             await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...")
+            await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
             cd = ["glitch_this", "-c", "-s", "-o", edit_img_loc, download_location, "1"]
             process = await asyncio.create_subprocess_exec(
                 *cd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
@@ -264,12 +264,12 @@ async def scanlineglitch_2(client, message):
         edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "scanlineglitch_2.jpg"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
-                "Downloading image", quote=True
+                "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
             )
             await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...")
+            await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
             cd = ["glitch_this", "-c", "-s", "-o", edit_img_loc, download_location, "2"]
             process = await asyncio.create_subprocess_exec(
                 *cd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
@@ -306,12 +306,12 @@ async def scanlineglitch_3(client, message):
         edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "scanlineglitch_3.jpg"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
-                "Downloading image", quote=True
+                "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
             )
             await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...")
+            await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
             cd = ["glitch_this", "-c", "-s", "-o", edit_img_loc, download_location, "3"]
             process = await asyncio.create_subprocess_exec(
                 *cd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
@@ -348,12 +348,12 @@ async def scanlineglitch_4(client, message):
         edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "scanlineglitch_4.jpg"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
-                "Downloading image", quote=True
+                "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
             )
             await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...")
+            await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
             cd = ["glitch_this", "-c", "-s", "-o", edit_img_loc, download_location, "4"]
             process = await asyncio.create_subprocess_exec(
                 *cd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
@@ -390,12 +390,12 @@ async def scanlineglitch_5(client, message):
         edit_img_loc = "./DOWNLOADS" + "/" + userid + "/" + "scanlineglitch_5.jpg"
         if not message.reply_to_message.empty:
             msg = await message.reply_to_message.reply_text(
-                "Downloading image", quote=True
+                "<b>𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>", quote=True
             )
             await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...")
+            await msg.edit("<b>𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙸𝙼𝙰𝙶𝙴....</b>")
             cd = ["glitch_this", "-c", "-s", "-o", edit_img_loc, download_location, "5"]
             process = await asyncio.create_subprocess_exec(
                 *cd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
