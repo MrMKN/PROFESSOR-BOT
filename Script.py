@@ -72,12 +72,6 @@ t𝗋𝗒 𝗍𝗁𝗂𝗌 𝖮𝗎𝗍:
 5. /luck or /cownd - Spin the Lucky"""
     DEPLOY_TXT = """<b>𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?</b> 
   
-<b>✮ Source Code 1 ›› 
-https://github.com/Aadhi000/Ajax</b>
-
-<b>✮ Source Code 2 ›› 
-https://github.com/Aadhi000/Ajax-Extra-Features</b>
-
 <b>✮ Deploy Tutorial ››</b> <i><b>https://youtu.be/kB9TkCs8cX0</b></i>
 
 <b>Share and Subscribe</b>
@@ -150,10 +144,11 @@ Helps you to know your ping 🚶🏼‍♂️
 <b>Commands:</b>
 
 • /alive - To check you are alive.
-• /help - To get help 
-• /ping - To get your ping 
-• /repo - Source Code. 
-
+• /help - To get help.
+• /ping - To get your ping.
+• /repo - Source Code.
+• /channel - Channel Details.
+• /ajax - Bot Link.
 <b>🏹Usage🏹 :</b>
 
 • This commands can be used in pms and groups
@@ -285,7 +280,7 @@ This module only works for my admins
 ➪ /covid - 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝖼𝗈𝗎𝗇𝗍𝗋𝗒 𝗇𝖺𝗆𝖾 𝗍𝗈 𝗀𝖾𝗍 𝖼𝗈𝗏𝗂𝖽𝖾 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇
 
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
-/covid 𝖨𝗇𝖽𝗂𝖺"""
+<code>/covid 𝖨𝗇𝖽𝗂𝖺</code>"""
 
     URLSHORT_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖴𝗋𝗅 𝗌𝗁𝗈𝗋𝗍𝗇𝖾𝗋
 
@@ -296,7 +291,7 @@ This module only works for my admins
 ➪ /short: 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌
 
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
-/short https://youtu.be/kB9TkCs8cX0"""
+<code>/short https://youtu.be/kB9TkCs8cX0</code>"""
 
     VIDEO_TXT ="""𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝚅𝙸𝙳𝙴𝙾 𝙵𝚁𝙾𝙼 𝚈𝙾𝚄𝚃𝚄𝙱𝙴.
 
@@ -306,8 +301,8 @@ This module only works for my admins
 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
 • 𝘛𝘺𝘱𝘦 /video or /mp4 𝘈𝘯𝘥 (https://youtu.be/kB9TkCs8cX0)
 • 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
-/mp4 https://youtu.be/kB9TkCs8cX0
-/video https://youtu.be/kB9TkCs8cX0"""
+<code>/mp4 https://youtu.be/kB9TkCs8cX0</code>
+<code>/video https://youtu.be/kB9TkCs8cX0</code>"""
 
     ZOMBIES_TXT = """𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙺𝙸𝙲𝙺 𝚄𝚂𝙴𝚁𝚂
 
@@ -344,7 +339,7 @@ To Get Sticker ID
 𝘛𝘺𝘱𝘦 /ytthumb 𝘈𝘯𝘥 𝘝𝘪𝘥𝘦𝘰 𝘓𝘪𝘯𝘬
 
 • 𝘌𝘹𝘢𝘮𝘱𝘭𝘦
-/ytthumb https://youtu.be/kB9TkCs8cX0"""
+<code>/ytthumb https://youtu.be/UyzJ9KEoU0w</code>"""
 
     ABOOK_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖠𝗎𝖽𝗂𝗈𝖻𝗈𝗈𝗄
 
