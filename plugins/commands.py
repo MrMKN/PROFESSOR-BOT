@@ -52,9 +52,9 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('✅ SUBSCᏒIBΞ  ✅', url='https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA')
         ]]
-        await message.reply_chat_action("typing")
+        await message.reply_chat_action("Typing")
         m=await message.reply_sticker("CAACAgQAAxkBAAEBB2ZiJjhMEWxwMEQZQ3P8MnO_1kqiKQACpDgAAjGNRgAB7LQc4Pny-AIeBA") 
-        await asyncio.sleep(5)
+        await asyncio.sleep(3)
         await m.delete()  
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -99,9 +99,9 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('✅ SUBSCᏒIBΞ  ✅', url='https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA')
         ]]
-        await message.reply_chat_action("typing")
+        await message.reply_chat_action("Typing")
         m=await message.reply_sticker("CAACAgQAAxkBAAEBB2ZiJjhMEWxwMEQZQ3P8MnO_1kqiKQACpDgAAjGNRgAB7LQc4Pny-AIeBA") 
-        await asyncio.sleep(5)
+        await asyncio.sleep(3)
         await m.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
