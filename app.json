@@ -46,6 +46,10 @@
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
             "required": true       
+        },
+        "INDEX_REQ_CHANNEL": {
+            "description": "Same Logs channel id with -100xxxxxxx",
+            "required": true       
         },       
         "AUTH_USERS": {
             "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
@@ -83,7 +87,7 @@
         },
         "SUPPORT_CHAT": {
             "description": "Updated Channel Username Without @ Not Chanel ID",
-            "value": "MW Updatez",
+            "value": "OpusTechz",
             "required": false
         },
         "IMDB": {
