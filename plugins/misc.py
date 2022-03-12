@@ -57,6 +57,19 @@ async def showid(client, message):
             quote=True
         )
 
+@Client.on_message(filters.command("about"))
+async def aboutme(client, message):
+        buttons= [[
+            InlineKeyboardButton('Developer on this repo', url='tg://user?id=5019561760'),
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.ABOUT_TXT.format(message.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+
 @Client.on_message(filters.command(["info"]))
 async def who_is(client, message):
     # https://github.com/SpEcHiDe/PyroGramBot/blob/master/pyrobot/plugins/admemes/whois.py#L19
