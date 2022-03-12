@@ -60,7 +60,7 @@ async def showid(client, message):
 @Client.on_message(filters.command("about"))
 async def aboutme(client, message):
         buttons= [[
-            InlineKeyboardButton('Developer on this repo', url='tg://user?id=5019561760'),
+            InlineKeyboardButton('Developer on this repo', url='https://t.me/aadhi011'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
