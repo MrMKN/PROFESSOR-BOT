@@ -50,9 +50,6 @@ class Bot(Client):
         logging.info("Restarting Ajax.")
 
 
-app = Bot()
-app.run()
-
 class Bot(Client):
     def __init__(self):
         super().__init__(
