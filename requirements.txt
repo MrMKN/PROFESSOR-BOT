@@ -7,6 +7,7 @@ python-telegram-bot==11.1.0
 umongo==3.0.0
 requests
 bs4
+Pyromod
 imdbpy
 youtube-dl
 youtube_search
