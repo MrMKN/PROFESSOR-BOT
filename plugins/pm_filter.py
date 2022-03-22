@@ -78,13 +78,14 @@ FILTER_MODE = {}
 
 @Client.on_message(filters.command('autofilter'))
 async def fil_mod(client, message): 
-      mode_on = ["yes", "on", "true"] 
+      mode_on = ["yes", "on", "true"]
       mode_of = ["no", "off", "false"]
 
       try: 
          args = message.text.split(None, 1)[1].lower() 
       except: 
          return await message.reply("**𝙸𝙽𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙴 𝙲𝙾𝙼𝙼𝙰𝙽𝙳...**")
+      
       m = await message.reply("**𝚂𝙴𝚃𝚃𝙸𝙽𝙶.../**")
 
       if args in mode_on:
