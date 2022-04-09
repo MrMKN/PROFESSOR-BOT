@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/AJAX.png" alt="Ajax-Extra-FeaturesLogo">
+  <img src="https://telegra.ph/file/2e2a07e86066538ed7406.jpg" alt="MKN BOTZ LOGO">
 </p>
 <h1 align="center">
   <b>𝙰𝙹𝙰𝚇-𝙴𝚇𝚃𝚁𝙰-𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂</b>
