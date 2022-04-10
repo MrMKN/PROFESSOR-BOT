@@ -222,7 +222,7 @@ async def next_page(bot, query):
         )
     except MessageNotModified:
         pass
-    await query.answer()
+    await query.answer("🤨 നീആള് കൊള്ളാലോ മറ്റുള്ളവർ search ചെയ്തലിൽ കുത്തി നോക്കണ്ട നിനക്ക് വേണമെങ്കിൽ സ്വയം search ചെയ്യ് 😁••",show_alert=True)
 
 
 @Client.on_callback_query(filters.regex(r"^spolling"))
