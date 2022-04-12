@@ -78,7 +78,7 @@
 ## Credits 
 * [![EvaMaria-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://telegram.dog/EvaMariaDevs)
 
-## 𝗧𝗔𝗡𝗞𝗦 𝗧𝗢
+## 𝗦𝗣𝗔𝗖𝗜𝗔𝗟 𝗧𝗛𝗔𝗡𝗞𝗦 𝗧𝗢
 * [⚡️𝔻𝕆ℕ⚡️](https://github.com/SflixBots)
 
 * [![SflixBots](https://img.shields.io/static/v1?label=Sflix&message=Bots&color=critical)](https://t.me/SflixBots)
