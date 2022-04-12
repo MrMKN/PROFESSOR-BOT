@@ -75,13 +75,23 @@
 ## Original Repo
 * [Team EvaMaria](https://github.com/EvamariaTG/EvaMaria)
 
+## I used Repo
+*  [Ajax-Extra-Features](https://github.com/Aadhi000/Ajax-Extra-Features)
+
 ## Credits 
 * [![EvaMaria-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://telegram.dog/EvaMariaDevs)
 
 ## 𝗦𝗣𝗔𝗖𝗜𝗔𝗟 𝗧𝗛𝗔𝗡𝗞𝗦 𝗧𝗢
 * [⚡️𝔻𝕆ℕ⚡️](https://github.com/SflixBots)
 
+* [⚡️𝐀𝐚𝐝𝐡𝐢⚡️](https://github.com/Aadhi000)
+
+## TELAGRAM SUPPORT 
 * [![SflixBots](https://img.shields.io/static/v1?label=Sflix&message=Bots&color=critical)](https://t.me/SflixBots)
+
+* [![𝐌𝐖 𝐔𝐩𝐝𝐚𝐭𝐞𝐳](https://img.shields.io/static/v1?label=𝐌𝐖&message=𝐔𝐩𝐝𝐚𝐭𝐞𝐳&color=critical)](https://t.me/MWUpdatez)
+
+* [![MKN BOTZ](https://img.shields.io/static/v1?label=MKN&message=BOTZ&color=critical)](https://t.me/mkn_bots_updates)
 
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
