@@ -72,10 +72,8 @@
 • /channel - to get list of total connected channels
 • /broadcast - to broadcast a message to all Eva Maria users
 ```
-## Original Repo
-* [Team EvaMaria](https://github.com/EvamariaTG/EvaMaria)
 
-## I used Repo
+## Original Repo
 *  [Ajax-Extra-Features](https://github.com/Aadhi000/Ajax-Extra-Features)
 
 ## Credits 
