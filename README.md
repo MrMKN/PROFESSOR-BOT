@@ -79,8 +79,9 @@
 * [![EvaMaria-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://telegram.dog/EvaMariaDevs)
 
 ## Thanks To
-* [DON SflixBots](https://github.com/SflixBots)
+* [⚡️ DON ⚡️](https://github.com/SflixBots)
 
+* * [![🤖 SflixBots 🤖](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://t.me/SflixBots)
 ##
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
