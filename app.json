@@ -58,14 +58,6 @@
         "AUTH_CHANNEL": {
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
             "required": false
-        },
-        "CH_FILTER": {
-            "description": "Channel ID -100xxxxxxx",
-            "required": true
-        },
-        "CH_LINK": {
-            "description": "Channel Link",
-            "required": true
         },   
         "USE_CAPTION_FILTER": {
             "description": "Whether bot should use captions to improve search results. (True False)",
