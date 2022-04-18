@@ -15,6 +15,7 @@ class Database:
         return dict(
             id = id,
             name = name,
+            username = username,
             ban_status=dict(
                 is_banned=False,
                 ban_reason="",
@@ -26,6 +27,7 @@ class Database:
         return dict(
             id = id,
             title = title,
+            username = username,
             chat_status=dict(
                 is_disabled=False,
                 reason="",
