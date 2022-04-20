@@ -25,7 +25,7 @@ class Database:
     def new_group(self, id, title):
         return dict(
             id = id,
-            title = title 
+            title = title,
             chat_status=dict(
                 is_disabled=False,
                 reason="",
