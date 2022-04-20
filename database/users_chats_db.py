@@ -15,7 +15,6 @@ class Database:
         return dict(
             id = id,
             name = name,
-            username = username,
             ban_status=dict(
                 is_banned=False,
                 ban_reason="",
@@ -26,8 +25,7 @@ class Database:
     def new_group(self, id, title):
         return dict(
             id = id,
-            title = title,
-            username = username,
+            title = title 
             chat_status=dict(
                 is_disabled=False,
                 reason="",
