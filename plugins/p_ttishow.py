@@ -255,7 +255,7 @@ async def list_chats(bot, message):
     chats = await db.get_all_chats()
     out = "Chats Saved In DB Are:\n\n"
     async for chat in chats:
-        out += f"**Title:** `{chat['title']}`\n**- ID:** `{chat['id']}`\n**-UN:** `{chat['username']}`\n"
+        out += f"**Title:** `{chat['title']}`\n**- ID:** `{chat['id']}`\n"
     try:
         await raju.edit_text(out)
     except MessageTooLong:
