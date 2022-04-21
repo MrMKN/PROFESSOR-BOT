@@ -83,7 +83,7 @@
 ```
 
 ## Original Repo
-*  [Ajax-Extra-Features](https://github.com/Aadhi000/Ajax-Extra-Features)
+*  [Eva Maria](https://github.com/EvamariaTG/EvaMaria)
 
 ## Credits 
 * [![EvaMaria-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://telegram.dog/EvaMariaDevs)
