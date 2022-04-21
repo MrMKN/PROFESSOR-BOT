@@ -91,6 +91,8 @@
 ## Spacial Thanks To
 * [⚡️𝔻𝕆ℕ⚡️](https://github.com/SflixBots)
 
+* [⚡️𝐌𝐡𝐝𝐫𝐳𝐢𝐧⚡️](https://github.com/Mhdrzn)
+
 * [⚡️𝐀𝐚𝐝𝐡𝐢⚡️](https://github.com/Aadhi000)
 
 * [⚡️𝚉𝙸𝙽𝙰𝙽⚡️](https://github.com/Zinan100)
