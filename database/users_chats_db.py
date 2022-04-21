@@ -22,10 +22,11 @@ class Database:
         )
 
 
-    def new_group(self, id, title):
+    def new_group(self, id, title, username):
         return dict(
             id = id,
             title = title,
+            username = username,
             chat_status=dict(
                 is_disabled=False,
                 reason="",
