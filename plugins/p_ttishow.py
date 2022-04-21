@@ -256,7 +256,7 @@ async def list_chats(bot, message):
     out = "Chats Saved In DB Are:\n\n"
     async for chat in chats:
         username = chat['username']
-        out += f"**- Title:** `{chat['title']}`\n**- ID:** `{chat['id']}`\n**Username:** {"private" if not username else username}\n"
+        out += f"**- Title:** `{chat['title']}`\n**- ID:** `{chat['id']}`\n**Username:** {uname}\n".format(uname = "private" if chat['username'] else "@" + username)
     try:
         await raju.edit_text(out)
     except MessageTooLong:
