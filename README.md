@@ -104,7 +104,7 @@
 
 * [![MKN BOTZ](https://img.shields.io/static/v1?label=MKN&message=BOTZ&color=critical)](https://t.me/mkn_bots_updates)
 
-* [![MKN BOTZ](https://img.shields.io/static/v1?label=ME&message=UPDATES&color=critical)](https://t.me/M_E_UPDATEZ)
+* [![ME BOTZ](https://img.shields.io/static/v1?label=ME&message=UPDATES&color=critical)](https://t.me/M_E_UPDATEZ)
 
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
