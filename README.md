@@ -89,13 +89,10 @@
 * [![EvaMaria-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://telegram.dog/EvaMariaDevs)
 
 ## Spacial Thanks To
-* [⚡️𝔻𝕆ℕ⚡️](https://github.com/SflixBots)
 
 * [⚡️𝐌𝐡𝐝𝐫𝐳𝐢𝐧⚡️](https://github.com/Mhdrzn)
 
 * [⚡️𝐀𝐚𝐝𝐡𝐢⚡️](https://github.com/Aadhi000)
-
-* [⚡️𝚉𝙸𝙽𝙰𝙽⚡️](https://github.com/Zinan100)
 
 ## TELAGRAM SUPPORT 
 * [![SflixBots](https://img.shields.io/static/v1?label=Sflix&message=Bots&color=critical)](https://t.me/SflixBots)
@@ -103,8 +100,6 @@
 * [![𝐌𝐖 𝐔𝐩𝐝𝐚𝐭𝐞𝐳](https://img.shields.io/static/v1?label=𝐌𝐖&message=𝐔𝐩𝐝𝐚𝐭𝐞𝐳&color=critical)](https://t.me/MWUpdatez)
 
 * [![MKN BOTZ](https://img.shields.io/static/v1?label=MKN&message=BOTZ&color=critical)](https://t.me/mkn_bots_updates)
-
-* [![ME BOTZ](https://img.shields.io/static/v1?label=ME&message=UPDATES&color=critical)](https://t.me/M_E_UPDATEZ)
 
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
