@@ -90,14 +90,9 @@
 
 ## Spacial Thanks To
 
-* [⚡️𝐌𝐡𝐝𝐫𝐳𝐢𝐧⚡️](https://github.com/Mhdrzn)
-
 * [⚡️𝐀𝐚𝐝𝐡𝐢⚡️](https://github.com/Aadhi000)
 
 ## TELAGRAM SUPPORT 
-* [![SflixBots](https://img.shields.io/static/v1?label=Sflix&message=Bots&color=critical)](https://t.me/SflixBots)
-
-* [![𝐌𝐖 𝐔𝐩𝐝𝐚𝐭𝐞𝐳](https://img.shields.io/static/v1?label=𝐌𝐖&message=𝐔𝐩𝐝𝐚𝐭𝐞𝐳&color=critical)](https://t.me/MWUpdatez)
 
 * [![MKN BOTZ](https://img.shields.io/static/v1?label=MKN&message=BOTZ&color=critical)](https://t.me/mkn_bots_updates)
 
