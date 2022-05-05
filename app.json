@@ -1,7 +1,7 @@
 {
-    "name": "ᗩᒍᗩ᙭",
+    "name": "PROFESSOR-BOT",
     "description": "This Bot Will Help You To Store Files In Cloud Storage. You Can Add Files To The Bot By Forward the last file from a public channel to your bot and Press Yes Button.. If The Files Channl Is Private Make the bot admin on the channel and forward the last file to bot. Then Add the bot to you group and send the movie name The Bot Will Give the file in Bot PM..✮✮",
-    "logo": "https://telegra.ph/file/1b837a8df2670b0097aaf.jpg",
+    "logo": "https://telegra.ph/file/2e2a07e86066538ed7406.jpg",
     "stack": "container",
     "keywords": [
       "telegram",
@@ -16,8 +16,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Aadhi000/Ajax",
-    "repository": "https://github.com/Aadhi000/Ajax",
+    "website": "https://github.com/MrMKN/PROFESSOR-BOT",
+    "repository": "https://github.com/MrMKN/PROFESSOR-BOT",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -73,11 +73,12 @@
         },
         "DATABASE_NAME": {
             "description": "Name of the database in mongoDB.",
+            "value": "Cluster0"
             "required": false
         },
         "COLLECTION_NAME": {
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
-            "value": "Ajax_Files",
+            "value": "Telegram_files",
             "required": false
         },
         "CACHE_TIME": {
@@ -87,7 +88,7 @@
         },
         "SUPPORT_CHAT": {
             "description": "Updated Channel Username Without @ Not Chanel ID",
-            "value": "OpusTechz",
+            "value": "MKN_BOTZ_DISCUSSION_GROUP",
             "required": false
         },
         "IMDB": {
