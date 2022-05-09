@@ -67,7 +67,7 @@ TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 TG_MAX_SELECT_LEN = environ.get("TG_MAX_SELECT_LEN", "100")
 
 # Command
-COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
+COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/", ".")
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
