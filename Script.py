@@ -5,7 +5,6 @@ class script(object):
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """<b>✯ 𝙼𝚈 𝙽𝙰𝙼𝙴 : {}
 <b>✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 : <a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 𝚃𝙶</a></b>
-<b>✯ 𝙲𝙾𝙳𝙴 𝙳𝙴𝚅 : <a href=https://t.me/Aadhi011>𝙰𝙰𝙳𝙷𝙸</a></b>
 <b>✯ 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 : <a href=https://t.me/mkn_bots_updates>𝙼𝙺𝙽 𝙱𝙾𝚃𝚉</a></b>
 <b>✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</b>
 <b>✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹</b>
@@ -14,7 +13,8 @@ class script(object):
 <b>✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂 : 𝚅1.0.43 [𝙼𝙰𝙹𝙾𝚁]</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - This is a Eva Mari clone Project
-- contact <a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 𝚃𝙶</a></b>
+- 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁 👉 :<a href=https://github.com/MrMKN/PROFESSOR-BOT>𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑-𝐁𝐎𝐓</a>
+
 <b>DEVS:</b>
 - 𝙳𝚎𝚟 1<a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 𝚃𝙶</a>
 - 𝙳𝚎𝚟 2<a href=https://t.me/Aadhi011>𝙰𝙰𝙳𝙷𝙸</a>"""
