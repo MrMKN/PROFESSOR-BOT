@@ -45,15 +45,7 @@
         },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
-            "required": true       
-        },
-        "INDEX_REQ_CHANNEL": {
-            "description": "Same Logs channel id with -100xxxxxxx",
-            "required": true       
-        },       
-        "AUTH_USERS": {
-            "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
-            "required": false
+            "required": true                              
         },
         "AUTH_CHANNEL": {
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
@@ -61,10 +53,12 @@
         },   
         "USE_CAPTION_FILTER": {
             "description": "Whether bot should use captions to improve search results. (True False)",
+            "value": "True",
             "required": false
         },
         "CUSTOM_FILE_CAPTION": {
             "description": "A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding.",
+            "value": "{file_name}\n\n🔘 size - {file_size}\n\n╔═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗\n💥 𝙅𝙊𝙄𝙉 :- @Mr_Movies_Main\n💥 𝙅𝙊𝙄𝙉 :- @mknmovies\n╚═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝ ",
             "required": false
         },
         "DATABASE_URI": {
@@ -79,12 +73,7 @@
         "COLLECTION_NAME": {
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
             "value": "Telegram_files",
-            "required": false
-        },
-        "CACHE_TIME": {
-            "description": "The maximum amount of time in seconds that the result of the inline query may be cached on the server",
-            "value": "300",
-            "required": false
+            "required": false        
         },
         "SUPPORT_CHAT": {
             "description": "Updated Channel Username Without @ Not Chanel ID",
@@ -93,10 +82,16 @@
         },
         "IMDB": {
             "description": "Imdb, the view of information when making True/False",
+            "value": "True",
             "required": false     
         },
         "IMDB_TEMPLATE": {
             "description": "Custom IMDB Template",        
+            "required": false
+        }, 
+        "IMDB_DELET_TIME": {
+            "description": "bot risult aouto delet time in second do to avoid group copyright issue. default is 300 ",
+            "value": "300",
             "required": false  
         },
         "SINGLE_BUTTON": {
