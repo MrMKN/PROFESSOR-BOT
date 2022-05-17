@@ -86,7 +86,8 @@
             "required": false     
         },
         "IMDB_TEMPLATE": {
-            "description": "Custom IMDB Template",        
+            "description": "Custom IMDB Template",
+            "value": "<b>🏷 Title</b>: <a href={url}>{title}</a>\n<b>🎭 Genres</b>: {genres}\n<b>📆 Year</b>: <a href={url}/releaseinfo>{year}</a>\n<b>🌟 Rating</b>: <a href={url}/ratings>{rating}</a>\n<b>☀️ Languages</b> : <code>{languages}</code>\n<b>👨‍💼 Dɪʀᴇᴄᴛᴏʀ</b>: {director}\n<b>👨🏻‍🦱 Pʀᴏᴅᴜᴄᴇʀ</b>: {producer}\n<b>📑 wʀɪᴛᴇʀ</b>: {writer}\n<b>📀 RunTime</b>: {runtime} Minutes\n<b>📆 Release Info</b> : {release_date}\n<b>🎛 Countries</b> : <code>{countries}</code>\n<b>📓 Sᴛᴏʀy</b> : <code>{plot}</code>\n\n\n<b>🍀Requested by🍀</b> : {message.from_user.mention}",        
             "required": false
         }, 
         "IMDB_DELET_TIME": {
