@@ -49,3 +49,4 @@ ffmpeg-python
 ffmpeg
 Pillow
 ujson
+speedtest
