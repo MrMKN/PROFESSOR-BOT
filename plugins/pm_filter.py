@@ -347,7 +347,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                                        file_caption='' if f_caption is None else f_caption)
                 
                 buttons = [[
-                  InlineKeyboardButton('🔰 Main Group 🔰', url='https://t.me/KC_Films')
+                  InlineKeyboardButton('🔰 Main Group 🔰', url='https://t.me/mallumovie099')
                   ]]
             except Exception as e:
                 logger.exception(e)
@@ -393,7 +393,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     ]
                 )
             )
-            await query.answer('Check "KC | File Channel" For Your File',show_alert=True)
+            await query.answer('Check "MALLU MOVIES 099 | File Channel" For Your File',show_alert=True)
             await asyncio.sleep(300)
             await msg1.delete()            
             await ms.delete()
@@ -420,7 +420,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                                        file_size='' if size is None else size,
                                                        file_caption='' if f_caption is None else f_caption)
                 buttons = [[
-                  InlineKeyboardButton('🔰 Main Group 🔰', url='https://t.me/KC_Films')
+                  InlineKeyboardButton('🔰 Main Group 🔰', url='https://t.me/mallumovie099')
                   ]]
             except Exception as e:
                 logger.exception(e)
@@ -440,7 +440,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ],[
-            InlineKeyboardButton('⛑ Contact Owner', url=f'http://t.me/KCAjm')
+            InlineKeyboardButton('⛑ Contact Owner', url=f'https://t.me/JP_Jeol')
             ],
         [
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
@@ -704,22 +704,22 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]   
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="⚜️ Backup Channel ⚜️",url="https://t.me/+7AyTKA_SqdsyNWNl"),
-             InlineKeyboardButton(text="🧲 Backup Group 🧲",url="https://t.me/KC_Filmz")]
+            [InlineKeyboardButton(text="⚜️ Main Channel ⚜️",url="https://t.me/Mallumovies099"),
+             InlineKeyboardButton(text="💢 Main Group 💢",url="https://t.me/mallumovie099")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="🔶 KC Files Channel 🔶",url="https://t.me/+PKaP3oBEgTEyZjM1")]
+            [InlineKeyboardButton(text="🔶 Files Channel 🔶",url="https://t.me/Mallumovies099")]
         )
     else:
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="⚜️ Backup Channel ⚜️",url="https://t.me/+7AyTKA_SqdsyNWNl"),
-             InlineKeyboardButton(text="🧲 Backup Group 🧲",url="https://t.me/KC_Filmz")]
+            [InlineKeyboardButton(text="⚜️ Main Channel ⚜️",url="https://t.me/Mallumovies099"),
+             InlineKeyboardButton(text="⭕️ MAIN Group ⭕️",url="https://t.me/mallumovie099")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="🔶 KC Files Channel 🔶",url="https://t.me/+PKaP3oBEgTEyZjM1")]
+            [InlineKeyboardButton(text="🔶 Files Channel 🔶",url="https://t.me/Mallumovies099")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
