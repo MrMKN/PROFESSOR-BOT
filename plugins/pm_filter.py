@@ -708,7 +708,7 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="💢 Main Group 💢",url="https://t.me/mallumovie099")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="🔶 Files Channel 🔶",url="https://t.me/Mallumovies099")]
+            [InlineKeyboardButton(text="🔶 Files Channel 🔶",url="https://t.me/+r1UDcoFaukE0NjFl")]
         )
     else:
         btn.append(
@@ -719,7 +719,7 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="⭕️ MAIN Group ⭕️",url="https://t.me/mallumovie099")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="🔶 Files Channel 🔶",url="https://t.me/Mallumovies099")]
+            [InlineKeyboardButton(text="🔶 Files Channel 🔶",url="https://t.me/+r1UDcoFaukE0NjFl")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
