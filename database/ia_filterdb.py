@@ -7,7 +7,7 @@ from pymongo.errors import DuplicateKeyError
 from umongo import Instance, Document, fields
 from motor.motor_asyncio import AsyncIOMotorClient
 from marshmallow.exceptions import ValidationError
-from info import DATABASE_URI, DATABASE_NAME, COLLECTION_NAME, USE_CAPTION_FILTER
+from info import DATABASE_URI, DATABASE_NAME, COLLECTION_NAME, USE_CAPTION_FILTER, MAX_RIST_BTNS
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -62,7 +62,7 @@ async def save_file(media):
 
 
 
-async def get_search_results(query, file_type=None, max_results=6, offset=0, filter=False):
+async def get_search_results(query, file_type=None, max_results={MAX_RIST_BTNS}, offset=0, filter=False):
     """For given query return (results, next_offset)"""
 
     query = query.strip()
