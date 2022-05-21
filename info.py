@@ -77,6 +77,10 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #Downloader
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
+#maximum search result buttos count in number#
+
+MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
+
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
