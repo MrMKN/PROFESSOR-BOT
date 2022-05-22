@@ -103,17 +103,7 @@
         "SINGLE_BUTTON": {
             "description": "choose b/w single or double buttons https://github.com/Aadhi000/Ajax/issues/22",
             "value": "True",
-            "required": false
-        },
-        "UPDATES": {
-            "description": "your update channel or movie channe link eg:- https://t.me/mkn_bots_updates",
-            "value": "https://t.me/mkn_bots_updates",
-            "required": false
-        },
-        "OWNER": {
-            "description": "yor telagram user name without @ eg:- mr_MKN ",
-            "value": "mr_MKN",
-            "required": false     
+            "required": false        
         },
         "P_TTI_SHOW_OFF": {
             "description": "Customize Result Buttons to Callback or Url by (True = url / False = callback)",
