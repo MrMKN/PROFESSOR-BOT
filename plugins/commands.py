@@ -56,7 +56,7 @@ async def start(client, message):
         await asyncio.sleep(1)
         await m.delete()        
         await client.send_photo(
-            chat_id=update.chat.id,
+            chat_id=message.chat.id,
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
@@ -102,7 +102,7 @@ async def start(client, message):
         await asyncio.sleep(1)
         await m.delete()
         await client.send_photo(
-            chat_id=update.chat.id,
+            chat_id=message.chat.id,
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
