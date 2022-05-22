@@ -78,8 +78,11 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 #maximum search result buttos count in number#
-
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
+
+# my adons😉#
+UPDATES = environ.get('UPDATES', 'https://t.me/mkn_bots_updates')
+OWNER = environ.get('OWNER', 'mr_MKN')
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
