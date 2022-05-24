@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/BETA_UPDATES')
+                InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/beta_bot_updates')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
@@ -45,15 +45,15 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕️ Add Me To Your Group ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('࿏ OWNER ࿏', url='https://t.me/JP_Jeol'), 
-            InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/BETA_UPDATES')
+            InlineKeyboardButton('࿏ OWNER ࿏', url='https://t.me/JP_Jeol_org'), 
+            InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/beta_bot_updates')
             ],[      
             InlineKeyboardButton('ℹ️ Help ℹ️', callback_data='help'),
             InlineKeyboardButton('😊 About 😊', callback_data='about')
         ]]         
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("Typing")
-        m=await message.reply_sticker("CAACAgUAAxkBAAIFNGJSlfOErbkSeLt9SnOniU-58UUBAAKaAAPIlGQULGXh4VzvJWoeBA") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAICn2KM32RzusUm4EVigMvotXJaLd8JAAIEAAPBJDExieUdbguzyBAeBA") 
         await asyncio.sleep(1)
         await m.delete()        
         await message.reply_photo(
@@ -90,15 +90,15 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕️ Add Me To Your Group ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('࿏ OWNER ࿏', url='https://t.me/JP_Jeol'), 
-            InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/BETA_UPDATES')
+            InlineKeyboardButton('࿏ OWNER ࿏', url='https://t.me/JP_Jeol_org'), 
+            InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/beta_bot_updates')
             ],[      
             InlineKeyboardButton('ℹ️ Help ℹ️', callback_data='help'),
             InlineKeyboardButton('😊 About 😊', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("Typing")
-        m=await message.reply_sticker("CAACAgUAAxkBAAIFNGJSlfOErbkSeLt9SnOniU-58UUBAAKaAAPIlGQULGXh4VzvJWoeBA") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAICn2KM32RzusUm4EVigMvotXJaLd8JAAIEAAPBJDExieUdbguzyBAeBA") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
