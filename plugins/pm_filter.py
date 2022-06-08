@@ -115,18 +115,18 @@ async def pm_autofilter(client, message):
         else:
             cap = f"Here is what i found for your query {search}"
         if imdb and imdb.get('poster'):
-                dell=await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(300)
-                await dell.delete()
-            elif imdb:
-                dell=await message.reply_photo(photo=random.choice(PICS), caption=cap, reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(300)
-                await dell.delete()
-            else:
-                dell=await message.reply_photo(photo=random.choice(PICS), caption=cap, reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(300)
-                await dell.delete()
-            return
+            dell=await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(buttons))
+            await asyncio.sleep(300)
+            await dell.delete()
+        elif imdb:
+            dell=await message.reply_photo(photo=random.choice(PICS), caption=cap, reply_markup=InlineKeyboardMarkup(buttons))
+            await asyncio.sleep(300)
+            await dell.delete()
+        else:
+            dell=await message.reply_photo(photo=random.choice(PICS), caption=cap, reply_markup=InlineKeyboardMarkup(buttons))
+            await asyncio.sleep(300)
+            await dell.delete()
+        return
 
 
 # ---------- 📁 [ | 𝗣𝗠 𝗙𝗜𝗟𝗘𝗦 | ] 📁 ---------- #
