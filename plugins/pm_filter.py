@@ -54,11 +54,11 @@ async def pm_autofilter(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        files = await get_search_results(query=search)
+        files = await get_search_results(search.lower(), offset=0, filter=True)
         if files:
             for file in files:
                 btn.append(
-                    [InlineKeyboardButton(text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f"pmfile#{file.file_id}")]
+                    [InlineKeyboardButton(text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'pmfile#{file.file_id}')]
                 )
         else:
             await message.reply_photo(
