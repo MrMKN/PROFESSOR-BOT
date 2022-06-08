@@ -34,20 +34,19 @@ logger.setLevel(logging.ERROR)
 
 @Client.on_message(filters.private & filters.text & ~filters.edited & filters.incoming)
 async def give_filter(client,message):
-    await auto_filter(client, message)   
+    await pm_autofilter(client, message)   
 
 
 # ---------- Bot PM ---------- #
 
-async def pm_auto_filter(client, msg):
-        message = msg
-        if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
-            return
-        if 2 < len(message.text) < 50:
-            btn = []
-            search = message.text
-            files = await get_search_results(query=search)
-            if files:
+async def pm_autofilter(client, message):
+    if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
+        return
+    if 2 < len(message.text) < 50:    
+        btn = []
+        search = message.text
+        files = await get_search_results(query=search)
+        if files:
             for file in files:
                 file_id = file.file_id
                 filename = f"{get_size(file.file_size)} {file.file_name}"
