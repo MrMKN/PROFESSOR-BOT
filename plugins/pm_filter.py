@@ -55,7 +55,7 @@ async def pm_autofilter(client, message):
         btn = []
         search = message.text
         files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
-        message = msg.message.reply_to_message
+        message = message.message.reply_to_message
         if files:
             for file in files:
                 btn.append(
