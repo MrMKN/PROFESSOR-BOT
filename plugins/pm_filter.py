@@ -37,7 +37,7 @@ CUSTOM_FILE_CAPTION = """Hai {mention} 👋
 💥 𝙅𝙊𝙄𝙉 :- @Mr_Movies_Main 
 💥 𝙅𝙊𝙄𝙉 :- @mknmovies 
 ╚═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝ 
-
+"""
 
 # # ---------- 🔘 [ | 𝗕𝗢𝗧 𝗣𝗠 𝗙𝗜𝗟𝗧𝗘𝗥𝗦 | ] 🔘 ---------- # #
 
