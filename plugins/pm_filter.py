@@ -150,7 +150,7 @@ async def cb_handler(client, query):
         typed = query.from_user.id
 
     if (clicked == typed):
-        elif query.data.startswith("pmfile"):            
+        if query.data.startswith("pmfile"):            
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
             for files in filedetails:
