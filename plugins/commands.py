@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('📢 UPDATES 📢', url='https://t.me/beta_bot_updates')
+                InlineKeyboardButton('〄 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 〄', url='https://t.me/beta_bot_updates')
             ],
             [
-                InlineKeyboardButton('ℹ️ Help ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
+                InlineKeyboardButton('☞ 𝙷𝙴𝙻𝙿 ☚', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -45,7 +45,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('☸ 𝙾𝚆𝙽𝙴𝚁 ☸', url=f'https://t.me/JP_Jeol_org'),
+            InlineKeyboardButton('✆ 𝙾𝚆𝙽𝙴𝚁 ✆', url=f'https://t.me/JP_Jeol_org'),
             InlineKeyboardButton('〄 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 〄', url=f'https://t.me/beta_bot_updates')
             ],[
             InlineKeyboardButton('🔍sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇ🔎', switch_inline_query_current_chat='')
@@ -77,7 +77,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "📢 Join Update Channel 📢", url=invite_link.invite_link
+                    "〄 Join Update Channel 〄", url=invite_link.invite_link
                 )
             ]
         ]
@@ -95,7 +95,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('☸ 𝙾𝚆𝙽𝙴𝚁 ☸', url=f'https://t.me/JP_Jeol_org'),
+            InlineKeyboardButton('✆ 𝙾𝚆𝙽𝙴𝚁 ✆', url=f'https://t.me/JP_Jeol_org'),
             InlineKeyboardButton('〄 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 〄', url=f'https://t.me/beta_bot_updates')
             ],[
             InlineKeyboardButton('🔍sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇ🔎', switch_inline_query_current_chat='')
@@ -356,12 +356,12 @@ async def delete_all_index(bot, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="⚡ 𝐘𝐞𝐬 ⚡", callback_data="autofilter_delete"
+                        text="✔ 𝐘𝐞𝐬 ✔", callback_data="autofilter_delete"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        text="❄ 𝐂𝐚𝐧𝐜𝐞𝐥 ❄", callback_data="close_data"
+                        text="✘ 𝐂𝐚𝐧𝐜𝐞𝐥 ✘", callback_data="close_data"
                     )
                 ],
             ]
