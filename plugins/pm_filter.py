@@ -759,13 +759,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔰 𝙾𝚆𝙽𝙴𝚁', url=f'https://t.me/JP_Jeol_org'),
-            InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢', url=f'https://t.me/beta_bot_updates')
+            InlineKeyboardButton('☸ 𝙾𝚆𝙽𝙴𝚁 ☸', url=f'https://t.me/JP_Jeol_org'),
+            InlineKeyboardButton('〄 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 〄', url=f'https://t.me/beta_bot_updates')
             ],[
             InlineKeyboardButton('🔍sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇ🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿 ℹ️', callback_data='help'),
-            InlineKeyboardButton('💫 𝙰𝙱𝙾𝚄𝚃 💫', callback_data='about')
+            InlineKeyboardButton('☞ 𝙷𝙴𝙻𝙿 ☚', callback_data='help'),
+            InlineKeyboardButton('⍟ 𝙰𝙱𝙾𝚄𝚃 ⍟', callback_data='about')
             ],[
             InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='stats'),
             InlineKeyboardButton('ᴄʟᴏsᴇ ✗', callback_data='close_data'),
