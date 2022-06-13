@@ -759,7 +759,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('☸ 𝙾𝚆𝙽𝙴𝚁 ☸', url=f'https://t.me/JP_Jeol_org'),
+            InlineKeyboardButton('✆ 𝙾𝚆𝙽𝙴𝚁 ✆', url=f'https://t.me/JP_Jeol_org'),
             InlineKeyboardButton('〄 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 〄', url=f'https://t.me/beta_bot_updates')
             ],[
             InlineKeyboardButton('🔍sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇ🔎', switch_inline_query_current_chat='')
@@ -864,13 +864,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)       
         await query.message.edit_text(
-            text="❃"
+            text="✰"
         )
         await query.message.edit_text(
             text="✰✰✰"
         )
         await query.message.edit_text(
-            text="❃✰✺❃✰✺"
+            text="✰✰✰✰✰✰"
         )
         await query.message.edit_text(                     
             text=script.HELP_TXT.format(query.from_user.mention),
@@ -886,13 +886,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="❃"
+            text="✰"
         )
         await query.message.edit_text(
             text="✰✰✰"
         )
         await query.message.edit_text(
-            text="❃✰✺❃✰✺"
+            text="✰✰✰✰✰✰"
         ) 
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
