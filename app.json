@@ -93,7 +93,15 @@
         "IMDB_DELET_TIME": {
             "description": "bot risult aouto delet time in second do to avoid group copyright issue. default is 300 ",
             "value": "300",
-            "required": false  
+            "required": false
+        },
+        "CH_FILTER": {
+            "description": "Channel ID -100xxxxxxx",
+            "required": true
+        },
+        "CH_LINK": {
+            "description": "Channel Link",
+            "required": true
         },
         "SINGLE_BUTTON": {
             "description": "choose b/w single or double buttons https://github.com/Aadhi000/Ajax/issues/22",
