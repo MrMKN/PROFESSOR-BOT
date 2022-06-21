@@ -8,7 +8,7 @@ import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
 from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, \
-    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, IMDB_DELET_TIME, UPDATE_CHANNEL, OWNER_UN
+    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, IMDB_DELET_TIME, START_MESSAGE, BTN_LOCK_ALERT
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
@@ -490,7 +490,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             except Exception as e:
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
         else:
-            return await query.answer(f"⚠️ 𝙃𝙚𝙮, {query.from_user.first_name}! 𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣", show_alert=True)
+            return await query.answer(BTN_LOCK_ALERT.format(query=query.from_user.first_name), show_alert=True)
 
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -754,21 +754,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "rmbgsticker":
         await removebg_sticker(client, query.message)
     elif query.data == "pages":
-        await query.answer()
-    elif query.data == "start":
-        buttons = [[
-            InlineKeyboardButton('➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('💥 𝙾𝚆𝙽𝙴𝚁 💥', url=f'https://t.me/{OWNER_UN}'), 
-            InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢', url=f'https://t.me/{UPDATE_CHANNEL}')
-            ],[      
-            InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿 ℹ️', callback_data='help'),
-            InlineKeyboardButton('💫 𝙰𝙱𝙾𝚄𝚃 💫', callback_data='about')
-        ]]  
-        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.answer("🤨 Curiosity is a little more, isn't it? 😁")
+    elif query.data == "start":                
         await query.message.edit_text(
-            text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
-            reply_markup=reply_markup,
+            text=START_MESSAGE.format(user=query.from_user.mention, temp.U_NAME, temp.B_NAME),
+            reply_markup=script.BTN,
             parse_mode='html'
         )
     elif query.data == "photo":
