@@ -102,31 +102,21 @@
         "SINGLE_BUTTON": {
             "description": "choose b/w single or double buttons https://github.com/Aadhi000/Ajax/issues/22",
             "value": "True",
-            "required": false 
-        },
-        "UPDATE_CHANNEL": {
-            "description": "",
-            "value": "",
-            "required": false
-        },
-        "OWNER_UN": {
-            "description": "",
-            "value": "",
-            "required": false
+            "required": false         
         },
         "START_MESSAGE": {
-            "description": "",
-            "value": "",
+            "description": "bot start message text [ {user} = bot startd user name {bot} = your bot name",
+            "value": "👋 𝙷𝙴𝙻𝙾 {user}\n\n𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {bot},\n𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽...",
             "required": false
         },
         "BTN_LOCK_ALERT": {
-            "description": "",
-            "value": "",
+            "description": "Button Lock text use one person search risult dont use other person 😁 alert text (use  {query} = user mention )",
+            "value": "⚠️ 𝙃𝙚𝙮 {query}! 𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣",
             "required": false 
         },
         "FORCE_SUB_TEXT": {
-            "description": "",
-            "value": "",
+            "description": "custom force sub text (use ** = bold / use ``=  mono)",
+            "value": "**𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!**",
             "required": false 
         },
         "P_TTI_SHOW_OFF": {
