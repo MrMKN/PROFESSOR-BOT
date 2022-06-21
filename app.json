@@ -103,7 +103,27 @@
         "SINGLE_BUTTON": {
             "description": "choose b/w single or double buttons https://github.com/Aadhi000/Ajax/issues/22",
             "value": "True",
-            "required": false        
+            "required": false 
+        },
+        "UPDATE_CHANNEL": {
+            "description": "",
+            "value": "",
+            "required": false
+        },
+        "OWNER_UN": {
+            "description": "",
+            "value": "",
+            "required": false
+        },
+        "START_MESSAGE": {
+            "description": "",
+            "value": "",
+            "required": false
+        },
+        "BTN_LOCK_ALERT": {
+            "description": "",
+            "value": "",
+            "required": false   
         },
         "P_TTI_SHOW_OFF": {
             "description": "Customize Result Buttons to Callback or Url by (True = url / False = callback)",
