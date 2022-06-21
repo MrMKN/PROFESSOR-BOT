@@ -757,7 +757,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("🤨 Curiosity is a little more, isn't it? 😁")
     elif query.data == "start":                
         await query.message.edit_text(
-            text=START_MESSAGE.format(user=query.from_user.mention, temp.U_NAME, temp.B_NAME),
+            text=START_MESSAGE.format(user=query.from_user.mention, bot=temp.B_LINK),
             reply_markup=script.BTN,
             parse_mode='html'
         )
