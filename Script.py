@@ -391,8 +391,8 @@ To Get Sticker ID
     BTN = InlineKeyboardMarkup( [[
             InlineKeyboardButton('➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💥 𝙾𝚆𝙽𝙴𝚁 💥', url=f'https://t.me/mr_MKN'), 
-            InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢', url=f'https://t.me/mkn_bots_updates')
+            InlineKeyboardButton('💥 𝙾𝚆𝙽𝙴𝚁 💥', url='https://t.me/mr_MKN'), 
+            InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢', url='https://t.me/mkn_bots_updates')
             ],[      
             InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿 ℹ️', callback_data='help'),
             InlineKeyboardButton('💫 𝙰𝙱𝙾𝚄𝚃 💫', callback_data='about')
