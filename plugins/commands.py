@@ -40,8 +40,7 @@ async def start(client, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
-    if len(message.command) != 2:        
-        reply_markup = InlineKeyboardMarkup(buttons)
+    if len(message.command) != 2:                
         await message.reply_chat_action("Typing")
         m=await message.reply_sticker("CAACAgUAAxkBAAIFNGJSlfOErbkSeLt9SnOniU-58UUBAAKaAAPIlGQULGXh4VzvJWoeBA") 
         await asyncio.sleep(1)
@@ -76,8 +75,7 @@ async def start(client, message):
             parse_mode="markdown"
             )
         return
-    if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:        
-        reply_markup = InlineKeyboardMarkup(buttons)
+    if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:                
         await message.reply_chat_action("Typing")
         m=await message.reply_sticker("CAACAgUAAxkBAAIFNGJSlfOErbkSeLt9SnOniU-58UUBAAKaAAPIlGQULGXh4VzvJWoeBA") 
         await asyncio.sleep(1)
