@@ -79,6 +79,9 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 #maximum search result buttos count in number#
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
+OWNER_UN = environ.get('OWNER_UN', 'mr_MKN')
+UPDATE_CHANNEL = environ.get('UPDATE_CHANNEL', 'mkn_bots_updates')
+
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
