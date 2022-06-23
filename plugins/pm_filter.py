@@ -766,7 +766,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("💫 𝙰𝙱𝙾𝚄𝚃 💫", callback_data="about")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-            await query.message.edit_text(
+        await query.message.edit_text(
             text=START_MESSAGE.format(user=query.from_user.mention, bot=temp.B_LINK),
             reply_markup=reply_markup,
             parse_mode='html'
