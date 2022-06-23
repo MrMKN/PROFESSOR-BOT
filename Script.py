@@ -10,6 +10,7 @@ import re
 import json
 import base64
 logger = logging.getLogger(__name__)
+BOT = temp.U_NAME
 
 class script(object):
     START_TXT = """👋 𝙷𝙴𝙻𝙾 {},
@@ -399,7 +400,7 @@ To Get Sticker ID
 𝙵𝙾𝚁 𝚄𝚂𝙴 𝚃𝙷𝙰𝚃 𝙵𝙴𝚄𝚃𝚄𝚁𝙴 𝚃𝚈𝙿𝙴 /font <your text> 𝚃𝙷𝙴𝙽 𝚈𝙾𝚄𝚁 𝚃𝙴𝚇𝚃 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈."""
 
     BTN = InlineKeyboardMarkup( [[
-            InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{BOT}?startgroup=true")
             ],[
             InlineKeyboardButton("💥 𝙾𝚆𝙽𝙴𝚁 💥", url="https://t.me/mr_MKN"), 
             InlineKeyboardButton("📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="https://t.me/mkn_bots_updates")
