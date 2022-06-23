@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 BATCH_FILES = {}
 
 BTN = InlineKeyboardMarkup( [[
-            InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url="http://t.me/{}?startgroup=true")
+            InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url="http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
             InlineKeyboardButton("💥 𝙾𝚆𝙽𝙴𝚁 💥", url="https://t.me/mr_MKN"), 
             InlineKeyboardButton("📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="https://t.me/mkn_bots_updates")
