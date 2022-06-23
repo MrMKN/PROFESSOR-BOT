@@ -1,5 +1,7 @@
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.errors import ChatAdminRequired
 from utils import temp
+
 
 class script(object):
     START_TXT = """👋 𝙷𝙴𝙻𝙾 {},
