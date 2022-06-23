@@ -18,18 +18,6 @@ logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
 
-BTN = InlineKeyboardMarkup( [[
-            InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
-            ],[
-            InlineKeyboardButton("💥 𝙾𝚆𝙽𝙴𝚁 💥", url="https://t.me/mr_MKN"), 
-            InlineKeyboardButton("📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="https://t.me/mkn_bots_updates")
-            ],[      
-            InlineKeyboardButton("ℹ️ 𝙷𝙴𝙻𝙿 ℹ️", callback_data="help"),
-            InlineKeyboardButton("💫 𝙰𝙱𝙾𝚄𝚃 💫", callback_data="about")
-        ]]  
-        )
-
-
 @Client.on_message(filters.command("start"))
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
@@ -52,7 +40,17 @@ async def start(client, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
-    if len(message.command) != 2:                
+    if len(message.command) != 2: 
+        buttons = [[
+            InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            ],[
+            InlineKeyboardButton("💥 𝙾𝚆𝙽𝙴𝚁 💥", url="https://t.me/mr_MKN"), 
+            InlineKeyboardButton("📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="https://t.me/mkn_bots_updates")
+            ],[      
+            InlineKeyboardButton("ℹ️ 𝙷𝙴𝙻𝙿 ℹ️", callback_data="help"),
+            InlineKeyboardButton("💫 𝙰𝙱𝙾𝚄𝚃 💫", callback_data="about")
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_chat_action("Typing")
         m=await message.reply_sticker("CAACAgUAAxkBAAIFNGJSlfOErbkSeLt9SnOniU-58UUBAAKaAAPIlGQULGXh4VzvJWoeBA") 
         await asyncio.sleep(1)
@@ -60,7 +58,7 @@ async def start(client, message):
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
-            reply_markup=BTN,
+            reply_markup=reply_markup,
             parse_mode='html'
         )
         return
@@ -87,7 +85,17 @@ async def start(client, message):
             parse_mode="markdown"
             )
         return
-    if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:                
+    if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:   
+         buttons = [[
+            InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            ],[
+            InlineKeyboardButton("💥 𝙾𝚆𝙽𝙴𝚁 💥", url="https://t.me/mr_MKN"), 
+            InlineKeyboardButton("📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="https://t.me/mkn_bots_updates")
+            ],[      
+            InlineKeyboardButton("ℹ️ 𝙷𝙴𝙻𝙿 ℹ️", callback_data="help"),
+            InlineKeyboardButton("💫 𝙰𝙱𝙾𝚄𝚃 💫", callback_data="about")
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)          
         await message.reply_chat_action("Typing")
         m=await message.reply_sticker("CAACAgUAAxkBAAIFNGJSlfOErbkSeLt9SnOniU-58UUBAAKaAAPIlGQULGXh4VzvJWoeBA") 
         await asyncio.sleep(1)
@@ -95,7 +103,7 @@ async def start(client, message):
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
-            reply_markup=BTN,
+            reply_markup=reply_markup,
             parse_mode='html'
         )
         return
