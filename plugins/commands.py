@@ -48,7 +48,7 @@ async def start(client, message):
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
-            reply_markup=script.BTN,
+            reply_markup=script.BTN.format(temp.U_NAME),
             parse_mode='html'
         )
         return
@@ -83,7 +83,7 @@ async def start(client, message):
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
-            reply_markup=script.BTN,
+            reply_markup=script.BTN.format(temp.U_NAME),
             parse_mode='html'
         )
         return
