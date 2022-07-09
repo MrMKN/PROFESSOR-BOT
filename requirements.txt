@@ -8,7 +8,7 @@ umongo==3.0.0
 requests
 bs4
 Pyromod
-imdbpy
+imdbpy==2021.4.18
 youtube-dl
 youtube_search
 requests
