@@ -1,5 +1,6 @@
 git+https://github.com/MrMKN/pyrogram@inline-m
 tgcrypto
+Heroku3
 pymongo[srv]==3.11.4
 motor==2.4.0
 marshmallow==3.12.2
