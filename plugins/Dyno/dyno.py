@@ -13,7 +13,7 @@ CMD = ['.', '/']
 HEROKU_API_KEY = (os.environ.get("HEROKU_API_KEY", ""))
 #=====================================================
 
-@Client.on_message(fmters.private & filters.user(ADMINS) & filters.command("dyno", CMD))         
+@Client.on_message(filters.private & filters.user(ADMINS) & filters.command("dyno", CMD))         
 async def bot_status_cmd(client,message):
     if HEROKU_API_KEY:
         try:
