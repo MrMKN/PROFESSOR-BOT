@@ -5,7 +5,7 @@ pymongo[srv]==3.11.4
 motor==2.4.0
 marshmallow 
 python-telegram-bot==11.1.0
-umongo==3.0.0
+umongo
 requests
 bs4
 Pyromod
