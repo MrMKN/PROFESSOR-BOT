@@ -83,6 +83,7 @@ enable - re-enable chat.
 ban_user  - to ban a user.
 unban_user  - to unban a user.
 channel - to get list of total connected channels
+dyno - check dyno status ADMIN Only
 broadcast - to broadcast a message to all Eva Maria users
 ```
 
