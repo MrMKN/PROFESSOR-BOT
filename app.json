@@ -1,7 +1,7 @@
 {
     "name": "PROFESSOR-BOT",
-    "description": "This Bot Will Help You To Store Files In Cloud Storage. You Can Add Files To The Bot By Forward the last file from a public channel to your bot and Press Yes Button.. If The Files Channl Is Private Make the bot admin on the channel and forward the last file to bot. Then Add the bot to you group and send the movie name The Bot Will Give the file in Bot PM..✮✮",
-    "logo": "https://telegra.ph/file/e6d627c43c0a8d6c15bac.jpg",
+    "description": "This is Telegram-bot",
+    "logo": "https://telegra.ph/file/4b357fe1056e0d5cde13b.jpg",
     "stack": "container",
     "keywords": ["telegram", "auto-filter"],
     "website": "https://github.com/MrMKN/PROFESSOR-BOT",
