@@ -1,6 +1,6 @@
 {
     "name": "PROFESSOR-BOT",
-    "description": "This is Telegram-bot",
+    "description": "This is Telegram-bot with AutoFilter",
     "logo": "https://telegra.ph/file/4b357fe1056e0d5cde13b.jpg",
     "stack": "container",
     "keywords": [
