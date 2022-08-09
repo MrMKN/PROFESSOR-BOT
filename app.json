@@ -2,9 +2,12 @@
     "name": "PROFESSOR-BOT",
     "description": "This is Telegram-bot",
     "logo": "https://telegra.ph/file/4b357fe1056e0d5cde13b.jpg",
-
     "stack": "container",
-    "keywords": "auto-filter",
+    "keywords": [
+      "telegram",
+      "auto-filter",     
+      "pyrogram",      
+    ],
     "repository": "https://github.com/MrMKN/PROFESSOR-BOT",
     "env": {
         "BOT_TOKEN": {
