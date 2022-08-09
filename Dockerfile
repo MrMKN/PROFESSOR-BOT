@@ -1,12 +1,8 @@
-FROM python:3.9.13-slim-buster
+FROM python:3.9-slim-buster
+WORKDIR /app
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
 
-RUN apt update && apt upgrade -y
-RUN apt install git -y
-COPY requirements.txt /requirements.txt
+COPY . .
 
-RUN cd /
-RUN pip3 install -U pip && pip3 install -U -r requirements.txt                  
-RUN mkdir /PROFESSOR-BOT
-WORKDIR /PROFESSOR-BOT
-COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"]
+CMD python3 bot.py
