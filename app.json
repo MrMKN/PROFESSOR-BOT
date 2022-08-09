@@ -8,6 +8,7 @@
       "auto-filter",     
       "pyrogram",      
     ],
+    "website": "https://github.com/MrMKN/PROFESSOR-BOT",
     "repository": "https://github.com/MrMKN/PROFESSOR-BOT",
     "env": {
         "BOT_TOKEN": {
