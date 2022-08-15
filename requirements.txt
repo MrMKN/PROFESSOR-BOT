@@ -31,7 +31,6 @@ psutil
 wheel
 humanize
 ytthumb
-pypdf2
 PyPDF2
 pyshorteners
 ffmpeg-python
