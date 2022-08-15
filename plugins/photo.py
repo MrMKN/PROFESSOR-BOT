@@ -1,6 +1,9 @@
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram import Client, filters
-
+from pyrogram.enums.ParseMode import MARKDOWN, HTML
+md=MARKDOWN
+html=HTML
+markdown=MARKDOWN
 
 @Client.on_message(filters.photo & filters.private)
 async def photo(client: Client, message: Message):
