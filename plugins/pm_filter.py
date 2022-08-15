@@ -1,7 +1,6 @@
 import asyncio
 import re
 import ast
-
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
 import pyrogram
@@ -21,6 +20,11 @@ from database.filters_mdb import (
     get_filters,
 )
 import logging
+
+from pyrogram.enums.ParseMode import MARKDOWN, HTML
+md=MARKDOWN
+html=HTML
+markdown=MARKDOWN
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
