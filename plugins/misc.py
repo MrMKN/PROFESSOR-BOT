@@ -12,6 +12,10 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
+from pyrogram.enums.ParseMode import MARKDOWN, HTML
+md=MARKDOWN
+html=HTML
+markdown=MARKDOWN
 
 @Client.on_message(filters.command('id'))
 async def showid(client, message):
