@@ -21,11 +21,6 @@ from database.filters_mdb import (
 )
 import logging
 
-from pyrogram.enums.ParseMode import MARKDOWN, HTML
-md=MARKDOWN
-html=HTML
-markdown=MARKDOWN
-
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
