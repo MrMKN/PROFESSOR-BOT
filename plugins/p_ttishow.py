@@ -7,10 +7,7 @@ from database.ia_filterdb import Media
 from utils import get_size, temp
 from Script import script
 from pyrogram.errors import ChatAdminRequired
-from pyrogram.enums.ParseMode import MARKDOWN, HTML
-md=MARKDOWN
-html=HTML
-markdown=MARKDOWN
+
 
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
