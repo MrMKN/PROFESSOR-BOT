@@ -1,6 +1,6 @@
-git+https://github.com/MrMKN/pyrogram@inline-m
+git+https://github.com/MrMKN/pyrogram@inline-m                 
 tgcrypto
-pyrogram2==2.*
+git+https://github.com/MKN-BOTZ/pyrogram2
 Heroku3
 pymongo[srv]==3.11.4
 motor==2.4.0
