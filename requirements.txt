@@ -1,0 +1,3 @@
+git+https://github.com/MKN-BOTZ/pyrogram         
+tgcrypto
+
