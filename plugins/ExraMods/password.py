@@ -1,5 +1,5 @@
 import random, os
-from pyrogram import Client, filters
+from pyrogram import Client, filters, enums 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
@@ -11,6 +11,6 @@ async def password(bot, update):
     qw = random.choice(ST)
     limit = int(qw)
     random_value = "".join(random.sample(password, limit))
-    text = f"**Limit :-** `{str(limit)}`.\n**Password :-** `{random_value}`**",
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('Mᴋɴ Bᴏᴛᴢ™️', url='https://t.me/mkn_bots_updates')]])
-    await message.edit_text(text, True)
+    txt = f"**Limit :-** `{str(limit)}`.\n**Password :-** `{random_value}`**",
+    btn = InlineKeyboardMarkup([[InlineKeyboardButton('Mᴋɴ Bᴏᴛᴢ™️', url='https://t.me/mkn_bots_updates')]])
+    await message.edit_text(text=txt, reply_markup=btn, parse_mode=enums.ParseMode.HTML)
