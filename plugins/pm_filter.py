@@ -1634,7 +1634,7 @@ async def global_filters(client, message, text=False):
                                 disable_web_page_preview=True,
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(DELETE_TIME)
+                            await asyncio.sleep(IMDB_DELET_TIME)
                             await knd3.delete()
                             await message.delete()
 
@@ -1647,7 +1647,7 @@ async def global_filters(client, message, text=False):
                                 reply_markup=InlineKeyboardMarkup(button),
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(DELETE_TIME)
+                            await asyncio.sleep(IMDB_DELET_TIME)
                             await knd2.delete()
                             await message.delete()
 
@@ -1658,7 +1658,7 @@ async def global_filters(client, message, text=False):
                             caption=reply_text or "",
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(DELETE_TIME)
+                        await asyncio.sleep(IMDB_DELET_TIME)
                         await knd1.delete()
                         await message.delete()
 
@@ -1670,7 +1670,7 @@ async def global_filters(client, message, text=False):
                             reply_markup=InlineKeyboardMarkup(button),
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(DELETE_TIME)
+                        await asyncio.sleep(IMDB_DELET_TIME)
                         await knd.delete()
                         await message.delete()
 
