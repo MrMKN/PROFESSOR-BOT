@@ -137,7 +137,7 @@
             "description": "background remover website api key. get from https://www.remove.bg/b/background-removal-api",
             "required": false 
         },
-        "P_TTI_SHOW_OFF": {
+        "P_TTI_SHOW_OFF": { 
             "description": "Customize Result Buttons to Callback or Url by (True = url / False = callback)",
             "value": "True",
             "required": false
