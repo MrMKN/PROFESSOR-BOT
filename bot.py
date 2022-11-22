@@ -1,3 +1,5 @@
+import os
+import math
 import logging
 import logging.config
 from pyrogram import Client, __version__
@@ -9,7 +11,7 @@ from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from datetime import datetime
-import pytz
+from pytz import timezone
 from pyrogram.errors import BadRequest, Unauthorized
 
 # Get logging configurations
