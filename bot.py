@@ -1,4 +1,4 @@
-import logging
+import logging, os
 import logging.config
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
@@ -42,7 +42,7 @@ class Bot(Client):
         me = await self.get_me()
         temp.ME = me.id
         temp.U_NAME = me.username
-        temp.B_NAME = me.first_name
+        temp.B_NAME = me.mention
         self.username = '@' + me.username
         curr = datetime.now(timezone(TIMEZONE))
         date = curr.strftime('%d %B, %Y')
