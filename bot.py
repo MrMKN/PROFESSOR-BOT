@@ -10,13 +10,15 @@ from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from datetime import datetime
 import pytz
+from pyrogram.errors import BadRequest, Unauthorized
 
 # Get logging configurations
 logging.config.fileConfig("logging.conf")
 logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 logging.getLogger("cinemagoer").setLevel(logging.ERROR)
-
+LOGGER = logging.getLogger(__name__)
+TIMEZONE = (os.environ.get("TIMEZONE", "Asia/Kolkata"))
 class Bot(Client):
 
     def __init__(self):
@@ -40,14 +42,19 @@ class Bot(Client):
         temp.ME = me.id
         temp.U_NAME = me.username
         temp.B_NAME = me.first_name
-        temp.B_LINK = me.mention 
         self.username = '@' + me.username
-        IST = pytz.timezone('Asia/Kolkata')
-        datetime_ist = datetime.now(IST)
-        GMT = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")     
+        curr = datetime.now(timezone(TIMEZONE))
+        date = curr.strftime('%d %B, %Y')
+        time = curr.strftime('%I:%M:%S %p')
         logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
         logging.info(LOG_STR)
-        await self.send_message(LOG_CHANNEL, text=f"⚡️ BOT STARTED\n\nBot Namr: {me.first_name}\nUserName: @{me.username}\nPyrogram: v{__version__}\nLyer: {layer}\n\nTime : {GMT}")                         
+        if LOG_CHANNEL:
+            try:
+                await self.send_message(LOG_CHANNEL, text=f"<b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !!\n\n📅 Dᴀᴛᴇ : <code>{date}</code>\n⏰ Tɪᴍᴇ : <code>{time}</code>\n🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>{TIMEZONE}</code>\n\n🉐 Vᴇʀsɪᴏɴ : <code>v{__version__}</code></b>")
+            except Unauthorized:
+                LOGGER.warning("Bot isn't able to send message to LOG_CHANNEL")
+            except BadRequest as e:
+                LOGGER.error(e)                         
 
     async def stop(self, *args):
         await super().stop()
