@@ -1,11 +1,11 @@
 {
     "name": "PROFESSOR-BOT",
     "description": "the telegram Autofilter bot",
-    "logo": "https://graph.org/file/b7e8484f6395a180b6380.jpg",
+    "logo": "https://graph.org/file/e916450d539bdd002d674.jpg",
     "stack": "container",
     "keywords": ["telegram", "auto-filter"],
-    "website": "https://github.com/MrMKN/PROFESSOR-BOT",
-    "repository": "https://github.com/MrMKN/PROFESSOR-BOT",
+    "website": "https://github.com/athulx80",
+    "repository": "https://github.com/athulx80/THE_WEEKND_BOT",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
