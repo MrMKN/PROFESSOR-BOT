@@ -177,7 +177,7 @@ By @{} """
 • /inkick long_time_ago - to kick members who are offline for more than a month and Deleted Accounts.
 • /dkick - to kick deleted accounts."""
 
-    IMAGE_TXT = """➤ 𝐇𝐞𝐥𝐩: ɪᴍᴀɢᴇ
+    IMAGE_TXT = """➤ 𝐇𝐞𝐥𝐩: ɪᴍᴀɢᴇ 🖼️
 
 𝖳𝗁𝗂𝗌 𝖢𝗈𝗆𝗆𝖺𝗇𝖽 𝗁𝖾𝗅𝗉𝗌 𝗒𝗈𝗎 𝗍𝗈 𝖾𝖽𝗂𝗍 𝗂𝗆𝖺𝗀𝖾 𝗏𝖾𝗋𝗒 𝖾𝖺𝗌𝗂𝗅𝗒
 
@@ -185,7 +185,7 @@ By @{} """
 
 ➪ 𝖩𝗎𝗌𝗍 𝗌𝖾𝗇𝖽 𝗆𝖾 𝖺 𝗂𝗆𝖺𝗀𝖾 𝗍𝗈 𝖾𝖽𝗂𝗍 ✨
 
-𝖬𝖺𝖽𝖾 𝖻𝗒 <a href=https://t.me/+L8SWfrF_7m04ODZl>MOVIE EMPIRE</a>"""
+⭕𝙐𝙥𝙙𝙖𝙩𝙚𝙨 : <b>@MEmpire_Official</b>"""
 
     RESTRIC_TXT = """➤ 𝐇𝐞𝐥𝐩: ᴍᴜᴛᴇ 🔇
 
@@ -216,7 +216,7 @@ By @{} """
 <b>📌ᴄᴏᴍᴍᴀɴᴅꜱ ᴀɴᴅ ᴜꜱᴇɢᴇ</b>
 
 ◉ /pin :- To Pin the Message on your chats
-◉ /unpin :- 𝚃𝙾 𝚄𝙽𝙿𝙸𝙽 𝚃𝙷𝙴 𝙲𝚄𝚁𝚁𝙴𝙴𝙽𝚃 𝙿𝙸𝙽𝙽𝙴d 𝙼𝙴𝚂𝙰𝙰𝙶𝙴"""
+◉ /unpin :- To unpin the Current Pinned Message"""
 
     PASTE_TXT = """Help: <b>Paste</b>
 
@@ -253,13 +253,13 @@ Helps you to know your ping 🚶🏼‍♂️
 
 • /alive - To check you are alive.
 • /ping - To get your ping.
-<b>🔺Usage :</b>
+<b>Usage :</b>
 
 • This commands can be used in pms and groups
 • This commands can be used buy everyone in the groups and bots pm
 • Share us for more features"""
 
-    TELE_TXT = """<b>▫️HELP: Telegraph▪️</b>
+    TELE_TXT = """<b>HELP: Telegraph▫️</b>
 
 Do as you wish with telegra.ph module!
 
