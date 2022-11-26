@@ -30,7 +30,7 @@ class script(object):
 
 <code>/batch https://t.me/MEmpire_Official https://t.me/MEmpire_Official</code>
 
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/+L8SWfrF_7m04ODZl><b>MOVIES EMPIRE</b></a>"""
+ᴄʀᴇᴅɪᴛꜱ ›› <a href=https://t.me/+L8SWfrF_7m04ODZl><b>MOVIES EMPIRE</b></a>"""
     
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
@@ -72,11 +72,11 @@ class script(object):
 
 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝚂 𝚃𝙷𝙴 𝙵𝙴𝙰𝚃𝚄𝚁𝙴 𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙰𝙽𝙳 𝚂𝙰𝚅𝙴  𝚃𝙷𝙴 𝙵𝙸𝙻𝙴𝚂 𝙰𝚄𝚃𝙾𝙼𝙰𝚃𝙸𝙲𝙰𝙻𝙻𝚈 𝙵𝚁𝙾𝙼 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝙶𝚁𝙾𝚄𝙿. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙴 𝙵𝙾𝙻𝙻𝙾𝚆𝙸𝙽𝙶 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 𝚃𝙾 𝙾𝙽 𝙰𝙽𝙳 𝙾𝙵𝙵 𝚃𝙷𝙴 𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝙽 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿../
 
-𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 :-
+ᴄᴏᴍᴍᴀɴᴅꜱ :-
 ›› /set_template - Set custom IMDB template for Auto Filter.
 ›› /get_template - Get current IMDB template for Auto Filter.
 
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 :- <a href=https://t.me/+L8SWfrF_7m04ODZl><b>MOVIES EMPIRE</b></a>**"""
+ᴄʀᴇᴅɪᴛꜱ :- <a href=https://t.me/+L8SWfrF_7m04ODZl><b>MOVIES EMPIRE</b></a>**"""
 
     CONNECTION_TXT = """Help: <b>Connections</b>
 
@@ -302,7 +302,7 @@ Delete A Lot Of Messages From Groups!
       
     START_KICK = """🚮 Removing Inactive Members This May Take A While..."""
       
-    ADMIN_REQUIRED = """❗<b>എന്നെ Admin ആക്കത്ത സ്ഥലത്ത് ഞാൻ നിക്കില്ല പോകുവാ Bii..Add Me Again with all admin rights.</b>"""
+    ADMIN_REQUIRED = """❗<b>Add Me Again with all admin rights.</b>"""
       
     DKICK = """✔️ Kicked {} Deleted Accounts Successfully."""
       
@@ -319,7 +319,7 @@ Delete A Lot Of Messages From Groups!
     SHARE_TXT = """☾︎𝗛𝗘𝗟𝗣 𝗙𝗢𝗥 𝗦𝗛𝗔𝗥𝗘 𝗧𝗘𝗫𝗧☽︎
 
 ➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
-• /share - 𝚁𝚎𝚙𝚕𝚢 𝚆𝚒𝚝𝚑 𝙰𝚗𝚢 𝚃𝚎𝚡𝚝 𝚃𝚘 𝚂𝚎𝚗𝚍 𝚃𝚑𝚒𝚜 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 """
+• /share - Reply with any Text to send this Command """
 
 
 
