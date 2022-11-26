@@ -57,7 +57,7 @@
 
 ## Deploy to Railway
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/0S9ANK?referralCode=awTESU)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/kj-FJ3?referralCode=athulx)
 
 ## Deploy to Heroku 
 
