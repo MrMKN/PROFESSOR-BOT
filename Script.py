@@ -10,11 +10,11 @@ class script(object):
 ➲ 𝖡𝗎𝗂𝗅𝖽 𝖵𝖾𝗋𝗌𝗂𝗈𝗇 : 𝖵𝟥.𝟢.𝟢"""
 
     SOURCE_TXT = """<b>NOTE:</b>
-- 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁 👉 :<a href=https://github.com/MrMKN/PROFESSOR-BOT>𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑-𝐁𝐎𝐓</a>
+ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ :<a href=https://t.me/+L8SWfrF_7m04ODZl>𝐌𝐎𝐕𝐈𝐄𝐒 𝐄𝐌𝐏𝐈𝐑𝐄</a>
 
-<b>DEVS:</b>
-- 𝙳𝚎𝚟 1<a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 𝚃𝙶</a>
-- 𝙳𝚎𝚟 2<a href=https://t.me/AboutAadhi>𝙰𝙰𝙳𝙷𝙸</a>"""
+<b>SOURCE:</b>
+ʀᴇᴘᴏ ʙʏ :<a href=https://t.me/mkn_bots_updates>ᴊᴏɪɴ</a>"""
+
 
     FILE_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐌𝐨𝐝𝐮𝐥𝐞../
 
