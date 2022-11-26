@@ -30,20 +30,20 @@ async def make_carbon(code):
 async def carbon_func(_, message):
     if not message.reply_to_message:
         return await message.reply_text(
-            "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇxᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴍᴀᴋᴇ ᴄᴀʀʙᴏɴ."
+            "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇxᴛ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴍᴀᴋᴇ ᴄᴀʀʙᴏɴ."
         )
     if not message.reply_to_message.text:
         return await message.reply_text(
-            "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇxᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴍᴀᴋᴇ ᴄᴀʀʙᴏɴ."
+            "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇxᴛ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴍᴀᴋᴇ ᴄᴀʀʙᴏɴ."
         )
     user_id = message.from_user.id
-    m = await message.reply_text("ᴘʀᴏᴄᴇssɪɴɢ...")
+    m = await message.reply_text("ᴘʀᴏᴄᴇꜱꜱɪɴɢ...")
     carbon = await make_carbon(message.reply_to_message.text)
-    await m.edit("ᴜᴘʟᴏᴀᴅɪɴɢ..")
+    await m.edit("ᴜᴘʟᴏᴀᴅɪɴɢ...")
     await message.reply_photo(
         photo=carbon,
-        caption="**Made by @mkn_bots_updates**",
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝚄𝚂", url="https://t.me/mkn_bots_updates")]]),                   
+        caption="**Made by @MEmpire_Official**",
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⭕ ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ", url="https://t.me/+L8SWfrF_7m04ODZl")]]),                   
     )
     await m.delete()
     carbon.close()
