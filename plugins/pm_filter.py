@@ -909,7 +909,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('❣️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ❣️', callback_data='source')
+            InlineKeyboardButton('♥️ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', callback_data='source')
             ],[
             InlineKeyboardButton('🏡 ʜᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('🔒 ᴄʟᴏꜱᴇ', callback_data='close_data')
@@ -922,7 +922,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('⭕ ꜰᴏʟʟᴏᴡ ᴜꜱ ɢɪᴛʜᴜʙ', url='https://github.com/athulx80')
+            InlineKeyboardButton('ᴄʟɪᴄᴋ ʜᴇʀᴇ', url='https://github.com/athulx80/the-Weeknd-bot')
             ],[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='about')
         ]]
