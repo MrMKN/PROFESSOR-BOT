@@ -24,7 +24,7 @@ async def start(client, message):
         buttons = [[           
             InlineKeyboardButton('♻️ 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 ♻️', url=f'https://t.me/{SUPPORT_CHAT}')
             ],[
-            InlineKeyboardButton('❗️ 𝙷𝙴𝙻𝙿 ❗️', url=f"https://t.me/{temp.U_NAME}?start=help")
+            InlineKeyboardButton('💫 𝙷𝙴𝙻𝙿 💫', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]]
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=temp.B_LINK), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
@@ -115,7 +115,7 @@ async def start(client, message):
         file_id = data
         pre = ""
     if data.split("-", 1)[0] == "BATCH":
-        sts = await message.reply("Please wait")
+        sts = await message.reply("Please wait...")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
         if not msgs:
@@ -125,7 +125,7 @@ async def start(client, message):
                     msgs=json.loads(file_data.read())
             except:
                 await sts.edit("FAILED")
-                return await client.send_message(LOG_CHANNEL, "UNABLE TO OPEN FILE.")
+                return await client.send_message(LOG_CHANNEL, "UNABLE TO OPEN FILE🥲")
             os.remove(file)
             BATCH_FILES[file_id] = msgs
         for msg in msgs:
@@ -163,7 +163,7 @@ async def start(client, message):
         await sts.delete()
         return
     elif data.split("-", 1)[0] == "DSTORE":
-        sts = await message.reply("Please wait")
+        sts = await message.reply("Please wait...")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
         try:
