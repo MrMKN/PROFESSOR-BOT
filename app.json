@@ -5,7 +5,7 @@
     "stack": "container",
     "keywords": ["telegram", "auto-filter"],
     "website": "https://github.com/MrMKN/PROFESSOR-BOT",
-    "repository": "https://github.com/MrMKN/PROFESSOR-BOT",
+    "repository": "https://github.com/COLD-ONEZ/PROFESSOR-BOT",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
