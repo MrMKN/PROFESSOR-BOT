@@ -2,19 +2,16 @@ class script(object):
     HELP_TXT = """𝙷𝙴𝚈 {}\n𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
 
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴 : {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 : <a href=https://t.me/mr_MKN>𝙈𝙧.𝙈𝙆𝙉 𝙏𝙂</a>
-✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 : 𝙼𝙾𝙽𝙶𝙾-𝙳𝙱
-✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁 : 𝙰𝙽𝚈𝚆𝙷𝙴𝚁𝙴
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚅𝙴𝚁𝚂𝙸𝙾𝙽: 𝙿𝚁𝙾𝙵𝙴𝚂𝚂𝙾𝚁-𝙱𝙾𝚃 𝚟3.0.0"""
+✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 : <a href=https://t.me/COLD_ONEZ>Ꮯᴏʟᴅ_Ꮻɴᴇᴢ</a>
+✯ 𝚃𝙴𝙰𝙼 : @TEAM_COLD
+✯ 𝙶𝚁𝙾𝚄𝙿 : @Fantasy_Group_X
+✯ 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 : @Fantasy_Updates
+✯ 𝙼𝙾𝚅𝙸𝙴𝚂 : @Fantasy_Movies_X
+✯ 𝚂𝙴𝚁𝙸𝙴𝚂: @Fantasy_Series_X"""
 
-    SOURCE_TXT = """<b>NOTE:</b>
-- 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁 👉 :<a href=https://github.com/MrMKN/PROFESSOR-BOT>𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑-𝐁𝐎𝐓</a>
+    SOURCE_TXT = """<a href=https://github.com/MrMKN/PROFESSOR-BOT><b>𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴-𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</b></a>
 
-<b>DEVS:</b>
-- 𝙳𝚎𝚟 1<a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 𝚃𝙶</a>
-- 𝙳𝚎𝚟 2<a href=https://t.me/AboutAadhi>𝙰𝙰𝙳𝙷𝙸</a>"""
+<b>𝙽𝙾𝚃𝙷𝙸𝙽𝙶 𝚃𝙾 𝚂𝙰𝚈 𝙼𝙾𝚁𝙴😌</b>"""
 
     FILE_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐌𝐨𝐝𝐮𝐥𝐞../
 
@@ -28,9 +25,9 @@ class script(object):
 
 ⪼ 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 ›
 
-<code>/batch https://t.me/mkn_bots_updates https://t.me/mkn_bots_updates</code>
+<code>/batch https://t.me/TEAM_COLD/1 https://t.me/TEAM_COLD/3</code>
 
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/mkn_bots_updates><b>𝙼𝙺𝙽 𝙱𝙾𝚃𝚉</b></a>"""
+𝙹𝙾𝙸𝙽 ›› <a href=https://t.me/TEAM_COLD><b>🌿Tᴇᴀᴍ Cᴏʟᴅ🌿</b></a>"""
     
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
@@ -76,7 +73,7 @@ class script(object):
 ›› /set_template - 𝚂𝙴𝚃 𝙲𝚄𝚂𝚃𝙾𝙼 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙵𝙾𝚁 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁. 
 ›› /get_template - 𝙶𝙴𝚃 𝙲𝚄𝚁𝚁𝙴𝙽𝚃 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙾𝙵 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁.
 
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 :- <a href=https://t.me/mr_MKN>Mr.MKN TG</a>**"""
+𝙹𝙾𝙸𝙽 ›› <a href=https://t.me/TEAM_COLD><b>🌿Tᴇᴀᴍ Cᴏʟᴅ🌿</b></a>**"""
 
     CONNECTION_TXT = """Help: <b>Connections</b>
 
@@ -103,8 +100,8 @@ these are the extra features of this bot
 • /imdb  - <code>get the film information from IMDb source.</code>
 • /search  - <code>get the film information from various sources.</code>"""
 
-    ADMIN_TXT = """<b>ɴᴏᴛᴇ:</b>
-<code>Tʜɪs Mᴏᴅᴜʟᴇ Oɴʟʏ Wᴏʀᴋs Fᴏʀ Mʏ Aᴅᴍɪɴs</code>
+    ADMIN_TXT = """<b>Aᴅᴍɪɴs:</b>
+<code>Tʜɪs Mᴏᴅᴜʟᴇ Oɴʟʏ Oɴʟʏ Fᴏʀ Mʏ Aᴅᴍɪɴs</code>
 
 🔋 <u><b>Basic Command</b></u>
 • /logs - <code>ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʀᴇᴄᴇɴᴛ ᴇʀʀᴏʀꜱ</code>
@@ -185,7 +182,7 @@ By @{} """
 
 ➪ 𝖩𝗎𝗌𝗍 𝗌𝖾𝗇𝖽 𝗆𝖾 𝖺 𝗂𝗆𝖺𝗀𝖾 𝗍𝗈 𝖾𝖽𝗂𝗍 ✨
 
-𝖬𝖺𝖽𝖾 𝖻𝗒 <a href=https://t.me/mr_MKN>Mr.MKN TG</a>"""
+<a href=https://t.me/TEAM_COLD>🍃Tᴇᴀᴍ Cᴏʟᴅ🍃</a>"""
 
     RESTRIC_TXT = """➤ 𝐇𝐞𝐥𝐩: Mᴜᴛᴇ 🚫
 
@@ -300,13 +297,13 @@ Delete A Lot Of Messages From Groups!
       
     KICKED = """✔️ Successfully Kicked {} Members According To The Arguments Provided."""
       
-    START_KICK = """🚮 Removing Inactive Members This May Take A While..."""
+    START_KICK = """Active അല്ലാത്തവരെ എടുത്ത് വെളിയിൽ കളയുന്നു...🚮"""
       
-    ADMIN_REQUIRED = """❗<b>എന്നെ Admin ആക്കത്ത സ്ഥലത്ത് ഞാൻ നിക്കില്ല പോകുവാ Bii..Add Me Again with all admin rights.</b>"""
+    ADMIN_REQUIRED = """❗<b>കൂട്ടില്ല എനിക്ക് ആവശ്യത്തിന് Privileges തന്ന് Admin ആക്കിയില്ലല്ലോ.. 🥲.ഞാൻ പോകുവാ..🚶🏻‍♂️</b>"""
       
-    DKICK = """✔️ Kicked {} Deleted Accounts Successfully."""
+    DKICK = """അക്കൗണ്ട് ഡിലീറ്റ് ആക്കിയ {} പേരെ ഞാൻ എടുത്ത് വെളിയിൽ കളഞ്ഞു...😁"""
       
-    FETCHING_INFO = """<b>ഇപ്പൊ എല്ലാം അടിച്ചുമാറ്റി തരാം...</b>"""
+    FETCHING_INFO = """<b>ഇപ്പൊ എല്ലാം അടിച്ചുമാറ്റി തരാം...😌</b>"""
       
     CARB_TXT = """☾︎𝗛𝗘𝗟𝗣 𝗙𝗢𝗥 𝗖𝗔𝗥𝗕𝗢𝗡☽︎
 𝙲𝙰𝚁𝙱𝙾𝙽 𝙸𝚂 𝙰 𝙵𝙴𝚄𝚃𝚄𝚁𝙴 𝚃𝙾 𝙼𝙰𝙺𝙴 𝚃𝙷𝙴 𝙸𝙼𝙰𝙶𝙴 𝙰𝚂 𝚂𝙷𝙾𝚆𝙽 𝙸𝙽 𝚃𝙷𝙴 𝚃𝙾𝙿 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁𝙴 𝚃𝙴𝚇𝚃𝚂.
