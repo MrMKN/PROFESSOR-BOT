@@ -26,7 +26,7 @@ BOT_TOKEN = environ['BOT_TOKEN']
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS' ,'https://telegra.ph/file/2e2a07e86066538ed7406.jpg')).split()
+PICS = (environ.get('PICS' ,'https://telegra.ph/file/6e6a08fe129afcf7fea8f.jpg https://telegra.ph/file/f0fce40edc0f741bd15f1.jpg https://telegra.ph/file/8c1ef4ec3baf9319f4edb.jpg https://telegra.ph/file/ca8b23c5084cc7991a170.jpg https://telegra.ph/file/f95256af9952e8051c055.jpg https://telegra.ph/file/cb38b3b619263781570d5.jpg https://telegra.ph/file/d6e0ca8ab73e588d0bae9.jpg')).split()
 BOT_START_TIME = time()
 
 # Admins, Channels & Users
@@ -46,22 +46,35 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #maximum search result buttos count in number#
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
-START_MESSAGE = environ.get('START_MESSAGE', '👋 𝙷𝙴𝙻𝙾 {user}\n\n𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {bot},\n𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽...')
+START_MESSAGE = environ.get('START_MESSAGE', '𝙷𝙴𝙻𝙻𝙾..👋 {user}\n\n𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {bot},\n𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂 & 𝚂𝙴𝚁𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 @Fantasy_Group_X 𝙰𝙽𝙳 𝙰𝚂𝙺 𝙼𝙾𝚅𝙸𝙴𝚂 𝙾𝚁 𝚂𝙴𝚁𝙸𝙴𝚂.')
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", "⚠️ 𝙃𝙚𝙮 {query}! 𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣")
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', '𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!')
 RemoveBG_API = environ.get("RemoveBG_API", "")
-WELCOM_PIC = environ.get("WELCOM_PIC", "")
-WELCOM_TEXT = environ.get("WELCOM_TEXT", "Hai {user}\nwelcome to {chat}")
+WELCOM_PIC = environ.get("WELCOM_PIC", "https://telegra.ph/file/cfd7e4ab93c40983b6701.jpg")
+WELCOM_TEXT = environ.get("WELCOM_TEXT", "<b>𝙷𝙴𝙻𝙻𝙾...👋 {user}
+𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 {chat}
+
+⚡️𝙵𝙸𝚁𝚂𝚃 𝚁𝙴𝙰𝙳 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝚃𝙸𝙾𝙽⚡️
+
+» Please use English when requesting movies/series.
+
+» You can use Malayalam, English or Tamil while talking to the admin.
+
+» Sending bad stuff/links will get ban or gban or fban.These steps will be taken even if the PM of other members of the group is interrupted.
+
+» When asking for the movie/series check if it has been released and falls into the fantasy genre. Only fantasy genre movies/series will be uploaded on the channel and will be available here.
+
+» If you ask for the movie/series we have added to the channel, you will get it immediately. If you don't get what you asked for, wait for admin's reply.</b>")
 PMFILTER = bool(environ.get("PMFILTER"))
 G_FILTER = bool(environ.get("G_FILTER", True))
-BUTTON_LOCK = bool(environ.get("BUTTON_LOCK", True))
+BUTTON_LOCK = bool(environ.get("BUTTON_LOCK", False))
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'mkn_bots_updates')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
-IMDB = is_enabled((environ.get('IMDB', "True")), True)
+IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "{file_name}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", None)
