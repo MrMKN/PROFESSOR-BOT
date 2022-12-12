@@ -51,20 +51,7 @@ BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", "⚠️ 𝙃𝙚𝙮 {query}!
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', '𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!')
 RemoveBG_API = environ.get("RemoveBG_API", "")
 WELCOM_PIC = environ.get("WELCOM_PIC", "https://telegra.ph/file/cfd7e4ab93c40983b6701.jpg")
-WELCOM_TEXT = environ.get("WELCOM_TEXT", "<b>𝙷𝙴𝙻𝙻𝙾...👋 {user}
-𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 {chat}
-
-⚡️𝙵𝙸𝚁𝚂𝚃 𝚁𝙴𝙰𝙳 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝚃𝙸𝙾𝙽⚡️
-
-» Please use English when requesting movies/series.
-
-» You can use Malayalam, English or Tamil while talking to the admin.
-
-» Sending bad stuff/links will get ban or gban or fban.These steps will be taken even if the PM of other members of the group is interrupted.
-
-» When asking for the movie/series check if it has been released and falls into the fantasy genre. Only fantasy genre movies/series will be uploaded on the channel and will be available here.
-
-» If you ask for the movie/series we have added to the channel, you will get it immediately. If you don't get what you asked for, wait for admin's reply.</b>")
+WELCOM_TEXT = environ.get("WELCOM_TEXT", "<b>Hello.. {user}\nWelcome To {chat}</b>")
 PMFILTER = bool(environ.get("PMFILTER"))
 G_FILTER = bool(environ.get("G_FILTER", True))
 BUTTON_LOCK = bool(environ.get("BUTTON_LOCK", False))
