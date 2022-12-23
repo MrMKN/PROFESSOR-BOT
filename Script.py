@@ -28,7 +28,7 @@ class script(object):
 
 ⪼ 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 ›
 
-<code>/batch https://t.me/MEmpire_Official https://t.me/MEmpire_Official</code>
+<code>/batch https://t.me/MEmpire_Official/1 https://t.me/MEmpire_Official/2</code>
 
 ᴄʀᴇᴅɪᴛꜱ ›› <a href=https://t.me/+L8SWfrF_7m04ODZl><b>MOVIES EMPIRE</b></a>"""
     
