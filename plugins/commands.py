@@ -40,8 +40,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton("🍂Tᴇᴀᴍ Cᴏʟᴅ🍂", url=f"https://t.me/TEAM_COLD")
             ],[
-            InlineKeyboardButton("🍁Mᴏᴠɪᴇꜱ🍁", url="https://t.me/Fantasy_Movies_X"), 
-            InlineKeyboardButton("🍁Sᴇʀɪᴇs🍁", url="https://t.me/Fantasy_Series_X")
+            InlineKeyboardButton("🍁Mᴏᴠɪᴇꜱ🍁", url="https://t.me/COLD_X_MOVIES"), 
+            InlineKeyboardButton("🍁Sᴇʀɪᴇs🍁", url="https://t.me/COLD_X_SERIES")
             ],[      
             InlineKeyboardButton("💫 𝙷𝙴𝙻𝙿 💫", callback_data="help"),
             InlineKeyboardButton("💫 𝙰𝙱𝙾𝚄𝚃 💫", callback_data="about")
@@ -90,8 +90,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton("🍂Tᴇᴀᴍ Cᴏʟᴅ🍂", url=f"https://t.me/TEAM_COLD")
             ],[
-            InlineKeyboardButton("🍁Mᴏᴠɪᴇꜱ🍁", url="https://t.me/Fantasy_Movies_X"), 
-            InlineKeyboardButton("🍁Sᴇʀɪᴇs🍁", url="https://t.me/Fantasy_Series_X")
+            InlineKeyboardButton("🍁Mᴏᴠɪᴇꜱ🍁", url="https://t.me/COLD_X_MOVIES"), 
+            InlineKeyboardButton("🍁Sᴇʀɪᴇs🍁", url="https://t.me/COLD_X_SERIES")
             ],[      
             InlineKeyboardButton("💫 𝙷𝙴𝙻𝙿 💫", callback_data="help"),
             InlineKeyboardButton("💫 𝙰𝙱𝙾𝚄𝚃 💫", callback_data="about")
