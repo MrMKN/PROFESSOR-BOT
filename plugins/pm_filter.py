@@ -822,12 +822,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("🤨 Curiosity is a little more, isn't it? 😁", show_alert=True)
     elif query.data == "start":                        
         buttons = [[
-            InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            InlineKeyboardButton("🍂Tᴇᴀᴍ Cᴏʟᴅ🍂", url="https://t.me/TEAM_COLD")
             ],[
             InlineKeyboardButton("🍁Mᴏᴠɪᴇꜱ🍁", url="https://t.me/Fantasy_Movies_X"), 
             InlineKeyboardButton("🍁Sᴇʀɪᴇs🍁", url="https://t.me/Fantasy_Series_X")
-            ],[
-            InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 🔍", switch_inline_query_current_chat='')
             ],[      
             InlineKeyboardButton("💫 𝙷𝙴𝙻𝙿 💫", callback_data="help"),
             InlineKeyboardButton("💫 𝙰𝙱𝙾𝚄𝚃 💫", callback_data="about")
@@ -922,7 +920,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('SOURCE CODE', url='https://github.com/MrMKN/PROFESSOR-BOT')
+            InlineKeyboardButton('🍃Uᴩᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ🍃', url='https://t.me/Fantasy_Updates')
             ],[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='about')
         ]]
