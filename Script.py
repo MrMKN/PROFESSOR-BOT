@@ -30,7 +30,7 @@ class script(object):
 
 <code>/batch https://t.me/MEmpire_Official/1 https://t.me/MEmpire_Official/2</code>
 
-ᴄʀᴇᴅɪᴛꜱ ›› <a href=https://t.me/+L8SWfrF_7m04ODZl><b>MOVIES EMPIRE</b></a>"""
+⭕ ᴄʀᴇᴅɪᴛꜱ ›› <a href=https://t.me/+L8SWfrF_7m04ODZl><b>MOVIES EMPIRE</b></a>"""
     
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
