@@ -2,12 +2,7 @@ class script(object):
     HELP_TXT = """𝙷𝙴𝚈 {}\n𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
 
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴 : {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 : <a href=https://t.me/COLD_ONEZ>Ꮯᴏʟᴅ_Ꮻɴᴇᴢ</a>
-✯ 𝚃𝙴𝙰𝙼 : @TEAM_COLD
-✯ 𝙶𝚁𝙾𝚄𝙿 : @Fantasy_Group_X
-✯ 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 : @Fantasy_Updates
-✯ 𝙼𝙾𝚅𝙸𝙴𝚂 : @Fantasy_Movies_X
-✯ 𝚂𝙴𝚁𝙸𝙴𝚂: @Fantasy_Series_X"""
+✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 : <a href=https://t.me/COLD_ONEZ>Ꮯᴏʟᴅ_Ꮻɴᴇᴢ</a>"""
 
     SOURCE_TXT = """<a href=https://github.com/MrMKN/PROFESSOR-BOT><b>𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴-𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</b></a>
 
