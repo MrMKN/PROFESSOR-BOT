@@ -54,10 +54,10 @@ async def save_file(media):
         try:
             await file.commit()
         except DuplicateKeyError:      
-            logger.warning(getattr(media, "file_name", "NO FILE NAME") + " is already saved in database")
+            logger.warning(str(getattr(media, "file_name", "NO FILE NAME")) + " is already saved in database")
             return False, 0
         else:
-            logger.info(getattr(media, "file_name", "NO FILE NAME") + " is saved in database")
+            logger.info(str(getattr(media, "file_name", "NO FILE NAME")) + " is saved in database")
             return True, 1
 
 
