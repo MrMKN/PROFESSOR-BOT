@@ -143,14 +143,10 @@
             "required": false
         }
     },
-    "addons": [],
-    "buildpacks": [{
-        "url": "heroku/python"
-    }],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "eco"
-        }
-    }
+    "buildpacks": [{"url": "heroku/python"}],        
 }
+
+
+
+
+
