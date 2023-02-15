@@ -143,7 +143,10 @@
             "required": false
         }
     },
-    "buildpacks": [{"url": "heroku/python"}]      
+    "buildpacks":
+        [
+            {"url": "heroku/python"}
+        ]      
 }
 
 
