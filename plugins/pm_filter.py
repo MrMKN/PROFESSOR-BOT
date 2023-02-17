@@ -80,7 +80,7 @@ async def g_fil_mod(client, message):
 
 @Client.on_message(filters.group & filters.text & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.incoming & filters.group)
 async def give_filter(client, message):
-    if G_FILTER:
+    if G_FILTER.lower() in ["true", "yes", "1", "enable", "y"]:
         if G_MODE.get(str(message.chat.id)) == "False":
             return 
         else:
@@ -516,7 +516,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     if query.data.startswith("file"):        
         ident, req, file_id = query.data.split("#")
-        if BUTTON_LOCK:
+        if BUTTON_LOCK.lower() in ["true", "yes", "1", "enable", "y"]:
             if int(req) not in [query.from_user.id, 0]:
                 return await query.answer(BUTTON_LOCK_TEXT.format(query=query.from_user.first_name), show_alert=True)             
         files_ = await get_file_details(file_id)
