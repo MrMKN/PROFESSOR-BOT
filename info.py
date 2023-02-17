@@ -52,7 +52,7 @@ FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', '𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 �
 RemoveBG_API = environ.get("RemoveBG_API", "")
 WELCOM_PIC = environ.get("WELCOM_PIC", "")
 WELCOM_TEXT = environ.get("WELCOM_TEXT", "Hai {user}\nwelcome to {chat}")
-PMFILTER = environ.get('PMFILTER', "True")
+PMFILTER = bool(environ.get('PMFILTER', True))
 G_FILTER = environ.get("G_FILTER", "True")
 BUTTON_LOCK = environ.get("BUTTON_LOCK", "True")
 
