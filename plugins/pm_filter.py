@@ -104,7 +104,7 @@ async def give_filter(client, message):
 @Client.on_message(filters.private & filters.text & filters.chat(AUTH_USERS) if AUTH_USERS else filters.text & filters.private)
 async def pm_filter(client, message):
     if message.text.startswith("/"): return  # ignore commands and hashtags
-    if PMFILTER is False:
+    if PMFILTER == False:
         return 
     if G_FILTER.lower() in ["true", "yes", "1", "enable", "y"]:
         kd = await global_filters(client, message)
