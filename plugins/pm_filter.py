@@ -112,7 +112,7 @@ async def pm_filter(client, message):
         else:
             await pm_AutoFilter(client, message)
     else:
-        return 
+        return True 
 
 
 @Client.on_callback_query(filters.regex(r"^pmnext"))
