@@ -45,11 +45,11 @@ async def fil_mod(client, message):
       m = await message.reply("**𝚂𝙴𝚃𝚃𝙸𝙽𝙶.../**")
 
       if args in mode_on:
-          FILTER_MODE[str(message.chat.id)] = "True" 
+          FILTER_MODE[str(message.chat.id)] = True
           await m.edit("**𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙴𝙽𝙰𝙱𝙻𝙴𝙳**")
       
       elif args in mode_of:
-          FILTER_MODE[str(message.chat.id)] = "False"
+          FILTER_MODE[str(message.chat.id)] = False
           await m.edit("**𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳**")
       else:
           await m.edit("𝚄𝚂𝙴 :- /autofilter on 𝙾𝚁 /autofilter off")
@@ -68,11 +68,11 @@ async def g_fil_mod(client, message):
       m = await message.reply("**𝚂𝙴𝚃𝚃𝙸𝙽𝙶.../**")
 
       if args in mode_on:
-          G_MODE[str(message.chat.id)] = "True" 
+          G_MODE[str(message.chat.id)] = True
           await m.edit("**𝙶𝙻𝙾𝙱𝙰𝙻 𝙴𝙽𝙰𝙱𝙻𝙴𝙳**")
       
       elif args in mode_of:
-          G_MODE[str(message.chat.id)] = "False"
+          G_MODE[str(message.chat.id)] = False
           await m.edit("**𝙶𝙻𝙾𝙱𝙰𝙻 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳**")
       else:
           await m.edit("𝚄𝚂𝙴 :- /g_filter on 𝙾𝚁 /g_filter off")
