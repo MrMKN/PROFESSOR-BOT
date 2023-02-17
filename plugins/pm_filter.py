@@ -104,7 +104,7 @@ async def give_filter(client, message):
 @Client.on_message(filters.private & filters.text & filters.chat(AUTH_USERS) if AUTH_USERS else filters.text & filters.private)
 async def pm_filter(client, message):
     if message.text.startswith("/"): return  # ignore commands and hashtags
-    if PMFILTER == True:
+    if PMFILTER.lower() in ["true", "yes", "1", "enable", "y"]:
         if G_FILTER:
             kd = await global_filters(client, message)
             if kd == False:
@@ -1401,7 +1401,10 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         btn.append(
             [InlineKeyboardButton(text="📄 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
         )
-    imdb = await get_poster(search) if PM_IMDB else None
+    if PM_IMDB.lower() in ["true", "yes", "1", "enable", "y"]:
+        imdb = await get_poster(search)
+    else:
+        imdb = None
     TEMPLATE = IMDB_TEMPLATE
     if imdb:
         cap = TEMPLATE.format(
