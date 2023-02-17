@@ -105,7 +105,7 @@ async def give_filter(client, message):
 async def pm_filter(client, message):
     if message.text.startswith("/"): return  # ignore commands and hashtags
     if PMFILTER == False:
-        return 
+        return True 
     if G_FILTER.lower() in ["true", "yes", "1", "enable", "y"]:
         kd = await global_filters(client, message)
         if kd == False:
