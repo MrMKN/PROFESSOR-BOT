@@ -15,6 +15,7 @@ from database.ia_filterdb import Media, get_file_details, get_search_results
 from database.filters_mdb import del_all, find_filter, get_filters
 from database.gfilters_mdb import find_gfilter, get_gfilters
 from plugins.helper.admin_check import admin_fliter
+from plugins.next_and_spell import next_page, advantage_spoll_choker
 
 from image.edit_1 import bright, mix, black_white, g_blur, normal_blur, box_blur
 from image.edit_2 import circle_with_bg, circle_without_bg, sticker, edge_curved, contrast, sepia_mode, pencil, cartoon                             
@@ -215,7 +216,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             alert = alerts[int(i)]
             alert = alert.replace("\\n", "\n").replace("\\t", "\t")
             await query.answer(alert, show_alert=True)
-
+    elif query.data.startswith("next"):
+       await next_page(client, query)
+    elif query.data.startswith("spolling"):
+       await advantage_spoll_choker(client, query)
     if query.data.startswith("pmfile"):
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
