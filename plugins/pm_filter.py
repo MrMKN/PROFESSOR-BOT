@@ -21,7 +21,7 @@ PM_SPELL_CHECK = {}
 async def pm_filter(client, msg, pmspoll=False):
     if PMFILTER == "False":
         return 
-    if G_FILTER.lower() in ["true", "yes", "1", "enable", "y"]:
+    if G_FILTER:
         kd = await global_filters(client, msg)
         if kd == False:
             pass
