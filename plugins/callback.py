@@ -322,163 +322,112 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "removebg":
         await query.message.edit_text("**Select required mode**",
-            reply_markup=InlineKeyboardMarkup(
-                [[
+            reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton(text="𝖶𝗂𝗍𝗁 𝖶𝗁𝗂𝗍𝖾 𝖡𝖦", callback_data="rmbgwhite"),
                 InlineKeyboardButton(text="𝖶𝗂𝗍𝗁𝗈𝗎𝗍 𝖡𝖦", callback_data="rmbgplain"),
                 ],[
                 InlineKeyboardButton(text="𝖲𝗍𝗂𝖼𝗄𝖾𝗋", callback_data="rmbgsticker"),
                 ],[
                 InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')
-             ]]
-        ),)
+             ]])
+        )
     elif query.data == "stick":
-        await query.message.edit(
-            "**Select a Type**",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(text="𝖭𝗈𝗋𝗆𝖺𝗅", callback_data="stkr"),
-                        InlineKeyboardButton(
-                            text="𝖤𝖽𝗀𝖾 𝖢𝗎𝗋𝗏𝖾𝖽", callback_data="cur_ved"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="𝖢𝗂𝗋𝖼𝗅𝖾", callback_data="circle_sticker"
-                        )
-                    ],
-                    [
-                        InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')
-                    ],
-                ]
-            ),
-        )
+        await query.message.edit("**Select a Type**",            
+            reply_markup=InlineKeyboardMarkup( [[
+               InlineKeyboardButton(text="𝖭𝗈𝗋𝗆𝖺𝗅", callback_data="stkr"),
+               InlineKeyboardButton(text="𝖤𝖽𝗀𝖾 𝖢𝗎𝗋𝗏𝖾𝖽", callback_data="cur_ved"),
+               ],[                    
+               InlineKeyboardButton(text="𝖢𝗂𝗋𝖼𝗅𝖾", callback_data="circle_sticker")
+               ],[
+               InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')
+               ]]                
+           )
+       )
     elif query.data == "rotate":
-        await query.message.edit_text(
-            "**Select the Degree**",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(text="180", callback_data="180"),
-                        InlineKeyboardButton(text="90", callback_data="90"),
-                    ],
-                    [InlineKeyboardButton(text="270", callback_data="270")],
-                    ],
-                    [
-                        InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')
-                ]
-            ),
-        )
+        await query.message.edit_text("**Select the Degree**",
+            reply_markup=InlineKeyboardMarkup( [[
+               InlineKeyboardButton(text="180", callback_data="180"),
+               InlineKeyboardButton(text="90", callback_data="90")
+               ],[
+               InlineKeyboardButton(text="270", callback_data="270")
+               ],[
+               InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')
+               ]]
+           )
+       )
     elif query.data == "glitch":
-        await query.message.edit_text(
-            "**Select required mode**ㅤㅤㅤㅤ",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="𝖭𝗈𝗋𝗆𝖺𝗅", callback_data="normalglitch"
-                        ),
-                        InlineKeyboardButton(
-                            text="𝖲𝖼𝖺𝗇 𝖫𝖺𝗂𝗇𝗌", callback_data="scanlineglitch"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')
-                    ]
-                ]
-            ),
-        )
+        await query.message.edit_text("**Select required mode**",
+            reply_markup=InlineKeyboardMarkup( [[
+               InlineKeyboardButton(text="𝖭𝗈𝗋𝗆𝖺𝗅", callback_data="normalglitch"),
+               InlineKeyboardButton(text="𝖲𝖼𝖺𝗇 𝖫𝖺𝗂𝗇𝗌", callback_data="scanlineglitch")
+               ],[
+               InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')
+               ]]
+           )
+       )
     elif query.data == "normalglitch":
-        await query.message.edit_text(
-            "**Select Glitch power level**",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(text="1", callback_data="normalglitch1"),
-                        InlineKeyboardButton(text="2", callback_data="normalglitch2"),
-                        InlineKeyboardButton(text="3", callback_data="normalglitch3"),
-                    ],
-                    [
-                        InlineKeyboardButton(text="4", callback_data="normalglitch4"),
-                        InlineKeyboardButton(text="5", callback_data="normalglitch5"),
-                    ],
-                    [
-                        InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='glitch')
-                    ],
-                ]
-            ),
-        )
+        await query.message.edit_text(text="**Select Glitch power level**",
+           reply_markup=InlineKeyboardMarkup( [[
+               InlineKeyboardButton(text="1", callback_data="normalglitch1"),
+               InlineKeyboardButton(text="2", callback_data="normalglitch2"),
+               InlineKeyboardButton(text="3", callback_data="normalglitch3"),
+               ],[
+               InlineKeyboardButton(text="4", callback_data="normalglitch4"),
+               InlineKeyboardButton(text="5", callback_data="normalglitch5"),
+               ],[
+               InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='glitch')
+               ]]
+           )
+       )
     elif query.data == "scanlineglitch":
-        await query.message.edit_text(
-            "**Select Glitch power level**",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(text="1", callback_data="scanlineglitch1"),
-                        InlineKeyboardButton(text="2", callback_data="scanlineglitch2"),
-                        InlineKeyboardButton(text="3", callback_data="scanlineglitch3"),
-                    ],
-                    [
-                        InlineKeyboardButton(text="4", callback_data="scanlineglitch4"),
-                        InlineKeyboardButton(text="5", callback_data="scanlineglitch5"),
-                    ],
-                    [
-                        InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='glitch')
-                    ],
-                ]
-            ),
-        )
+        await query.message.edit_text("**Select Glitch power level**",
+            reply_markup=InlineKeyboardMarkup( [[
+               InlineKeyboardButton(text="1", callback_data="scanlineglitch1"),
+               InlineKeyboardButton(text="2", callback_data="scanlineglitch2"),
+               InlineKeyboardButton(text="3", callback_data="scanlineglitch3"),
+               ],[
+               InlineKeyboardButton(text="4", callback_data="scanlineglitch4"),
+               InlineKeyboardButton(text="5", callback_data="scanlineglitch5"),
+               ],[
+               InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='glitch')
+               ]]
+           )
+       )
     elif query.data == "blur":
-        await query.message.edit(
-            "**Select a Type**",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(text="𝖡𝗈𝗑", callback_data="box"),
-                        InlineKeyboardButton(text="𝖭𝗈𝗋𝗆𝖺𝗅", callback_data="normal"),
-                    ],
-                    [InlineKeyboardButton(text="𝖦𝖺𝗎𝗌𝗌𝗂𝖺𝗇", callback_data="gas")],
-                    ],
-                    [
-                        InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')
-                ]
-            ),
-        )
+        await query.message.edit("**Select a Type**",
+            reply_markup=InlineKeyboardMarkup( [[
+               InlineKeyboardButton(text="𝖡𝗈𝗑", callback_data="box"),
+               InlineKeyboardButton(text="𝖭𝗈𝗋𝗆𝖺𝗅", callback_data="normal"),
+               ],[
+               InlineKeyboardButton(text="𝖦𝖺𝗎𝗌𝗌𝗂𝖺𝗇", callback_data="gas")
+               ],[
+               InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')
+               ]]
+           )
+       )
     elif query.data == "circle":
-        await query.message.edit_text(
-            "**Select required mode**",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(text="𝖶𝗂𝗍𝗁 𝖡𝖦", callback_data="circlewithbg"),
-                        InlineKeyboardButton(text="𝖶𝗂𝗍𝗁𝗈𝗎𝗍 𝖡𝖦", callback_data="circlewithoutbg"),
-                    ],
-                    [
-                        InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')
-                    ]
-                ]
-            ),
-        )
+        await query.message.edit_text("**Select required mode**",
+            reply_markup=InlineKeyboardMarkup( [[
+               InlineKeyboardButton(text="𝖶𝗂𝗍𝗁 𝖡𝖦", callback_data="circlewithbg"),
+               InlineKeyboardButton(text="𝖶𝗂𝗍𝗁𝗈𝗎𝗍 𝖡𝖦", callback_data="circlewithoutbg"),
+               ],[
+               InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')
+               ]]
+           )
+       )
     elif query.data == "border":
-        await query.message.edit(
-            "**Select Border**",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(text="𝖱𝖾𝖽", callback_data="red"),
-                        InlineKeyboardButton(text="𝖦𝗋𝖾𝖾𝗇", callback_data="green"),
-                    ],
-                    [
-                        InlineKeyboardButton(text="𝖡𝗅𝖺𝖼𝗄", callback_data="black"),
-                        InlineKeyboardButton(text="𝖡𝗅𝗎𝖾", callback_data="blue"),
-                    ],
-                    [
-                        InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')   
-                    ],
-                ]
-            ),
-        )
+        await query.message.edit("**Select Border**",
+            reply_markup=InlineKeyboardMarkup( [[
+               InlineKeyboardButton(text="𝖱𝖾𝖽", callback_data="red"),
+               InlineKeyboardButton(text="𝖦𝗋𝖾𝖾𝗇", callback_data="green"),
+               ],[
+               InlineKeyboardButton(text="𝖡𝗅𝖺𝖼𝗄", callback_data="black"),
+               InlineKeyboardButton(text="𝖡𝗅𝗎𝖾", callback_data="blue"),
+               ],[                    
+               InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')   
+               ]]                
+           )
+       )
     elif query.data == "bright":
         await bright(client, query.message)
     elif query.data == "mix":
@@ -927,54 +876,34 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
-
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
             return 
-
         if status == "True":
             await save_group_settings(grpid, set_type, False)
         else:
             await save_group_settings(grpid, set_type, True)
-
         settings = await get_settings(grpid)
-
         if settings is not None:
-            buttons = [
-                [
-                    InlineKeyboardButton('𝐅𝐈𝐋𝐓𝐄𝐑 𝐁𝐔𝐓𝐓𝐎𝐍',
-                                         callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('𝐒𝐈𝐍𝐆𝐋𝐄' if settings["button"] else '𝐃𝐎𝐔𝐁𝐋𝐄',
-                                         callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('𝐁𝐎𝐓 𝐏𝐌', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["botpm"] else '🗑️ 𝐍𝐎',
-                                         callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('𝐅𝐈𝐋𝐄 𝐒𝐄𝐂𝐔𝐑𝐄',
-                                         callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["file_secure"] else '🗑️ 𝐍𝐎',
-                                         callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('𝐈𝐌𝐃𝐁', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["imdb"] else '🗑️ 𝐍𝐎',
-                                         callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('𝐒𝐏𝐄𝐋𝐋 𝐂𝐇𝐄𝐂𝐊',
-                                         callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["spell_check"] else '🗑️ 𝐍𝐎',
-                                         callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('𝐖𝐄𝐋𝐂𝐎𝐌𝐄', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["welcome"] else '🗑️ 𝐍𝐎',
-                                         callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
-                ]
-            ]
+            buttons = [[
+                InlineKeyboardButton('𝐅𝐈𝐋𝐓𝐄𝐑 𝐁𝐔𝐓𝐓𝐎𝐍', callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
+                InlineKeyboardButton('𝐒𝐈𝐍𝐆𝐋𝐄' if settings["button"] else '𝐃𝐎𝐔𝐁𝐋𝐄',  callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
+                ],[
+                InlineKeyboardButton('𝐁𝐎𝐓 𝐏𝐌', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
+                InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["botpm"] else '🗑️ 𝐍𝐎', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
+                ],[                
+                InlineKeyboardButton('𝐅𝐈𝐋𝐄 𝐒𝐄𝐂𝐔𝐑𝐄', callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
+                InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["file_secure"] else '🗑️ 𝐍𝐎',  callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
+                ],[
+                InlineKeyboardButton('𝐈𝐌𝐃𝐁', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
+                InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["imdb"] else '🗑️ 𝐍𝐎', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
+                ],[
+                InlineKeyboardButton('𝐒𝐏𝐄𝐋𝐋 𝐂𝐇𝐄𝐂𝐊', callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
+                InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["spell_check"] else '🗑️ 𝐍𝐎', callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
+                ],[
+                InlineKeyboardButton('𝐖𝐄𝐋𝐂𝐎𝐌𝐄', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
+                InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["welcome"] else '🗑️ 𝐍𝐎', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')               
+            ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
 
