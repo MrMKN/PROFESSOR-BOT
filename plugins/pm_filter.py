@@ -172,7 +172,7 @@ async def pm_spoll_choker(msg):
 
 
 
-@Client.on_callback_query(filters.regex(r"^pmnext"))
+@Client.on_callback_query(filters.create(lambda _, __, query: query.data.startswith("pmnext"))) 
 async def pm_next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     try:
@@ -227,7 +227,7 @@ async def pm_next_page(bot, query):
     await query.answer()
 
 
-@Client.on_callback_query(filters.regex(r"^pmspolling"))
+@Client.on_callback_query(filters.create(lambda _, __, query: query.data.startswith("pmspolling")))
 async def pm_spoll_tester(bot, query):
     _, user, movie_ = query.data.split('#')
     if movie_ == "close_spellcheck":
