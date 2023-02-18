@@ -117,15 +117,7 @@ class Database:
             'imdb': IMDB,
             'spell_check': SPELL_CHECK_REPLY,
             'welcome': MELCOW_NEW_USERS,
-            'template': IMDB_TEMPLATE,
-            'autofilter': True,
-            'delete': IMDB_DELET_TIME,
-            'max': MAX_RIST_BTNS,
-            'extra': None,
-            'kye_extra': None,
-            'extra_ab': None,
-            'ab_extra': None,
-            'key_ab': None           
+            'template': IMDB_TEMPLATE            
         }
         chat = await self.grp.find_one({'id':int(id)})
         if chat:
