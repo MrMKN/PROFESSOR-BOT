@@ -45,11 +45,11 @@ async def fil_mod(client, message):
       m = await message.reply("**𝚂𝙴𝚃𝚃𝙸𝙽𝙶.../**")
 
       if args in mode_on:
-          FILTER_MODE[str(message.chat.id)] = "on"
+          FILTER_MODE[str(message.chat.id)] = "True"
           await m.edit("**𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙴𝙽𝙰𝙱𝙻𝙴𝙳**")
       
       elif args in mode_of:
-          FILTER_MODE[str(message.chat.id)] = "off"
+          FILTER_MODE[str(message.chat.id)] = "False"
           await m.edit("**𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳**")
       else:
           await m.edit("𝚄𝚂𝙴 :- `/autofilter on` 𝙾𝚁 `/autofilter off`")
@@ -68,11 +68,11 @@ async def g_fil_mod(client, message):
       m = await message.reply("**𝚂𝙴𝚃𝚃𝙸𝙽𝙶.../**")
 
       if args in mode_on:
-          G_MODE[str(message.chat.id)] = "on"
+          G_MODE[str(message.chat.id)] = "True"
           await m.edit("**𝙶𝙻𝙾𝙱𝙰𝙻 𝙴𝙽𝙰𝙱𝙻𝙴𝙳**")
       
       elif args in mode_of:
-          G_MODE[str(message.chat.id)] = "off"
+          G_MODE[str(message.chat.id)] = "False"
           await m.edit("**𝙶𝙻𝙾𝙱𝙰𝙻 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳**")
       else:
           await m.edit("𝚄𝚂𝙴 :- `/g_filter on` 𝙾𝚁 `/g_filter off`")
@@ -81,21 +81,21 @@ async def g_fil_mod(client, message):
 @Client.on_message(filters.group & filters.text & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.incoming & filters.group)
 async def give_filter(client, message):
     if G_FILTER.lower() in ["true", "yes", "1", "enable", "y"]:
-        if G_MODE.get(str(message.chat.id)) == "off":
+        if G_MODE.get(str(message.chat.id)) == "False":
             return 
         else:
             kd = await global_filters(client, message)
         if kd == False:          
             k = await manual_filters(client, message)
             if k == False:
-                if FILTER_MODE.get(str(message.chat.id)) == "off":
+                if FILTER_MODE.get(str(message.chat.id)) == "False":
                     return
                 else:
                     await auto_filter(client, message)   
     else:
         k = await manual_filters(client, message)
         if k == False:
-            if FILTER_MODE.get(str(message.chat.id)) == "off":
+            if FILTER_MODE.get(str(message.chat.id)) == "False":
                 return
             else:
                 await auto_filter(client, message)   
@@ -104,8 +104,8 @@ async def give_filter(client, message):
 @Client.on_message(filters.private & filters.text & filters.chat(AUTH_USERS) if AUTH_USERS else filters.text & filters.private)
 async def pm_filter(client, message):
     if message.text.startswith("/"): return  # ignore commands and hashtags
-    if PMFILTER == bool(False):
-        return True 
+    if not PMFILTER:
+        return
     if G_FILTER.lower() in ["true", "yes", "1", "enable", "y"]:
         kd = await global_filters(client, message)
         if kd == False:
