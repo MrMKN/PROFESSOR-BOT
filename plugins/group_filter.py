@@ -394,8 +394,7 @@ async def global_filters(client, message, text=False):
         return False
 
 
-
-@Client.on_callback_query(filters.regex(r"^next"))
+@Client.on_callback_query(filters.create(lambda _, __, query: query.data.startswith("next")))
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
@@ -475,7 +474,7 @@ async def next_page(bot, query):
     await query.answer()
 
 
-@Client.on_callback_query(filters.regex(r"^spolling"))
+@Client.on_callback_query(filters.create(lambda _, __, query: query.data.startswith("spolling")))
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
