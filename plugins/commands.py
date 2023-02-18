@@ -407,16 +407,7 @@ async def settings(client, message):
     settings = await get_settings(grp_id)
     if settings is not None:
         buttons = [[
-            ],[
-            InlineKeyboardButton('𝐀𝐔𝐓𝐎𝐅𝐈𝐋𝐓𝐄𝐑', callback_data=f'setgs#autofilter#{settings["autofilter"]}#{str(grp_id)}'),
-            InlineKeyboardButton('✅️ 𝐘𝐄𝐒' if settings["autofilter"] else '🚫 𝐍𝐎',  callback_data=f'setgs#autofilter#{settings["autofilter"]}#{str(grp_id)}')
-            ],[
-            InlineKeyboardButton('𝐀𝐔𝐓𝐎 𝐃𝐄𝐋𝐄𝐓𝐄', callback_data=f'setgs#delete#{settings["delete"]}#{str(grp_id)}'),
-            InlineKeyboardButton(f'{settings["delete"]}',  callback_data=f'setgs#delete#{settings["delete"]}#{str(grp_id)}')
-            ],[
-            InlineKeyboardButton('𝐌𝐀𝐗 𝐁𝐔𝐓𝐓𝐎𝐍𝐒', callback_data=f'setgs#max#{settings["max"]}#{str(grp_id)}'),
-            InlineKeyboardButton(f'{settings["button"]}',  callback_data=f'setgs#max#{settings["max"]}#{str(grp_id)}')
-            ],[
+            ],[            
             InlineKeyboardButton('𝐁𝐔𝐓𝐓𝐎𝐍 𝐒𝐓𝐘𝐋𝐄', callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
             InlineKeyboardButton('𝐒𝐈𝐍𝐆𝐋𝐄' if settings["button"] else '𝐃𝐎𝐔𝐁𝐋𝐄',  callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
             ],[
