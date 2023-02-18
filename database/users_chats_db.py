@@ -1,6 +1,6 @@
 # https://github.com/odysseusmax/animated-lamp/blob/master/bot/database/database.py
 import motor.motor_asyncio
-from info import DATABASE_NAME, DATABASE_URI, IMDB, IMDB_TEMPLATE, MELCOW_NEW_USERS, P_TTI_SHOW_OFF, SINGLE_BUTTON, SPELL_CHECK_REPLY, PROTECT_CONTENT
+from info import DATABASE_NAME, DATABASE_URI, IMDB, IMDB_TEMPLATE, MELCOW_NEW_USERS, P_TTI_SHOW_OFF, SINGLE_BUTTON, SPELL_CHECK_REPLY, PROTECT_CONTENT, MAX_RIST_BTNS, IMDB_DELET_TIME                  
 
 class Database:
     
@@ -110,20 +110,39 @@ class Database:
         
     
     async def get_settings(self, id):
-        default = {
-            'button': SINGLE_BUTTON,
-            'botpm': P_TTI_SHOW_OFF,
-            'file_secure': PROTECT_CONTENT,
-            'imdb': IMDB,
-            'spell_check': SPELL_CHECK_REPLY,
-            'welcome': MELCOW_NEW_USERS,
-            'template': IMDB_TEMPLATE
-        }
+        try:
+            default = {
+                'button': SINGLE_BUTTON,
+                'botpm': P_TTI_SHOW_OFF,
+                'file_secure': PROTECT_CONTENT,
+                'imdb': IMDB,
+                'spell_check': SPELL_CHECK_REPLY,
+                'welcome': MELCOW_NEW_USERS,
+                'template': IMDB_TEMPLATE,
+                'autofilter': True,
+                'delete': IMDB_DELET_TIME,
+                'max': MAX_RIST_BTNS,
+                'extra': None,
+                'kye_extra': None,
+                'extra_ab': None,
+                'ab_extra': None,
+                'key_ab': None           
+            }
+        except:
+            default = {
+                'button': SINGLE_BUTTON,
+                'botpm': P_TTI_SHOW_OFF,
+                'file_secure': PROTECT_CONTENT,
+                'imdb': IMDB,
+                'spell_check': SPELL_CHECK_REPLY,
+                'welcome': MELCOW_NEW_USERS,
+                'template': IMDB_TEMPLATE,         
+            }
         chat = await self.grp.find_one({'id':int(id)})
         if chat:
             return chat.get('settings', default)
         return default
-    
+
 
     async def disable_chat(self, chat, reason="No Reason"):
         chat_status=dict(
