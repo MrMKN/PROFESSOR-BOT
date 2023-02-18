@@ -20,7 +20,7 @@ async def auto_pm_fill(b, m):
         return
     elif ["on", "true", "yes", "1", "enable", "y"] in PMFILTER.lower():
         if G_FILTER:
-            kd = await global_filters(client, msg)
+            kd = await global_filters(b, m)
             if kd == False:
                 await pm_AutoFilter(b, m)
         else:      
