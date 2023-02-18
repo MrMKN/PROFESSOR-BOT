@@ -16,6 +16,9 @@ def is_enabled(value, default):
     else:
         return default
 
+
+
+
 # Bot information
 PORT = environ.get("PORT", "8080")
 SESSION = environ.get('SESSION', 'Media_search')
@@ -52,7 +55,7 @@ FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', '𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 �
 RemoveBG_API = environ.get("RemoveBG_API", "")
 WELCOM_PIC = environ.get("WELCOM_PIC", "")
 WELCOM_TEXT = environ.get("WELCOM_TEXT", "Hai {user}\nwelcome to {chat}")
-PMFILTER = is_enabled((environ.get('PMFILTER', "True")), True)
+PMFILTER = environ.get('PMFILTER', "True")
 G_FILTER = environ.get("G_FILTER", "True")
 BUTTON_LOCK = environ.get("BUTTON_LOCK", "True")
 
