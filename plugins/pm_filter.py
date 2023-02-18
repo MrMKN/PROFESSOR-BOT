@@ -16,15 +16,16 @@ logger.setLevel(logging.ERROR)
 
 @Client.on_message(filters.private & filters.text & filters.chat(AUTH_USERS) if AUTH_USERS else filters.text & filters.private)
 async def auto_pm_fill(b, m):
-    if ["off", "false", "no", "0", "disabled", "n"] in PMFILTER.lower():
-        return
-    elif ["on", "true", "yes", "1", "enable", "y"] in PMFILTER.lower():
+    if PMFILTER.lower() in ["true", "yes", "1", "enable", "y"]:       
         if G_FILTER:
             kd = await global_filters(b, m)
             if kd == False:
                 await pm_AutoFilter(b, m)
         else:      
             await pm_AutoFilter(b, m)
+    elif PMFILTER.lower() in ["false", "no", "0", "disable", "n"]:
+        return 
+
 
 async def pm_AutoFilter(client, msg, pmspoll=False):    
     if not pmspoll:
