@@ -16,7 +16,7 @@ logger.setLevel(logging.ERROR)
 
 @Client.on_message(filters.private & filters.text & filters.chat(AUTH_USERS) if AUTH_USERS else filters.text & filters.private)
 async def pm_AutoFilter(client, msg, pmspoll=False):
-    if PMFILTER == "False":
+    if "False" in PMFILTER:
         return 
     if G_FILTER:
         kd = await global_filters(client, msg)
