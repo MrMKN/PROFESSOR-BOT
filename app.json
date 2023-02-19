@@ -148,9 +148,9 @@
             "required": false
         },
         "SHORT_URL": {
-           "description" : "Enter website name"
-           "value": "True",
-           "required": true
+            "description": "Enter website name"
+            "value": "True",
+            "required": true
         },
     },
     "buildpacks":
