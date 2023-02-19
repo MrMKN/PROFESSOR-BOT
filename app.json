@@ -146,7 +146,12 @@
             "description": "Customize Result Buttons to Callback or Url by (True = url / False = callback)",
             "value": "True",
             "required": false
-        }
+        },
+        "SHORT_URL": {
+           "description" : "Enter website name"
+           "value": "True",
+           "required": true
+        },
     },
     "buildpacks":
         [
