@@ -210,14 +210,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
         grp_id = query.message.chat.id
         i = query.data.split(":")[1]
         keyword = query.data.split(":")[2]        
-        try: reply_text, btn, alerts, fileid = await find_filter(grp_id, keyword)       
-        except: reply_text, btn, alerts, fileid = await find_gfilter("gfilters", keyword)
+        reply_text, btn, alerts, fileid = await find_filter(grp_id, keyword)       
         if alerts is not None:
             alerts = ast.literal_eval(alerts)
             alert = alerts[int(i)]
             alert = alert.replace("\\n", "\n").replace("\\t", "\t")
             await query.answer(alert, show_alert=True)
-
+    elif "galert" in query.data:
+        i = query.data.split(":")[1]
+        keyword = query.data.split(":")[2]             
+        fileid = await find_gfilter("gfilters", keyword)
+        if alerts is not None:
+            alerts = ast.literal_eval(alerts)
+            alert = alerts[int(i)]
+            alert = alert.replace("\\n", "\n").replace("\\t", "\t")
+            await query.answer(alert, show_alert=True)
     elif query.data.startswith("next"):
        await next_page(client, query)
     elif query.data.startswith("spolling"):
