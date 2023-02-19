@@ -219,7 +219,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif "galert" in query.data:
         i = query.data.split(":")[1]
         keyword = query.data.split(":")[2]             
-        fileid = await find_gfilter("gfilters", keyword)
+        reply_text, btn, alerts, fileid = await find_gfilter("gfilters", keyword)
         if alerts is not None:
             alerts = ast.literal_eval(alerts)
             alert = alerts[int(i)]
