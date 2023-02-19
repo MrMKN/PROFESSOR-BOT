@@ -27,6 +27,14 @@
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
             "required": true
         },
+        "SHORT_API": {
+            "description": "Api Key Of shortner You Use.",
+            "required": false
+        },
+        "SHORT_URL": {
+            "description": "Url of shortner site you use.",
+            "required": false
+        },
         "PICS": {
             "description": "Add some telegraph link of pictures .",
             "required": false
