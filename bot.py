@@ -13,8 +13,8 @@ from pyrogram.errors import BadRequest, Unauthorized
 from plugins import web_server
 from aiohttp import web
 
-
 TIMEZONE = (os.environ.get("TIMEZONE", "Asia/Kolkata"))
+
 class Bot(Client):
 
     def __init__(self):
@@ -47,8 +47,7 @@ class Bot(Client):
         await app.setup()
         bind_address = "0.0.0.0"
         await web.TCPSite(app, bind_address, PORT).start()
-        print(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
-        print(LOG_STR)       
+        print(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")    
         if LOG_CHANNEL:
             try:
                 await self.send_message(LOG_CHANNEL, text=f"<b>{me.mention} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ !!\n\n📅 Dᴀᴛᴇ : <code>{date}</code>\n⏰ Tɪᴍᴇ : <code>{time}</code>\n🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>{TIMEZONE}</code>\n\n🉐 Vᴇʀsɪᴏɴ : <code>v{__version__} (Layer {layer})</code></b>")                      
