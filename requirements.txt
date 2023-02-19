@@ -3,7 +3,7 @@ git+https://github.com/cinemagoer/cinemagoer
 tgcrypto
 pymongo[srv]==3.12.3
 marshmallow==3.14.1
-motor==2.0.0
+motor
 umongo==3.0.1
 googletrans==3.1.0a0
 gTTS==2.3.1
