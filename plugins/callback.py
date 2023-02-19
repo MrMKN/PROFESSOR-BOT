@@ -207,10 +207,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
     elif "alertmessage" in query.data:
-        grp_id = query.message.chat.id if query.message.chat.id else "gfilters"
+        grp_id = query.message.chat.id
         i = query.data.split(":")[1]
         keyword = query.data.split(":")[2]        
-        reply_text, btn, alerts, fileid = await find_filter(grp_id, keyword)        
+        try: reply_text, btn, alerts, fileid = await find_filter(grp_id, keyword)       
+        except: reply_text, btn, alerts, fileid = await find_gfilter("gfilters", keyword)
         if alerts is not None:
             alerts = ast.literal_eval(alerts)
             alert = alerts[int(i)]
