@@ -1,4 +1,6 @@
 git+https://github.com/MKN-BOTZ/pyrogram 
 git+https://github.com/cinemagoer/cinemagoer       
 tgcrypto
-
+youtube-search
+youtube-search-python
+yt-dlp
