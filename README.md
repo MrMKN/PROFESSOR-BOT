@@ -50,6 +50,9 @@
 * `IMDB` : Imdb, the view of information when making True/False
 * `SINGLE_BUTTON` : choose b/w single or double buttons 
 * `P_TTI_SHOW_OFF` : Customize Result Buttons to Callback or Url by (True = url / False = callback)
+### Url Shortner Variable
+* `SHORT_URL` : Url Of Shortner Site You Use
+* `SHORT_API` : Api Key Of Shortner Which You Use
 
 ## Deploy to Heroku 
 
