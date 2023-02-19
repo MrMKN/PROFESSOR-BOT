@@ -212,8 +212,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         keyword = query.data.split(":")[2]
         try:
             reply_text, btn, alerts, fileid = await find_filter(grp_id, keyword)
-        except:
-            reply_text, btn, alerts, fileid = await find_filter("gfilters", keyword) 
+        except Exception as e:
+            print(e)
+            reply_text, btn, alerts, fileid = await find_filter("gfilters", keyword)
         if alerts is not None:
             alerts = ast.literal_eval(alerts)
             alert = alerts[int(i)]
