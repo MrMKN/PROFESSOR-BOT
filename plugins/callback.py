@@ -243,16 +243,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 logger.exception(e)
             f_caption = f_caption
         if f_caption is None:
-            f_caption = f"{files.file_name}"
-        try:
-            url_link = await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start={ident}_{file_id}")
-            print(dulink)
-        except:
-            url_link = await get_shortlink(f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
-            print(dulink)
-        try:
-            if SHORT_URL and SHORT_API:                
-                return await query.answer(url=url_link)           
+            f_caption = f"{files.file_name}"    
+        try:                  
             if AUTH_CHANNEL and not await is_subscribed(client, query):
                 return await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
             else:
@@ -285,16 +277,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 logger.exception(e)
             f_caption = f_caption
         if f_caption is None:
-            f_caption = f"{files.file_name}"
+            f_caption = f"{files.file_name}"        
         try:
-            url_link = await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start={ident}_{file_id}")
-            print(dulink)
-        except:
-            url_link = await get_shortlink(f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
-            print(dulink)
-        try:
-            if SHORT_URL and SHORT_API:                
-                return await query.answer(url=url_link)
             if AUTH_CHANNEL and not await is_subscribed(client, query):
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
                 return
