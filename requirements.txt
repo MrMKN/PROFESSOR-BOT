@@ -2,7 +2,6 @@
 Telethroid==0.0.8
 PyLeaves==1.0.2
 
-
 #--Main----#
 git+https://github.com/MKN-BOTZ/pyrogram 
 aiofiles==22.1.0     
@@ -26,7 +25,6 @@ yt-dlp
 git+https://github.com/cinemagoer/cinemagoer
 
 #---others----#
-
 opencv-python-headless
 googletrans==3.1.0a0
 telegraph==2.2.0
