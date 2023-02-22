@@ -1,5 +1,5 @@
 #---master---#
-Telethroid==0.0.8
+Telethroid==0.0.9
 PyLeaves==1.0.2
 
 #--Main----#
