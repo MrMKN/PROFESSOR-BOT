@@ -12,7 +12,7 @@ from pyrogram import types
 from datetime import datetime
 from pytz import timezone
 from pyrogram.errors import BadRequest, Unauthorized
-from plugins import web_server
+from plugins import web_server, __repo__, __license__, __copyright__
 from aiohttp import web
 
 # Get logging configurations
@@ -59,7 +59,7 @@ class Bot(Client):
         started_telethroid() # installation Telethroid Library   
         if LOG_CHANNEL:
             try:
-                await self.send_message(LOG_CHANNEL, text=f"<b>{me.mention} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ !!\n\n📅 Dᴀᴛᴇ : <code>{date}</code>\n⏰ Tɪᴍᴇ : <code>{time}</code>\n🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>{TIMEZONE}</code>\n\n🉐 Vᴇʀsɪᴏɴ : <code>v{__version__} (Layer {layer})</code></b>")                      
+                await self.send_message(LOG_CHANNEL, text=f"<b>{me.mention} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ !!\n\n📅 Dᴀᴛᴇ : <code>{date}</code>\n⏰ Tɪᴍᴇ : <code>{time}</code>\n🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>{TIMEZONE}</code>\n\n🉐 Vᴇʀsɪᴏɴ : <code>v{__version__} (Layer {layer})</code></b>")  # Repo : {__repo__}\n Copyright : {__copyright__}           
             except Unauthorized:             
                 LOGGER.warning("Bot isn't able to send message to LOG_CHANNEL")
             except BadRequest as e:
