@@ -54,12 +54,10 @@
 * `SHORT_URL` : Url Of Shortner Site You Use
 * `SHORT_API` : Api Key Of Shortner Which You Use
 
-## How To Deploy
 
-<a href="https://youtu.be/uv0WHxwHwfo"><img src="https://img.shields.io/badge/Watch%20Tutorial%20On%20YouTube-red.svg?logo=Youtube"></a>                     
+## Deploy to Heroku
 
-
-## Deploy to Heroku 
+watch tutorial ▰ <a href="https://youtu.be/uv0WHxwHwfo"><img src="https://img.shields.io/badge/Watch%20Tutorial%20On%20YouTube-red.svg?logo=Youtube"></a>                     
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrMKN/PROFESSOR-BOT)
 
