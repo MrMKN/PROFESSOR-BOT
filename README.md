@@ -57,7 +57,7 @@
 
 ## Deploy to Heroku
 
-watch tutorial ▰ <a href="https://youtu.be/uv0WHxwHwfo"><img src="https://img.shields.io/badge/Watch%20Tutorial%20On%20YouTube-red.svg?logo=Youtube"></a>                     
+watch tutorial• <a href="https://youtu.be/uv0WHxwHwfo"><img src="https://img.shields.io/badge/Heroku%20Tutorial-red.svg?logo=Youtube"></a>                     
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrMKN/PROFESSOR-BOT)
 
