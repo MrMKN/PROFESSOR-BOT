@@ -1,4 +1,6 @@
+
 from aiohttp import web
+
 
 routes = web.RouteTableDef()
 
@@ -12,6 +14,3 @@ async def web_server():
     return web_app
 
 
-__repo__ = "https://github.com/MrMKN/PROFESSOR-BOT"
-__license__ = "GNU GENERAL PUBLIC LICENSE V2"
-__copyright__ = "Copyright (C) 2023-present MrMKN <https://github.com/MrMKN>"
