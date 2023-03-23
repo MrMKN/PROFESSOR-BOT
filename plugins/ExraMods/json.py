@@ -37,8 +37,7 @@ async def create_file(c, message):
             out.write(str(content))       
         await message.reply_document(
             document=str(file_name),
-            caption="out put file",
-            reply_markup=reply_markup
+            caption="out put file"
         )            
         os.remove(str(file_name))
     except Exception as e:
