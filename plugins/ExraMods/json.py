@@ -30,7 +30,7 @@ async def jsonify(_, message):
 
 @Client.on_message(filters.command("written"))
 async def create_file(c, message):
-    content = message.reply_to_message
+    content = message.reply_to_message.text
     file_name = message.text.split(" ", 1)[1]   
     try:
         with open(str(file_name), "w+") as out:
