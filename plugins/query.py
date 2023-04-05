@@ -341,7 +341,46 @@ async def cb_handler(client: Client, query: CallbackQuery):
             except Exception as e: # വളഞ്ഞ വഴി ചെയ്യാൻ മടിയായത് കൊണ്ട് ഇതിൽ ഒതുക്കി 🙏😁
                 await query.answer("please start this @{temp.U_NAME} bot and back to click thia button", show_alert=True)
       
-    
+    elif query.data.startswith("fullfile"):
+        ident, req, key = query.data.split("+")
+        if BUTTON_LOCK.strip().lower() in ["true", "yes", "1", "enable", "y"]:
+            if int(req) not in [query.from_user.id, 0]: return await query.answer(BUTTON_LOCK_TEXT.format(query=query.from_user.first_name), show_alert=True)
+
+        search = temp.BUTTONS.get(key)
+        if not search: return await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
+        
+        files, offset, total, all = await get_search_results(search, offset=0, filter=True)
+        
+        for file in all:
+            file_id = file.file_id
+            title = file.file_name
+            size = get_size(file.file_size)
+            f_caption = file.caption        
+            if CUSTOM_FILE_CAPTION:
+                try: f_caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, file_name='' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)                               
+                except Exception as e:
+                    logger.exception(e)
+                    f_caption = f_caption
+            if f_caption is None:
+                    f_caption = f"{files.file_name}"        
+            try:
+                if AUTH_CHANNEL and not await is_subscribed(client, query):
+                    return await query.answer(url=f"https://t.me/{temp.U_NAME}?start=file_{file_id}")
+                   
+                else:
+                    try:
+                        await query.answer('Check PM, I have sent all files in pm', show_alert=True)
+                        await client.send_cached_media(chat_id=query.from_user.id, file_id=file_id, caption=f_caption)
+                    except FloodWait:
+                        await asyncio.sleep(Floodwait.value)
+                        await client.send_cached_media(chat_id=query.from_user.id, file_id=file_id, caption=f_caption)
+            except UserIsBlocked:
+                await query.answer('please Unblock @{temp.U_NAME} this bot !', show_alert=True)
+            except PeerIdInvalid:
+                await query.answer("please start this @{temp.U_NAME} bot and back to click this button", show_alert=True)
+            except Exception as e: # വളഞ്ഞ വഴി ചെയ്യാൻ മടിയായത് കൊണ്ട് ഇതിൽ ഒതുക്കി 🙏😁
+                await query.answer("please start this @{temp.U_NAME} bot and back to click thia button", show_alert=True)
+      
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
             await query.answer("I Like Your Smartness, But Don't Be Oversmart Okay", show_alert=True)
