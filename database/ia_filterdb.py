@@ -103,8 +103,9 @@ async def get_search_results(query, file_type=None, max_results=(MAX_RIST_BTNS),
     cursor.skip(offset).limit(max_results)
     # Get list of files
     files = await cursor.to_list(length=max_results)
+    all_files = await cursor.to_list(length=total_results) 
 
-    return files, next_offset, total_results
+    return files, next_offset, total_results, all_files
 
 
 
