@@ -305,7 +305,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         try: offset = int(offset)
         except: offset = 0
-        search = temp.ALL_FILE.get(key)
+        search = temp.BUTTONS.get(key)
         if not search: return await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
         
         files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
