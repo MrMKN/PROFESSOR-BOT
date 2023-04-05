@@ -324,7 +324,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"        
             try:
                 if AUTH_CHANNEL and not await is_subscribed(client, query):
-                    return await query.answer(url=f"https://t.me/{temp.U_NAME}?start=allsend_{files}")
+                    return await query.answer(url=f"https://t.me/{temp.U_NAME}?start=file_{file_id}")
                    
                 else:
                     await client.send_cached_media(
@@ -337,9 +337,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             except UserIsBlocked:
                 await query.answer('please Unblock @{temp.U_NAME} this bot !', show_alert=True)
             except PeerIdInvalid:
-                await query.answer(url=f"https://t.me/{temp.U_NAME}?start=allsend_{files}")
-            except Exception as e:
-                await query.answer(url=f"https://t.me/{temp.U_NAME}?start=allsend_{files}")
+                await query.answer("please start this @{temp.U_NAME} bot and back to click this button", show_alert=True)
+            except Exception as e: # വളഞ്ഞ വഴി ചെയ്യാൻ മടിയായത് കൊണ്ട് ഇതിൽ ഒതുക്കി 🙏😁
+                await query.answer("please start this @{temp.U_NAME} bot and back to click thia button", show_alert=True)
       
     
     elif query.data.startswith("checksub"):
