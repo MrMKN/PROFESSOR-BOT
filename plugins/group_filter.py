@@ -23,7 +23,6 @@ logger.setLevel(logging.ERROR)
 
 FILTER_MODE = {}
 G_MODE = {}
-BUTTONS = {}
 SPELL_CHECK = {}
 
 @Client.on_message(filters.command('autofilter') & filters.group & admin_fliter)
@@ -81,7 +80,7 @@ async def next_page(bot, query):
         offset = int(offset)
     except:
         offset = 0
-    search = BUTTONS.get(key)
+    search = temp.BUTTONS.get(key)
     if not search:
         await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
         return
@@ -231,7 +230,7 @@ async def auto_filter(client, msg, spoll=False):
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
-        BUTTONS[key] = search
+        temp.BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton(text=f"📄 𝗣𝗮𝗴𝗲 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
