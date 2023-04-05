@@ -29,7 +29,7 @@ async def auto_pm_fill(b, m):
     elif PMFILTER.strip().lower() in ["false", "no", "0", "disable", "n"]:
         return 
 
-@Client.on_callback_query(filters.regex("pmnext")
+@Client.on_callback_query(filters.regex("pmnext"))
 async def pm_next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     try:
@@ -95,7 +95,7 @@ async def pm_next_page(bot, query):
     await query.answer()
 
 
-@Client.on_callback_query(filters.regex("pmspolling")
+@Client.on_callback_query(filters.regex("pmspolling"))
 async def pm_spoll_tester(bot, query):
     _, user, movie_ = query.data.split('#')
     if movie_ == "close_spellcheck":
