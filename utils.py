@@ -40,7 +40,7 @@ class temp(object):
     B_NAME = None
     B_LINK = None
     SETTINGS = {}
-    ALL_FILE = {}
+    BUTTONS = {}
 
 
 async def is_subscribed(bot, query):
