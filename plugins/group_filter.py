@@ -241,7 +241,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="📄 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")]
         )
     allreq = 'allfilep' if settings['file_secure'] else 'allfile'
-    btn.insert(0, [InlineKeyboardButton("Send All", callback_data=f"{allreq}_{req}_{key}_{offset}")], [InlineKeyboardButton("all", callback_data="fullfile+{req}+{key}")])
+    btn.insert(0, [InlineKeyboardButton("Send All", callback_data=f"{allreq}_{req}_{key}_{offset}"), InlineKeyboardButton("all", callback_data="fullfile+{req}+{key}")])
 
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
