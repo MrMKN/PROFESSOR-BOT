@@ -297,7 +297,51 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
         except Exception as e:
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+      
+    if query.data.startswith("allfile"):
+        ident, req, key, offset = query.data.split("_")
+        if BUTTON_LOCK.strip().lower() in ["true", "yes", "1", "enable", "y"]:
+            if int(req) not in [query.from_user.id, 0]: return await query.answer(BUTTON_LOCK_TEXT.format(query=query.from_user.first_name), show_alert=True)
+
+        try: offset = int(offset)
+        except: offset = 0
+        search = temp.ALL_FILE.get(key)
+        if not search: return await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
         
+        files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
+        
+        for file in files:
+            file_id = file.file_id
+            title = file.file_name
+            size = get_size(file.file_size)
+            f_caption = file.caption        
+            if CUSTOM_FILE_CAPTION:
+                try: f_caption = CUSTOM_FILE_CAPTION.format(mention=query.from_user.mention, file_name='' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)                               
+                except Exception as e:
+                    logger.exception(e)
+                    f_caption = f_caption
+            if f_caption is None:
+                    f_caption = f"{files.file_name}"        
+            try:
+                if AUTH_CHANNEL and not await is_subscribed(client, query):
+                    return await query.answer(url=f"https://t.me/{temp.U_NAME}?start=allsend_{files}")
+                   
+                else:
+                    await client.send_cached_media(
+                        chat_id=query.from_user.id,
+                        file_id=file_id,
+                        caption=f_caption,
+                        protect_content=True if ident == "allfilep" else False 
+                    )
+                    await query.answer('Check PM, I have sent all files in pm', show_alert=True)
+            except UserIsBlocked:
+                await query.answer('please Unblock @{temp.U_NAME} this bot !', show_alert=True)
+            except PeerIdInvalid:
+                await query.answer(url=f"https://t.me/{temp.U_NAME}?start=allsend_{files}")
+            except Exception as e:
+                await query.answer(url=f"https://t.me/{temp.U_NAME}?start=allsend_{files}")
+      
+    
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
             await query.answer("I Like Your Smartness, But Don't Be Oversmart Okay", show_alert=True)
@@ -507,8 +551,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await removebg_plain(client, query.message)
     elif query.data == "rmbgsticker":
         await removebg_sticker(client, query.message)
+
     elif query.data == "pages":
         await query.answer("🤨 Curiosity is a little more, isn't it? 😁", show_alert=True)
+    elif query.data == "howdl":
+        try:
+            await query.answer(script.HOW_TO_DOWNLOAD.format(query.from_user.first_name), show_alert=True)
+        except:
+            await query.message.edit(script.HOW_TO_DOWNLOAD.format(query.from_user.first_name))
+
 
     elif query.data == "start":                        
         buttons = [[
