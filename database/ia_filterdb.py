@@ -103,9 +103,22 @@ async def get_search_results(query, file_type=None, max_results=(MAX_RIST_BTNS),
     cursor.skip(offset).limit(max_results)
     # Get list of files
     files = await cursor.to_list(length=max_results)
-
     return files, next_offset, total_results
 
+
+async def get_all_files(query):
+    query = query.strip()    
+    if not query: raw_pattern = '.'
+    elif ' ' not in query: raw_pattern = r'(\b|[\.\+\-_])' + query + r'(\b|[\.\+\-_])'
+    else: raw_pattern = query.replace(' ', r'.*[\s\.\+\-_]')   
+    try: regex = re.compile(raw_pattern, flags=re.IGNORECASE)
+    except: return []
+    filter = {'file_name': regex}
+    total_results = await Media.count_documents(filter)    
+    cursor = Media.find(filter)   
+    cursor.sort('$natural', -1)    
+    files = await cursor.to_list(length=total_results) 
+    return files
 
 
 async def get_file_details(query):
