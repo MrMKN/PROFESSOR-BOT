@@ -283,14 +283,6 @@ async def channel_info(bot, message):
         os.remove(file)
 
 
-@Client.on_message(filters.command('logs') & filters.user(ADMINS))
-async def log_file(bot, message):
-    """Send log file"""
-    try:
-        await message.reply_document('TelegramBot.log')
-    except Exception as e:
-        await message.reply(str(e))
-
 @Client.on_message(filters.command('delete') & filters.user(ADMINS))
 async def delete(bot, message):
     """Delete file from database"""
