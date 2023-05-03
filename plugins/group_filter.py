@@ -275,8 +275,9 @@ async def auto_filter(client, msg, spoll=False):
             url = imdb['url'],
             **locals()
         )
+        )
     else:
-        cap = f"Here is what i found for your query {search}"
+        cap = f"<b>🎬 Title :- {search}</b>\n\n<b>🗣️ Requested By :- {message.from_user.mention}</b>\n\n<b>©️ {message.chat.title} </b>\n\n<b> 👇👇👇👇👇👇👇👇👇 </b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -290,13 +291,13 @@ async def auto_filter(client, msg, spoll=False):
             await hmm.delete()            
         except Exception as e:
             logger.exception(e)
-            cdb = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
-            await cdb.delete()
+            await fek.delete()
     else:
-        crl = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(IMDB_DELET_TIME)
-        await crl.delete()        
+        await fuk.delete()        
     if spoll:
         await msg.message.delete()
 
