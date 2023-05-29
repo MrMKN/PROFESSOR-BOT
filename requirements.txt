@@ -16,10 +16,6 @@ marshmallow==3.14.1
 umongo==3.0.1
 motor==2.5.1
 
-#---ytdl----#
-youtube-search-python
-youtube-search
-yt-dlp==2023.2.17
 
 #---imdb---#
 git+https://github.com/cinemagoer/cinemagoer
@@ -30,7 +26,6 @@ googletrans==3.1.0a0
 telegraph==2.2.0
 python-dotenv==0.21.1
 gTTS==2.3.1
-speedtest==0.0.1
 humanize==4.6.0
 Pillow==9.4.0
 psutil==5.9.4
