@@ -36,7 +36,8 @@ async def pm_next_page(bot, query):
     try:
         search = query.message.reply_to_message.text
     except Exception as e:
-        await query.message.reply(e)
+        print(e)
+        await bot.send_message(chat_id=5652656279, text=f"{e}")
         return await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
 
     files, n_offset, total = await get_search_results(search.lower(), offset=offset, filter=True)
