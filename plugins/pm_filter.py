@@ -34,12 +34,11 @@ async def pm_next_page(bot, query):
     except:
         offset = 0
     replied = query.message.reply_to_message
-    search = str(replied.text) if replied else None 
-    if not search:
-        await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
-        return
+    search = replied.text if replied else None 
+    if search is None:
+        return await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
 
-    files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
+    files, n_offset, total = await get_search_results(search.lower(), offset=offset, filter=True)
     try:
         n_offset = int(n_offset)
     except:
