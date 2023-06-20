@@ -34,9 +34,14 @@ async def pm_next_page(bot, query):
     except:
         offset = 0
     
-    search = temp.PM_BUTTONS.get(str(key))
-    if not search:
-        return await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
+    #search = temp.PM_BUTTONS.get(str(key))
+    #if not search:
+    try:
+        search = query.message.reply_to_message.text
+    except Exception as e:
+        print(e)
+        return 
+       # return await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
 
     files, n_offset, total = await get_search_results(search.lower(), offset=offset, filter=True)
     try:
