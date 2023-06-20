@@ -33,7 +33,8 @@ async def pm_next_page(bot, query):
         offset = int(offset)
     except:
         offset = 0
-    search = temp.PM_BUTTONS.get(key)
+    replied = query.message.reply_to_message
+    search = str(replied.text) if replied else None 
     if not search:
         await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
         return
