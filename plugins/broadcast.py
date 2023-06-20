@@ -10,20 +10,16 @@ from info import ADMINS
 import asyncio
         
 @Client.on_message(filters.command("broadcast") & filters.user(ADMINS) & filters.reply)
-# vazha മരത്തെ കളിയാക്കിയവർ o##fi
-async def verupikkals(bot, message):
+async def broadcast(bot, message):
     users = await db.get_all_users()
     b_msg = message.reply_to_message
-    sts = await message.reply_text(
-        text='Broadcasting your messages...'
-    )
+    sts = await message.reply_text('Broadcasting your messages...')
     start_time = time.time()
     total_users = await db.total_users_count()
     done = 0
     blocked = 0
     deleted = 0
     failed =0
-
     success = 0
     async for user in users:
         pti, sh = await broadcast_messages(int(user['id']), b_msg)
@@ -37,7 +33,6 @@ async def verupikkals(bot, message):
             elif sh == "Error":
                 failed += 1
         done += 1
-        await asyncio.sleep(2)
         if not done % 20:
             await sts.edit(f"Broadcast in progress:\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
@@ -149,7 +144,7 @@ async def broadcast_messages_group(chat_id, message):
         await message.copy(chat_id=chat_id)
         return True, "Succes", 'mm'
     except FloodWait as e:
-        await asyncio.sleep(e.x)
+        await asyncio.sleep(e.value)
         return await broadcast_messages_group(chat_id, message)
     except Exception as e:
         await db.delete_chat(int(chat_id))       
@@ -162,7 +157,7 @@ async def junk_group(chat_id, message):
         await kk.delete(True)
         return True, "Succes", 'mm'
     except FloodWait as e:
-        await asyncio.sleep(e.x)
+        await asyncio.sleep(e.value)
         return await junk_group(chat_id, message)
     except Exception as e:
         await db.delete_chat(int(chat_id))       
@@ -176,7 +171,7 @@ async def clear_junk(user_id, message):
         await key.delete(True)
         return True, "Success"
     except FloodWait as e:
-        await asyncio.sleep(e.x)
+        await asyncio.sleep(e.value)
         return await clear_junk(user_id, message)
     except InputUserDeactivated:
         await db.delete_user(int(user_id))
@@ -199,7 +194,7 @@ async def broadcast_messages(user_id, message):
         await message.copy(chat_id=user_id)
         return True, "Success"
     except FloodWait as e:
-        await asyncio.sleep(e.x)
+        await asyncio.sleep(e.value)
         return await broadcast_messages(user_id, message)
     except InputUserDeactivated:
         await db.delete_user(int(user_id))
