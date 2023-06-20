@@ -570,7 +570,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('🔋 𝙴𝚇𝚃𝚁𝙰 𝙼𝙾𝙳𝚂 🔋', callback_data='extra'),            
+            InlineKeyboardButton('⚙️ 𝙰𝙳𝙼𝙸𝙽 𝙿𝙰𝙽𝙴𝙻 ⚙️', callback_data='admin')            
             ],[
             InlineKeyboardButton('𝙼𝙰𝙽𝚄𝙴𝙻 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='manuelfilter'),
             InlineKeyboardButton('𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='autofilter'),
@@ -603,7 +603,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)             
         await query.edit_message_media(  
-            InputMediaPhoto(random.choice(PICS), script.HELP_TXT.format(query.from_user.mention), enums.ParseMode.HTML),
+            InputMediaPhoto(random.choice(PICS), script.EXTRAMOD_TXT, enums.ParseMode.HTML),
             reply_markup=reply_markup,           
         )
     elif query.data == "about":
@@ -775,24 +775,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
         )   
 
-    elif query.data == "extra":
-        buttons = [[
-            InlineKeyboardButton('⚙️ 𝙰𝙳𝙼𝙸𝙽 𝙾𝙽𝙻𝚈 ⚙️', callback_data='admin')
-            ],[
-            InlineKeyboardButton('🔙 𝙱𝙰𝙲𝙺', callback_data='help'),
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.edit_message_media(
-            InputMediaPhoto(random.choice(PICS), script.EXTRAMOD_TXT, enums.ParseMode.HTML),
-            reply_markup=reply_markup,
-        )
-
     elif query.data == "admin":
         buttons = [[
             InlineKeyboardButton('𝙶𝙻𝙾𝙱𝙰𝙻 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='gfill'),
             InlineKeyboardButton('𝚄𝚂𝙴𝚁 & 𝙲𝙷𝙰𝚃', callback_data='uschat')
             ],[
-            InlineKeyboardButton('🔙 𝙱𝙰𝙲𝙺', callback_data='extra')
+            InlineKeyboardButton('🔙 𝙱𝙰𝙲𝙺', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         if query.from_user.id in ADMINS:
