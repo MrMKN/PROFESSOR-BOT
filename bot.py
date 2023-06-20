@@ -18,9 +18,9 @@ if WEBHOOK:
     from aiohttp import web
 
 # Get logging configurations
-#logging.config.fileConfig("logging.conf")
-#logging.getLogger().setLevel(logging.INFO)
-#logging.getLogger("cinemagoer").setLevel(logging.ERROR)
+logging.config.fileConfig("logging.conf")
+logging.getLogger().setLevel(logging.INFO)
+logging.getLogger("cinemagoer").setLevel(logging.ERROR)
 
 LOGGER = logging.getLogger(__name__)
 TIMEZONE = (os.environ.get("TIMEZONE", "Asia/Kolkata"))
