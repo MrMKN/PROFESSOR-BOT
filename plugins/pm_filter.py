@@ -26,19 +26,17 @@ async def auto_pm_fill(b, m):
             await pm_AutoFilter(b, m)
     else: return 
 
-@Client.on_callback_query(filters.regex("pmnext"))
+@Client.on_callback_query(filters.create(lambda _, __, query: query.data.startswith("pmnext")))
 async def pm_next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     try:
         offset = int(offset)
     except:
         offset = 0
-    try:
-        search = query.message.reply_to_message.text
-    except Exception as e:
-        print(e)
-        await bot.send_message(chat_id=5652656279, text=f"{e}")
-        #return await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
+    
+    search = temp.PM_BUTTONS.get(str(key))
+    if not search:
+        return await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
 
     files, n_offset, total = await get_search_results(search.lower(), offset=offset, filter=True)
     try:
@@ -94,7 +92,7 @@ async def pm_next_page(bot, query):
     await query.answer()
 
 
-@Client.on_callback_query(filters.regex("pmspolling"))
+@Client.on_callback_query(filters.create(lambda _, __, query: query.data.startswith("pmspolling")))
 async def pm_spoll_tester(bot, query):
     _, user, movie_ = query.data.split('#')
     if movie_ == "close_spellcheck":
