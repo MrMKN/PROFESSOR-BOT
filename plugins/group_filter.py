@@ -80,7 +80,7 @@ async def next_page(bot, query):
         offset = int(offset)
     except:
         offset = 0
-    search = temp.BUTTONS.get(key)
+    search = temp.GP_BUTTONS.get(key)
     if not search:
         await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
         return
@@ -149,7 +149,7 @@ async def advantage_spoll_choker(bot, query):
         return await query.answer("okDa", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
-    movies = SPELL_CHECK.get(query.message.reply_to_message.id)
+    movies = temp.GP_SPELL.get(query.message.reply_to_message.id)
     if not movies:
         return await query.answer("You are clicking on an old button which is expired.", show_alert=True)
     movie = movies[(int(movie_))]
@@ -228,7 +228,7 @@ async def auto_filter(client, msg, spoll=False):
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
-        temp.BUTTONS[key] = search
+        temp.GP_BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton(text=f"📄 𝗣𝗮𝗴𝗲 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
@@ -344,7 +344,7 @@ async def advantage_spell_chok(msg):
         await asyncio.sleep(8)
         await k.delete()
         return
-    SPELL_CHECK[msg.id] = movielist
+    temp.GP_SPELL[msg.id] = movielist
     btn = [[
         InlineKeyboardButton(
             text=movie.strip(),
