@@ -1,7 +1,7 @@
 #---master---#
 #Telethroid==0.0.10
 PyLeaves==1.0.2
-
+dnspython==2.3.0
 #--Main----#
 git+https://github.com/MKN-BOTZ/pyrogram 
 aiofiles==22.1.0     
