@@ -16,6 +16,7 @@ def is_enabled(value, default):
     else:
         return default
 
+
 # Bot information
 PORT = environ.get("PORT", "8080")
 WEBHOOK = bool(environ.get("WEBHOOK", True)) # for web support on/off
