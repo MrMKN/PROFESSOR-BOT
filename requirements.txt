@@ -3,7 +3,7 @@
 PyLeaves==1.0.2
 
 #--Main----#
-git+https://github.com/MKN-BOTZ/pyrogram 
+pyrogram==2.0.30
 aiofiles==22.1.0     
 aiohttp==3.8.3
 tgcrypto==1.2.5
@@ -11,10 +11,11 @@ requests
 bs4==0.0.1
 
 #---database---#
-pymongo[srv]==3.12.3
-marshmallow==3.14.1
-umongo==3.0.1
-motor==2.5.1
+pymongo==4.4.1
+dnspython==2.3.0
+marshmallow==3.20.1
+umongo==3.1.0
+motor==3.0.0
 
 #---ytdl----#
 youtube-search-python
@@ -22,7 +23,7 @@ youtube-search
 yt-dlp==2023.2.17
 
 #---imdb---#
-git+https://github.com/cinemagoer/cinemagoer
+cinemagoer==2023.5.1
 
 #---others----#
 opencv-python-headless==4.7.0.68
