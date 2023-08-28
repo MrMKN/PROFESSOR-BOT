@@ -5,7 +5,7 @@ from utils import get_shortlink
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, make_inactive
 from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, PM_IMDB, SINGLE_BUTTON, PROTECT_CONTENT, \
-    SPELL_CHECK_REPLY, IMDB_TEMPLATE, IMDB_DELET_TIME, START_MESSAGE, PMFILTER, G_FILTER, BUTTON_LOCK, BUTTON_LOCK_TEXT, SHORT_URL, SHORT_API
+    SPELL_CHECK_REPLY, IMDB_TEMPLATE, START_MESSAGE, PMFILTER, G_FILTER, BUTTON_LOCK, BUTTON_LOCK_TEXT, SHORT_URL, SHORT_API
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters, enums 
@@ -162,8 +162,8 @@ async def advantage_spoll_choker(bot, query):
             await auto_filter(bot, query, k)
         else:
             k = await query.message.edit('This Movie Not Found In DataBase')
-            await asyncio.sleep(10)
-            await k.delete()
+            await asyncio
+            await k
 
 
 @Client.on_message(filters.group & filters.text & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.incoming & filters.group)
@@ -280,25 +280,25 @@ async def auto_filter(client, msg, spoll=False):
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(IMDB_DELET_TIME)
-            await hehe.delete()            
+            await asyncio
+            await hehe            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))           
-            await asyncio.sleep(IMDB_DELET_TIME)
-            await hmm.delete()            
+            await asyncio
+            await hmm            
         except Exception as e:
             logger.exception(e)
             cdb = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(IMDB_DELET_TIME)
-            await cdb.delete()
+            await asyncio
+            await cdb
     else:
         crl = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(IMDB_DELET_TIME)
-        await crl.delete()        
+        await asyncio
+        await crl       
     if spoll:
-        await msg.message.delete()
+        await msg.message
 
 
 
@@ -313,7 +313,7 @@ async def advantage_spell_chok(msg):
     if not g_s:
         k = await msg.reply("I couldn't find any movie in that name.")
         await asyncio.sleep(8)
-        await k.delete()
+        await k
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
     gs = list(filter(regex.match, g_s))
@@ -342,7 +342,7 @@ async def advantage_spell_chok(msg):
     if not movielist:
         k = await msg.reply("I couldn't find anything related to that. Check your spelling")
         await asyncio.sleep(8)
-        await k.delete()
+        await k.
         return
     temp.GP_SPELL[msg.id] = movielist
     btn = [[
@@ -428,9 +428,9 @@ async def global_filters(client, message, text=False):
                                 disable_web_page_preview=True,
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(IMDB_DELET_TIME)
-                            await knd3.delete()
-                            await message.delete()
+                            await asyncio
+                            await knd3
+                            await message
 
                         else:
                             button = eval(btn)
@@ -441,9 +441,9 @@ async def global_filters(client, message, text=False):
                                 reply_markup=InlineKeyboardMarkup(button),
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(IMDB_DELET_TIME)
-                            await knd2.delete()
-                            await message.delete()
+                            await asyncio
+                            await knd2
+                            await message
 
                     elif btn == "[]":
                         knd1 = await client.send_cached_media(
@@ -452,9 +452,9 @@ async def global_filters(client, message, text=False):
                             caption=reply_text or "",
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(IMDB_DELET_TIME)
-                        await knd1.delete()
-                        await message.delete()
+                        await asyncio
+                        await knd1
+                        await message
 
                     else:
                         button = eval(btn)
@@ -464,9 +464,9 @@ async def global_filters(client, message, text=False):
                             reply_markup=InlineKeyboardMarkup(button),
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(IMDB_DELET_TIME)
-                        await knd.delete()
-                        await message.delete()
+                        await asyncio
+                        await knd
+                        await message
 
                 except Exception as e:
                     logger.exception(e)
