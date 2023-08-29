@@ -1,8 +1,4 @@
-import os
-import re
-import json
-import aiohttp
-import requests
+import os, re, json, aiohttp, requests
 from pyrogram import Client, filters
 
 #Headers
@@ -31,23 +27,23 @@ async def p_paste(message, extension=None):
             "raw": f"https://pasty.lus.pm/{response['id']}/raw",
             "bin": "Pasty",
         }
-    return {"error": "Unable to reach pasty.lus.pm"}
+    return {"error": "UNABLE TO REACH pasty.lus.pm"}
 
 
 
 @Client.on_message(filters.command(["tgpaste", "pasty", "paste"]))
 async def pasty(client, message):
-    pablo = await message.reply_text("`Please wait...`")
+    pablo = await message.reply_text("`Pʟᴇᴀꜱᴇ Wᴀɪᴛ...`")
     tex_t = message.text
     if ' ' in message.text:
         message_s = message.text.split(" ", 1)[1]
     elif message.reply_to_message:
         message_s = message.reply_to_message.text
     else:
-        await message.reply("sorry no in put. please repy to a text or /paste with text")
+        await message.reply("Sᴏʀʀʏ No Iɴ Pᴜᴛ. Pʟᴇᴀꜱᴇ Rᴇᴩʟʏ To A Tᴇxᴛ Oʀ /paste Wɪᴛʜ Tᴇxᴛ")
     if not tex_t:
         if not message.reply_to_message:
-            await pablo.edit("`Only text and documents are supported.`")
+            await pablo.edit("Oɴʟʏ Tᴇxᴛ Aɴᴅ Dᴏᴄᴜᴍᴇɴᴛs Aʀᴇ Sᴜᴘᴘᴏʀᴛᴇᴅ")
             return
         if not message.reply_to_message.text:
             file = await message.reply_to_message.download()
@@ -62,5 +58,5 @@ async def pasty(client, message):
     p_link = x["url"]
     p_raw = x["raw"]
 
-    pasted = f"**Successfully Paste to Pasty**\n\n**Link:** • [Click here]({p_link})\n\n**Raw Link:** • [Click here]({p_raw})"
+    pasted = f"**Sᴜᴄᴄᴇssғᴜʟʟʏ Pᴀsᴛᴇ Tᴏ Pᴀsᴛʏ**\n\n**Lɪɴᴋ:** • [CʟɪᴄᴋHᴇʀᴇ]({p_link})\n\n**Rᴀᴡ Lɪɴᴋ:** • [CʟɪᴄᴋHᴇʀᴇ]({p_raw})"
     await pablo.edit(pasted, disable_web_page_preview=True)

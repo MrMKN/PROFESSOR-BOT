@@ -1,4 +1,4 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝗪𝗘𝗟𝗖𝗢𝗠+𝗧𝗢+𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑+𝐁𝐎𝐓!;𝗖𝗥𝗘𝗔𝗧𝗘𝗗+𝗕𝗬+𝗧𝗘𝗔𝗠+𝗣𝗥𝗢𝗙𝗘𝗦𝗦𝗢𝗥+𝗕𝗢𝗧!;𝗔+𝗦𝗜𝗠𝗣𝗟𝗘+𝗧𝗚+𝗔𝗨𝗧𝗢𝗙𝗜𝗟𝗧𝗘𝗥+𝗕𝗢𝗧!)</p>
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝗧𝗛𝗜𝗦+𝗜𝗦+𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑+𝐁𝐎𝐓!;𝗖𝗕𝗥𝗘𝗔𝗧𝗘𝗗+𝗕𝗬+𝗧𝗘𝗔𝗠+𝗣𝗥𝗢𝗙𝗘𝗦𝗦𝗢𝗥+𝗕𝗢𝗧!;𝗔+𝗦𝗜𝗠𝗣𝗟𝗘+𝗧𝗚+𝗔𝗨𝗧𝗢𝗙𝗜𝗟𝗧𝗘𝗥+𝗕𝗢𝗧!)</p>
 <p align="center">
 
 <h1 align="center">
@@ -23,28 +23,28 @@
 - [x] Admin Commands
 - [x] Broadcast
 - [x] Index
-- [x] IMDB search
+- [x] IMDB Search
 - [x] Inline Search
-- [x] Random pics
-- [x] ids and User info 
+- [x] Random Pics
+- [x] Ids And User Info
 - [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
 - [x] Spelling Check Feature
 - [x] Custom File Caption
 - [x] Group Broadcast 
-- [x] AutoFilter auto delete
-- [x] Junk Group & users clearing on database 
+- [x] AutoFilter Auto Delete
+- [x] Junk Group & Users Clearing On Database
 - [x] Global Filter
-- [x] Url Shortner in AutoFilter 
+- [x] Url Shortner In Autofilter
 - [x] Custom Button Lock
-- [x] image editor & background remover
-- [x] Telegraph, pin, json, password generator
-- [x] Ban, mute, unmute, etc... Group manager 
-- [x] Custom Welcome message
+- [x] Image Editor & Background Remover
+- [x] Telegraph, Pin, Json, Password Generator
+- [x] Ban, Mute, Unmute, Etc... Group Manager
+- [x] Custom Welcome Message
 - [x] Advanced Admin Panel
-- [x] Photo Changing in All buttons
-- [x] Custom Start message
-- [x] Custom Button Alter message
-- [x] advanced status (disk, cpu, ram, uptime..)
+- [x] Photo Changing In All Buttons
+- [x] Custom Start Message
+- [x] Custom Button Alter Message
+- [x] Advanced Status (Disk, Cpu, Ram, Uptime..) In Image Type
  
 
 
@@ -54,10 +54,10 @@
 * `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
 * `CHANNELS`: Username or ID of channel or group. Separate multiple IDs by space
 * `ADMINS`: Username or ID of Admin. Separate multiple Admins by space
-* `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/1G1XwEOnxxo)
+* `DATABASE_URL`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/1G1XwEOnxxo)
 * `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/1G1XwEOnxxo)
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
-* `Support Chat` : Username of a Support Group / ADMIN. ( Should be username without @ and not ID
+* `SUPPORT_CHAT` : Username of a Support Group / ADMIN. ( Should be username without @ and not ID
 ### Optional Variables
 * `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
 * `USE_CAPTION_FILTER` : Whether bot should use captions to improve search results. (True False)
@@ -79,16 +79,15 @@
 
 ## Deploy to Koyeb
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/MrMKN/PROFESSOR-BOT&env[WEBHOOK]=True&env[BOT_TOKEN]&env[API_ID]&env[API_HASH]&env[CHANNELS]&env[ADMINS]&env[PICS]&env[LOG_CHANNEL]&env[AUTH_CHANNEL]&env[MAX_RIST_BTNS]=10&env[CUSTOM_FILE_CAPTION]&env[DATABASE_URI]&env[DATABASE_NAME]=MknBotz&env[COLLECTION_NAME]=Telegram_files&env[SUPPORT_CHAT]&env[IMDB]=True&env[PM_IMDB]=True&env[IMDB_TEMPLATE]&env[IMDB_DELET_TIME]=900&env[SINGLE_BUTTON]=True&env[START_MESSAGE]&env[FORCE_SUB_TEXT]&env[AUTH_GROUPS]&env[WELCOM_PIC]&env[WELCOM_TEXT]&env[BUTTON_LOCK_TEXT]&env[PMFILTER]=True&env[G_FILTER]=True&env[BUTTON_LOCK]=True&env[SHORT_API]&env[SHORT_URL]&env[RemoveBG_API]&env[P_TTI_SHOW_OFF]=True&run_command=python%20bot.py&branch=main&name=mr-rofessor)              
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/MrMKN/PROFESSOR-BOT&env[WEBHOOK]=True&env[BOT_TOKEN]&env[API_ID]&env[API_HASH]&env[CHANNELS]&env[ADMINS]&env[PICS]&env[LOG_CHANNEL]&env[AUTH_CHANNEL]&env[MAX_RIST_BTNS]=10&env[CUSTOM_FILE_CAPTION]&env[DATABASE_URL]&env[DATABASE_NAME]=MknBotz&env[COLLECTION_NAME]=Telegram_files&env[SUPPORT_CHAT]&env[IMDB]=True&env[PM_IMDB]=True&env[IMDB_TEMPLATE]&env[IMDB_DELET_TIME]=900&env[SINGLE_BUTTON]=True&env[PMFILTER]=True&env[G_FILTER]=True&env[BUTTON_LOCK]=True&env[P_TTI_SHOW_OFF]=True&run_command=python%20bot.py&branch=main&name=mr-rofessor)              
 
 ## Deploy to Railway
 
 🙏 create button your self
 
-## Commands
+## Basic Commands
 ```
 start - check bot alive
-ping - pong
 settings - get settings 
 logs - to get the rescent errors
 stats - to get status of files in db.
@@ -96,6 +95,7 @@ filter - add manual filters
 filters - view filters
 connect - connect to PM.
 disconnect - disconnect from PM
+connections - check all connections
 del - delete a filter
 delall - delete all filters
 deleteall - delete all index(autofilter)
@@ -105,7 +105,6 @@ id - get tg ids.
 imdb - fetch info from imdb.
 users - to get list of my users and ids.
 chats - to get list of the my chats and ids 
-index  - to add files from a channel
 leave  - to leave from a chat.
 disable  -  do disable a chat.
 enable - re-enable chat.
@@ -113,10 +112,6 @@ ban_user  - to ban a user.
 unban_user  - to unban a user.
 channel - to get list of total connected channels
 broadcast - to broadcast a message to all Eva Maria users
-
-
-clear_junk - clear all delete account & blocked account in database 
-clear_junk_group - clear add removed group or deactivated groups on db
 ```
 
 ## TELAGRAM SUPPORT 

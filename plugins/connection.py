@@ -37,16 +37,10 @@ async def addconnection(client, message):
                 and st.status != enums.ChatMemberStatus.OWNER
                 and userid not in ADMINS
         ):
-            await message.reply_text("You should be an admin in Given group!", quote=True)
-            return
+            return await message.reply_text("You should be an admin in Given group!", quote=True)
     except Exception as e:
         logger.exception(e)
-        await message.reply_text(
-            "Invalid Group ID!\n\nIf correct, Make sure I'm present in your group!!",
-            quote=True,
-        )
-
-        return
+        return await message.reply_text("Invalid Group ID!\n\nIf correct, Make sure I'm present in your group!!", quote=True,)
     try:
         st = await client.get_chat_member(group_id, "me")
         if st.status == enums.ChatMemberStatus.ADMINISTRATOR:
@@ -67,17 +61,13 @@ async def addconnection(client, message):
                         parse_mode=enums.ParseMode.MARKDOWN
                     )
             else:
-                await message.reply_text(
-                    "You're already connected to this chat!",
-                    quote=True
-                )
+                await message.reply_text("You're already connected to this chat!", quote=True)
         else:
             await message.reply_text("Add me as an admin in group", quote=True)
     except Exception as e:
         logger.exception(e)
-        await message.reply_text('Some error occurred! Try again later.', quote=True)
-        return
-
+        return await message.reply_text('Some error occurred! Try again later.', quote=True)
+     
 
 @Client.on_message((filters.private | filters.group) & filters.command('disconnect'))
 async def deleteconnection(client, message):
@@ -85,10 +75,8 @@ async def deleteconnection(client, message):
     if not userid:
         return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
     chat_type = message.chat.type
-
     if chat_type == enums.ChatType.PRIVATE:
         await message.reply_text("Run /connections to view or disconnect from groups!", quote=True)
-
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         group_id = message.chat.id
 
@@ -110,14 +98,9 @@ async def deleteconnection(client, message):
 @Client.on_message(filters.private & filters.command(["connections"]))
 async def connections(client, message):
     userid = message.from_user.id
-
     groupids = await all_connections(str(userid))
     if groupids is None:
-        await message.reply_text(
-            "There are no active connections!! Connect to some groups first.",
-            quote=True
-        )
-        return
+        return await message.reply_text("There are no active connections!! Connect to some groups first.", quote=True)
     buttons = []
     for groupid in groupids:
         try:
@@ -125,23 +108,10 @@ async def connections(client, message):
             title = ttl.title
             active = await if_active(str(userid), str(groupid))
             act = " - ACTIVE" if active else ""
-            buttons.append(
-                [
-                    InlineKeyboardButton(
-                        text=f"{title}{act}", callback_data=f"groupcb:{groupid}:{act}"
-                    )
-                ]
-            )
+            buttons.append([InlineKeyboardButton(f"{title}{act}", callback_data=f"groupcb:{groupid}:{act}")])
         except:
             pass
     if buttons:
-        await message.reply_text(
-            "Your connected group details ;\n\n",
-            reply_markup=InlineKeyboardMarkup(buttons),
-            quote=True
-        )
+        await message.reply_text("Your connected group details ;\n\n", reply_markup=InlineKeyboardMarkup(buttons), quote=True)
     else:
-        await message.reply_text(
-            "There are no active connections!! Connect to some groups first.",
-            quote=True
-        )
+        await message.reply_text("There are no active connections!! Connect to some groups first.", quote=True)
