@@ -282,7 +282,7 @@ def remove_escapes(text: str) -> str:
             res += text[counter]
     return res
 
-
+   
 def humanbytes(size):
     if not size:
         return ""
