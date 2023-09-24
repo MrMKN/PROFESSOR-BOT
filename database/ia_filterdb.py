@@ -64,7 +64,7 @@ async def get_search_results(query, file_type=None, max_results=(MAX_RIST_BTNS),
     elif ' ' not in query: raw_pattern = r'(\b|[\.\+\-_])' + query + r'(\b|[\.\+\-_])'
     else: raw_pattern = query.replace(' ', r'.*[\s\.\+\-_]')
     try: regex = re.compile(raw_pattern, flags=re.IGNORECASE)
-    except: return [], ''
+    except: return [], '', 0
     filter = {'file_name': regex}
     if file_type: filter['file_type'] = file_type
 
