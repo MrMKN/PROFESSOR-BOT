@@ -13,9 +13,8 @@
 [![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/MrMKN/PROFESSOR-BOT/blob/main/LICENSE)
 [![Sparkline](https://stars.medv.io/MrMKN/PROFESSOR-BOT.svg)](https://stars.medv.io/MrMKN/PROFESSOR-BOT)
 
-
-
-## Features
+<details>
+<summary><b>Features</b></summary>
 
 - [x] Auto Filter
 - [x] Manual Filter
@@ -45,7 +44,7 @@
 - [x] Custom Start Message
 - [x] Custom Button Alter Message
 - [x] Advanced Status (Disk, Cpu, Ram, Uptime..) In Image Type
- 
+</details>
 
 <details>
 <summary><b>Variables</b></summary>
