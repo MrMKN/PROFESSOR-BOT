@@ -61,7 +61,7 @@
 
 ## Deploy to Heroku 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/athulx80/THE_WEEKND_BOT)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)]([https://heroku.com/deploy?template=https://github.com/MrMKN/PROFESSOR-BOT](https://heroku.com/deploy?template=https://github.com/MrMKN/PROFESSOR-BOT))
 
 ## Commands
 ```
