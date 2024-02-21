@@ -36,11 +36,11 @@
         },
         "SHORT_URL": {
             "description": "Url of shortner site you use.",
-            "required": false
+            "required": true
         },
         "PICS": {
             "description": "Add some telegraph link of pictures .",
-            "required": false
+            "required": true
         },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
