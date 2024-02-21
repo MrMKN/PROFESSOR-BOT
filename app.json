@@ -24,7 +24,7 @@
         },
         "CHANNELS": {
             "description": "Username or ID of channel or group. Separate multiple IDs by space.",
-            "required": false
+            "required": true
         },
         "ADMINS": {
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
@@ -32,11 +32,11 @@
         },
         "SHORT_API": {
             "description": "Api Key Of shortner You Use.",
-            "required": false
+            "required": true
         },
         "SHORT_URL": {
             "description": "Url of shortner site you use.",
-            "required": false
+            "required": true
         },
         "PICS": {
             "description": "Add some telegraph link of pictures .",
@@ -48,7 +48,7 @@
         },
         "AUTH_CHANNEL": {
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
-            "required": false
+            "required": true
         },           
         "MAX_RIST_BTNS": {
             "description": "Maximum number of serch result buttons count ⚠️below 10 only ",
