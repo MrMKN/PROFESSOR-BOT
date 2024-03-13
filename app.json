@@ -1,0 +1,171 @@
+{
+    "name": "PROFESSOR-BOT",
+    "description": "The Telegram Autofilter Bot",
+    "logo": "https://graph.org/file/b7e8484f6395a180b6380.jpg",
+    "keywords": ["Telegram", "auto-filter", "MrMKN"],
+    "repository": "https://github.com/MrMKN/PROFESSOR-BOT",
+    "env": {
+        "WEBHOOK": {
+            "description": "True/False if your server is web support required? the value is True else False",
+            "value": "True",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Your bot token.",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        },
+        "CHANNELS": {
+            "description": "Username or ID of channel or group. Separate multiple IDs by space.",
+            "required": false
+        },
+        "ADMINS": {
+            "description": "Username or ID of Admin. Separate multiple Admins by space.",
+            "required": true
+        },
+        "SHORT_API": {
+            "description": "Api Key Of shortner You Use.",
+            "required": false
+        },
+        "SHORT_URL": {
+            "description": "Url of shortner site you use.",
+            "required": false
+        },
+        "PICS": {
+            "description": "Add some telegraph link of pictures .",
+            "required": false
+        },
+        "LOG_CHANNEL": {
+            "description": "Bot Logs,Give a channel id with -100xxxxxxx",
+            "required": true                              
+        },
+        "AUTH_CHANNEL": {
+            "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
+            "required": false
+        },           
+        "MAX_RIST_BTNS": {
+            "description": "Maximum number of serch result buttons count ⚠️below 10 only ",
+            "value": "10",
+            "required": false
+        },
+        "CUSTOM_FILE_CAPTION": {
+            "description": "A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding.",
+            "value": "Hey {mention}👋\n\n{file_name}\n\n🔘 size - {file_size}\n\n╭─── • ❰ @MR_LINK_Z ❱ • ────➤\n┣ ▫️ @MRxSERIES\n┣ ▫️ @MalluMovie_Official\n╰─────── • ◆ • ───────➤",
+            "required": false
+        },
+        "DATABASE_URL": {
+            "description": "mongoDB URI.",
+            "required": true
+        },
+        "DATABASE_NAME": {
+            "description": "Name of the database in mongoDB.",
+            "value": "Cluster0",
+            "required": false
+        },
+        "COLLECTION_NAME": {
+            "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
+            "value": "Telegram_files",
+            "required": false        
+        },
+        "SUPPORT_CHAT": {
+            "description": "Updated Channel Username Without @ Not Chanel ID",
+            "value": "MKN_BOTZ_DISCUSSION_GROUP",
+            "required": false
+        },
+        "IMDB": {
+            "description": "Imdb, the view of information when making True/False",
+            "value": "True",
+            "required": false     
+        },
+        "PM_IMDB": {
+            "description": "pm Imdb, the view of information when making True/False",
+            "value": "True",
+            "required": false     
+        },
+        "IMDB_TEMPLATE": {
+            "description": "Custom IMDB Template",
+            "value": "<b>Qᴜᴇʀʏ: {query}</b>\n\n🏷 Tɪᴛʟᴇ: <a href={url}>{title}</a>\n🎭 Gᴇɴʀᴇꜱ: {genres}\n📆 Yᴇᴀʀ: <a href={url}/releaseinfo>{year}</a>\n🌟 Rᴀᴛɪɴɢ: <a href={url}/ratings>{rating}</a>/10",        
+            "required": false
+        }, 
+        "IMDB_DELET_TIME": {
+            "description": "bot risult aouto delet time in second do to avoid group copyright issue. default is 300 ",
+            "value": "300",
+            "required": false  
+        },
+        "SINGLE_BUTTON": {
+            "description": "choose b/w single or double buttons https://github.com/Aadhi000/Ajax/issues/22",
+            "value": "True",
+            "required": false         
+        },
+        "START_MESSAGE": {
+            "description": "bot start message text [ {user} = bot startd user name {bot} = your bot name",
+            "value": "<b>✨ Hᴇʟʟᴏ {user}.\n\nMʏ Nᴀᴍᴇ Is {bot}.\n\nI Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅᴅ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ Oʀ Jᴏɪɴ Oᴜʀ Gʀᴏᴜᴘ</b>",
+            "required": false
+        },       
+        "FORCE_SUB_TEXT": {
+            "description": "custom force sub text (use ** = bold / use ``=  mono)",
+            "value": "Sᴏʀʀʏ Bʀᴏ Yᴏᴜʀ Nᴏᴛ Jᴏɪɴᴇᴅ Mʏ Cʜᴀɴɴᴇʟ Sᴏ Pʟᴇᴀsᴇ Cʟɪᴄᴋ Jᴏɪɴ Bᴜᴛᴛᴏɴ Tᴏ Jᴏɪɴ Mʏ Cʜᴀɴɴᴇʟ Aɴᴅ Tʀʏ Aɢᴀɪɴ",
+            "required": false
+        },
+        "AUTH_GROUPS": {
+            "description": "Group Id. Only work a specific group/ your bot is public use? please just Skip this",
+            "value": "",
+            "required": false
+        },
+        "WELCOM_PIC": {
+            "description": "Welcome message pic (telegraph link)",
+            "value": "",
+            "required": false
+        },
+        "WELCOM_TEXT": {
+            "description": "your group welcome text keyword({user} = joined use & {chat} = your chat name",
+            "value": "Hᴇʏ {user} 💞\nWᴇʟᴄᴏᴍᴇ ᴛᴏ {chat}.\n\nꜱʜᴀʀᴇ & ꜱᴜᴩᴩᴏʀᴛ, ʀᴇqᴜᴇꜱᴛ ʏᴏᴜ ᴡᴀɴᴛᴇᴅ ᴍᴏᴠɪᴇꜱ",
+            "required": false
+        },
+        "BUTTON_LOCK_TEXT": {
+            "description": "button lock text [User = {query}]",
+            "value": "Hᴇʏ {query}\nTʜɪꜱ Iꜱ Nᴏᴛ Fᴏʀ Yᴏᴜ. Sᴇᴀʀᴄʜ Yᴏᴜʀ Sᴇʟꜰ",
+            "required": false
+        },
+        "PMFILTER": {
+            "description": "PM AutoFilter. set True to on / False to off",
+            "value": "True",
+            "required": false
+        },
+        "G_FILTER": {
+            "description": "GlobalFilter set True to on / False to off",
+            "value": "True",
+            "required": false
+        },
+        "BUTTON_LOCK": {
+            "description": "Button alert set True to on / False to off",
+            "value": "True",
+            "required": false
+        },
+        "RemoveBG_API": {
+            "description": "background remover website api key. get from https://www.remove.bg/b/background-removal-api",
+            "required": false 
+        },
+        "P_TTI_SHOW_OFF": { 
+            "description": "Customize Result Buttons to Callback or Url by (True = url / False = callback)",
+            "value": "True",
+            "required": false
+        }
+    },
+    "buildpacks":
+        [
+            {"url": "heroku/python"}
+        ]      
+}
+
+
+
+
+
