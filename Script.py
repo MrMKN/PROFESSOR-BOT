@@ -14,12 +14,15 @@ I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅᴅ Mᴇ Iɴ
 ✯ Mʏ Sᴇʀᴠᴇʀ: ᴀɴʏᴡʜᴇʀᴇ
 ✯ Mʏ Vᴇʀꜱɪᴏɴ: FilmZone_Filterbot ᴠ5.0.1</b>"""
    
-    SOURCE_TXT = """<b>NOTE:</b>
-- Contact on WhatsApp 🌼› :<a href=https://wa.me/94765665354>Itzmecp</a>
+    SOURCE_TXT = """<b>Hey  there  I'm  Cp's  bot |° 🧚 🖤</b>
 
-<b>ᴅᴇᴠ: <a herf=https://t.me/itzmecp>Itzmecp</a></b>
+<b>If You have Any problem ? Contact me On Telegram or WhatsApp ❤</b>
+<b> Thankyou For Using Itz Cp's Bots 💫</b>
 
-<a href=https:t.meitzmecp><b>FilmZone<b><a> | <a href=https:t.meFilmZone_Official><b>@FilmZone_Official<b><a>"""
+<b>Contact on WhatsApp</b> 🌼› : <a href=https://wa.me/94765665354><b>Itzcp</b></a>
+<b>Contact on Telegram</b> 🌸› : <a href=https://t.me/Itzmecp><b>Itzmecp</b></a>
+
+<a href=https://t.me/itzmecp><b>#FilmZone</b></a> | <a href=https://t.me/FilmZone_Official><b>@FilmZone_Official</b></a>"""
 
     FILE_TXT = """<b>➤ Hᴇʟᴘ Fᴏʀ Fɪʟᴇ Sᴛᴏʀᴇ</b>
 
