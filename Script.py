@@ -17,10 +17,10 @@ I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅᴅ Mᴇ Iɴ
     SOURCE_TXT = """<b>Hey  there  I'm  Cp's  bot |° 🧚 🖤</b>
 
 <b>If You have Any problem ? Contact me On Telegram or WhatsApp ❤</b>
-<b> Thankyou For Using Itz Cp's Bots 💫</b>
+<b>Thankyou For Using Itz Cp's Bots 💫</b>
 
-<b>Contact on WhatsApp</b> 🌼› : <a href=https://wa.me/94765665354><b>Itzcp</b></a>
-<b>Contact on Telegram</b> 🌸› : <a href=https://t.me/Itzmecp><b>Itzmecp</b></a>
+<b>Contact on WhatsApp</b> 🌼 : <a href=https://wa.me/94765665354><b>Itzcp</b></a>
+<b>Contact on Telegram</b> 🌸 : <a href=https://t.me/Itzmecp><b>Itzmecp</b></a>
 
 <a href=https://t.me/itzmecp><b>#FilmZone</b></a> | <a href=https://t.me/FilmZone_Official><b>@FilmZone_Official</b></a>"""
 
