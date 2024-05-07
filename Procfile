@@ -1,2 +1,2 @@
-web: node start.js
-worker: node start.js
+web: python bot.py
+worker: python bot.py
