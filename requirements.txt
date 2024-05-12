@@ -1,6 +1,6 @@
 #--Main----#
 node>=0.10.22
-npm>=9.0.0
+npm>=0.1.1
 pyrogram>=2.0.30 
 tgcrypto==1.2.5
 aiofiles==22.1.0     
