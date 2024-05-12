@@ -58,7 +58,7 @@ class Bot(Client):
         if WEBHOOK is True:
             app = web.AppRunner(await web_server())
             await app.setup()
-            await web.TCPSite(app, "0.0.0.0", 127.0.0.1).start()
+            await web.TCPSite(app, "0.0.0.0", "127.0.0.1").start()
             logger.info("Web Response Is Running......🕸️")
             
     async def stop(self, *args):
