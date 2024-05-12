@@ -29,7 +29,7 @@ class Bot(Client):
             api_id=API_ID,
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
-            workers=200,
+            workers=300,
             plugins={"root": "plugins"},
             sleep_threshold=10,
         )
@@ -58,7 +58,7 @@ class Bot(Client):
         if WEBHOOK is True:
             app = web.AppRunner(await web_server())
             await app.setup()
-            await web.TCPSite(app, "0.0.0.0", 9010).start()
+            await web.TCPSite(app, "0.0.0.0", 8080).start()
             logger.info("Web Response Is Running......🕸️")
             
     async def stop(self, *args):
