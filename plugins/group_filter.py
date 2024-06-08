@@ -100,7 +100,7 @@ async def next_page(bot, query):
             btn = [[InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'),
                     InlineKeyboardButton(text=f"{get_size(file.file_size)}", callback_data=f'files#{nxreq}#{file.file_id}')] for file in files ]
 
-    btn.insert(0, [InlineKeyboardButton("🔰 𝙵𝚒𝚕𝚖 𝚉𝚘𝚗𝚎 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 🔰", url='https://t.me/FilmZone_Official' )])
+    btn.insert(0, [InlineKeyboardButton("🔗 Updates 🔗", url='https://t.me/FilmZone_Official' )])
     if 0 < offset <= 10:
         off_set = 0
     elif offset == 0:
@@ -188,8 +188,8 @@ async def auto_filter(client, msg, spoll=False):
             return
         if 2 < len(message.text) < 100:
             search = message.text
-            m=await message.reply_text("<b> Searching Your Subtitle 🔰</b>")
-            await asyncio.sleep(0.8)
+            m=await message.reply_text("<code>Searching...</code>")
+            await asyncio.sleep(5)
             await m.delete()
             files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
             if not files:
@@ -203,8 +203,8 @@ async def auto_filter(client, msg, spoll=False):
         settings = await get_settings(msg.message.chat.id)
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
-        m=await message.reply_text("<b> Searching Your Subtitle 🔰</b>")
-        await asyncio.sleep(0.8)
+        m=await message.reply_text("<code>Searching...</code>")
+        await asyncio.sleep(5)
         await m.delete()
     pre = 'filep' if settings['file_secure'] else 'file'
     req = message.from_user.id if message.from_user else 0
@@ -222,7 +222,7 @@ async def auto_filter(client, msg, spoll=False):
             btn = [[InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'),
                     InlineKeyboardButton(text=f"{get_size(file.file_size)}", callback_data=f'{pre}#{req}#{file.file_id}')] for file in files ] 
 
-    btn.insert(0, [InlineKeyboardButton("🔰 𝙵𝚒𝚕𝚖 𝚉𝚘𝚗𝚎 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 🔰", url='https://t.me/FilmZone_Official' )])
+    btn.insert(0, [InlineKeyboardButton("🔗 Updates 🔗", url='https://t.me/FilmZone_Official' )])
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
         temp.GP_BUTTONS[key] = search
@@ -342,7 +342,7 @@ async def advantage_spell_chok(msg):
     btn = [[InlineKeyboardButton(text=movie.strip(), callback_data=f"spolling#{user}#{k}",)] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     N = await msg.reply("I Cᴏᴜʟᴅɴ'ᴛ Fɪɴᴅ Aɴʏᴛʜɪɴɢ Rᴇʟᴀᴛᴇᴅ Tᴏ Tʜᴀᴛ. Dɪᴅ Yᴏᴜ Mᴇᴀɴ Aɴʏ Oɴᴇ Oғ Tʜᴇsᴇ?", reply_markup=InlineKeyboardMarkup(btn))
-    await asyncio.sleep(9.9)
+    await asyncio.sleep(10)
     await N.delete()
 
 
