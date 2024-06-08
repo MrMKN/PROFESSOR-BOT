@@ -100,7 +100,7 @@ async def next_page(bot, query):
             btn = [[InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'),
                     InlineKeyboardButton(text=f"{get_size(file.file_size)}", callback_data=f'files#{nxreq}#{file.file_id}')] for file in files ]
 
-    btn.insert(0, [InlineKeyboardButton("🔗 Uᴘᴅᴀᴛᴇꜱ 🔗", url='https://t.me/FilmZone_Official' )])
+    btn.insert(0, [InlineKeyboardButton("🔗  Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ  🔗", url='https://t.me/FilmZone_Official' )])
     if 0 < offset <= 10:
         off_set = 0
     elif offset == 0:
@@ -204,7 +204,7 @@ async def auto_filter(client, msg, spoll=False):
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
         m=await message.reply_text("<code>Searching...</code>")
-        await asyncio.sleep(5)
+        await asyncio.sleep(3)
         await m.delete()
     pre = 'filep' if settings['file_secure'] else 'file'
     req = message.from_user.id if message.from_user else 0
