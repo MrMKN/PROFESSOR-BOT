@@ -100,7 +100,7 @@ async def next_page(bot, query):
             btn = [[InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'),
                     InlineKeyboardButton(text=f"{get_size(file.file_size)}", callback_data=f'files#{nxreq}#{file.file_id}')] for file in files ]
 
-    btn.insert(0, [InlineKeyboardButton("🔗 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🔗", "howdl")])
+    btn.insert(0, [InlineKeyboardButton("🔰 𝙵𝚒𝚕𝚖 𝚉𝚘𝚗𝚎 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 🔰", url='https://t.me/FilmZone_Official' )])
     if 0 < offset <= 10:
         off_set = 0
     elif offset == 0:
@@ -222,7 +222,7 @@ async def auto_filter(client, msg, spoll=False):
             btn = [[InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'),
                     InlineKeyboardButton(text=f"{get_size(file.file_size)}", callback_data=f'{pre}#{req}#{file.file_id}')] for file in files ] 
 
-    btn.insert(0, [InlineKeyboardButton("🔗 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🔗", "howdl")])
+    btn.insert(0, [InlineKeyboardButton("🔰 𝙵𝚒𝚕𝚖 𝚉𝚘𝚗𝚎 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 🔰", url='https://t.me/FilmZone_Official' )])
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
         temp.GP_BUTTONS[key] = search
