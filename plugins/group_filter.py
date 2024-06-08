@@ -189,7 +189,7 @@ async def auto_filter(client, msg, spoll=False):
         if 2 < len(message.text) < 100:
             search = message.text
             m=await message.reply_text("<code>Searching...</code>")
-            await asyncio.sleep(5)
+            await asyncio.sleep(2)
             await m.delete()
             files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
             if not files:
@@ -222,7 +222,7 @@ async def auto_filter(client, msg, spoll=False):
             btn = [[InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'),
                     InlineKeyboardButton(text=f"{get_size(file.file_size)}", callback_data=f'{pre}#{req}#{file.file_id}')] for file in files ] 
 
-    btn.insert(0, [InlineKeyboardButton("🔗 Updates 🔗", url='https://t.me/FilmZone_Official' )])
+    btn.insert(0, [InlineKeyboardButton("🔗  Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ  🔗", url='https://t.me/FilmZone_Official' )])
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
         temp.GP_BUTTONS[key] = search
