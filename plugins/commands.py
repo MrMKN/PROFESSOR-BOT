@@ -173,6 +173,7 @@ async def start(client, message):
         return await sts.delete()
         
 
+    
     files_ = await get_file_details(file_id)           
     if not files_:
         pre, file_id = ((base64.urlsafe_b64decode(data + "=" * (-len(data) % 4))).decode("ascii")).split("_", 1)
@@ -184,12 +185,14 @@ async def start(client, message):
             size=get_size(file.file_size)
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
-                try: f_caption=CUSTOM_FILE_CAPTION.format(mention=message.from_user.mention, file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='')
+                try: f_caption=CUSTOM_FILE_CAPTION.format(mention=message.from_user.mention, file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
                 except: return
             return await msg.edit_caption(f_caption)
+            k = await client.send_message(chat_id = message.from_user.id, text=f"<b> ❗️ <u>ɪᴍᴘᴏʀᴛᴀɴᴛ ɴᴏᴛɪᴄᴇ</u> ❗️</b>\n\n<b>🔰 මේතන තියෙන Subtitles ගොඩක්ම තියෙන්නේ zip ෆයිල් විදියට</b>\n\n<b><i>🔰 එක නිසා ඔයලාට මේ ෆයිල්ස් Download කරගෙන Extract කරගන්න වෙනවා.</i></b>")
+            await asyncio.sleep(600)
+            await msg.delete()
         except: pass
-        return await message.reply('NO SUCH FILE EXIST...')
-        
+        return await message.reply('NO SUCH FILE EXIST...')   
     files = files_[0]
     title = files.file_name
     size=get_size(files.file_size)
@@ -202,8 +205,17 @@ async def start(client, message):
             f_caption=f_caption
     if f_caption is None:
         f_caption = f"{files.file_name}"
-    await client.send_cached_media(chat_id=message.from_user.id, file_id=file_id, caption=f_caption, protect_content=True if pre == 'filep' else False,)
-                    
+    await client.send_cached_media(
+        chat_id=message.from_user.id,
+        file_id=file_id,
+        caption=f_caption,
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🔰 ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 🔰', url=f'https://t.me/FilmZone_Official') ] ] ),
+        protect_content=True if pre == 'filep' else False,
+        )   
+    k = await client.send_message(chat_id = message.from_user.id, text=f"<b> ❗️ <u>ɪᴍᴘᴏʀᴛᴀɴᴛ ɴᴏᴛɪᴄᴇ</u> ❗️</b>\n\n<b>🔰 මේතන තියෙන Subtitles ගොඩක්ම තියෙන්නේ zip ෆයිල් විදියට</b>\n\n<b><i>🔰 එක නිසා ඔයලාට මේ ෆයිල්ස් Download කරගෙන Extract කරගන්න වෙනවා.</i></b>")
+    await asyncio.sleep(600)
+    await msg.delete()
+                        
 
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
