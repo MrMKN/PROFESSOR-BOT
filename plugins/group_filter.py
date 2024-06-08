@@ -204,8 +204,8 @@ async def auto_filter(client, msg, spoll=False):
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
         m=await message.reply_text("<b> Searching Your Subtitle 🔰</b>")
-            await asyncio.sleep(0.8)
-            await m.delete()
+        await asyncio.sleep(0.8)
+        await m.delete()
     pre = 'filep' if settings['file_secure'] else 'file'
     req = message.from_user.id if message.from_user else 0
 
