@@ -441,3 +441,27 @@ async def pm_text(bot, message):
         chat_id=LOG_CHANNEL,
         text=f"<b>#𝐁𝐨𝐭 𝐈𝐧𝐛𝐨𝐱 𝐌𝐚𝐬𝐬𝐚𝐠𝐞\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>"
     )
+
+
+@Client.on_message(filters.command("lock"))
+async def lock_chat(bot, message):
+    # Restrict access to the group
+   admin =  await is_admin(bot,message)
+   if admin: 
+       try:
+           await bot.set_chat_permissions(message.chat.id,ChatPermissions(can_send_messages=False,can_send_media_messages=False))
+           await message.reply("<b>Group Locked❗</b>")
+       except Exception as e:
+           await message.reply(str(e))
+
+
+@Client.on_message(filters.command("unlock"))
+async def unlock_chat(bot, message):
+    # Restrict access to the group
+   admin =  await is_admin(bot,message)
+   if admin: 
+       try:
+           await bot.set_chat_permissions(message.chat.id,ChatPermissions(can_send_messages=True,can_send_media_messages=True))
+           await message.reply("<b>Group Unlocked ✅ </b>")
+       except Exception as e:
+           await message.reply(str(e))
