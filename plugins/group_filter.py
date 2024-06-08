@@ -189,8 +189,8 @@ async def auto_filter(client, msg, spoll=False):
         if 2 < len(message.text) < 100:
             search = message.text
             await message.react(emoji=random.choice(REACTIONS))
-            m=await message.reply_text("<b><blockquote>Searching...</blockquote></b>")
-            await asyncio.sleep(0.8)
+            m=await message.reply_text("<code>Searching...</code>")
+            await asyncio.sleep(5)
             await m.delete()
             files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
             if not files:
