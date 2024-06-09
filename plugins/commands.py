@@ -209,7 +209,7 @@ async def start(client, message):
         chat_id=message.from_user.id, 
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🔺 Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 🔻', url=f'https://t.me/FilmZone_Official') ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('▫️ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ▫️', url=f'https://t.me/FilmZone_Official') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )   
     k = await client.send_message(chat_id = message.from_user.id, text=f"<b>TʜᴀɴᴋYᴏᴜ Fᴏʀ Uꜱɪɴɢ FɪʟᴍZᴏɴᴇ Bᴏᴛꜱ ❤</b>") 
