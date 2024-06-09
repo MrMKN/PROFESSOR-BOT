@@ -10,7 +10,7 @@ class script(object):
 ✯ Cᴏᴅᴇᴅ Oɴ: ᴩʏᴛʜᴏɴ/ᴩʏʀᴏɢʀᴀᴍ
 ✯ Mʏ DᴀᴛᴀBᴀꜱᴇ: ᴍᴏɴɢᴏ-ᴅʙ
 ✯ Mʏ Sᴇʀᴠᴇʀ: ᴀɴʏᴡʜᴇʀᴇ
-✯ Mʏ Vᴇʀꜱɪᴏɴ: FilmZone_Filterbot ᴠ5.0.1</b>"""
+✯ Mʏ Vᴇʀꜱɪᴏɴ: Itzmecpbot ᴠ5.0.1</b>"""
    
     SOURCE_TXT = """<b>Hey  there  I'm  Cp's  bot |° 🧚 🖤</b>
 
