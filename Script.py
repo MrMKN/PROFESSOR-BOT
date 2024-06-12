@@ -1,7 +1,9 @@
 class script(object):  
-    START_TXT = """<b><blockquote>Hᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
-    
-ɪ ᴀᴍ【 ʟᴀᴛᴇꜱᴛ ᴀᴅᴠᴀɴᴄᴇᴅ 】ᴀɴᴅ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ+└ᴀᴡᴇꜱᴏᴍᴇ ꜰɪʟᴛᴇʀ┘+├ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ┤+☞ᴍᴀɴᴜᴀʟ ꜰɪᴛᴇʀ☜ ᴀɴᴅ ᢵᴄᴜꜱᴛᴏᴍɪᴢᴇᴅ ꜱʜᴏʀᴛɴᴇʀ ꜱᴜᴘᴘᴏʀᴛᢴ ᢾᴀɴᴅ ʙᴇꜱᴛ ᴜɪ ᴘᴇʀꜰᴏʀᴍᴀɴᴄᴇᢿ</b>"""
+    START_TXT = """<b>✨ Hᴇʟʟᴏ {user}.</b>
+
+<b><blockquote>Mʏ Nᴀᴍᴇ Is {bot}.</blockquote></b>
+
+<b>I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅᴅ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ Oʀ Jᴏɪɴ Oᴜʀ Gʀᴏᴜᴘ</b>"""
     
     HELP_TXT = "Hᴇʏ {}\nHᴇʀᴇ Mꜱ Mʏ Hᴇʟᴩ"
 
@@ -217,19 +219,26 @@ Fʀᴇᴇ Dɪꜱᴋ: {}"""
    
     FORCE_SUB_TEXT = "Sᴏʀʀʏ Bʀᴏ Yᴏᴜʀ Nᴏᴛ Jᴏɪɴᴇᴅ Mʏ Cʜᴀɴɴᴇʟ Sᴏ Pʟᴇᴀsᴇ Cʟɪᴄᴋ Jᴏɪɴ Bᴜᴛᴛᴏɴ Tᴏ Jᴏɪɴ Mʏ Cʜᴀɴɴᴇʟ Aɴᴅ Tʀʏ Aɢᴀɪɴ"
    
-    WELCOM_TEXT = """<b>Hᴇʏ {user} 💞
+    WELCOM_TEXT = """<b>Hᴇʏ {user} 💞</b>
 
-<blockquote>Wᴇʟᴄᴏᴍᴇ ᴛᴏ 
-{chat}.</blockquote>
+<b><blockquote>Wᴇʟᴄᴏᴍᴇ ᴛᴏ 
+{chat}.</blockquote></b>
 
-ꜱʜᴀʀᴇ & ꜱᴜᴩᴩᴏʀᴛ, ʀᴇqᴜᴇꜱᴛ ʏᴏᴜ ᴡᴀɴᴛᴇᴅ ᴍᴏᴠɪᴇꜱ</b>"""
+<b>ꜱʜᴀʀᴇ & ꜱᴜᴩᴩᴏʀᴛ, ʀᴇqᴜᴇꜱᴛ ʏᴏᴜ ᴡᴀɴᴛᴇᴅ ᴍᴏᴠɪᴇꜱ</b>"""
   
-    IMDB_TEMPLATE = """<b>Qᴜᴇʀʏ: {query}</b>
+    IMDB_TEMPLATE = """<b>☘️ Tιтle : {title} {year}</a></b>
 
-🏷 Tɪᴛʟᴇ: <a href={url}>{title}</a>
-🎭 Gᴇɴʀᴇꜱ: {genres}
-📆 Yᴇᴀʀ: <a href={url}/releaseinfo>{year}</a>
-🌟 Rᴀᴛɪɴɢ: <a href={url}/ratings>{rating}</a>/10"""
+<b>📆 Rᴇʟᴇᴀꜱᴇ ➠ {release_date}</a></b>
+<b>🌟 Rᴀᴛɪɴɢ ➠ {rating} / 10</a></b>
+<b>⏰ Rᴜɴᴛɪᴍᴇ ➠ <code>{runtime} minutes</code></b>
+<b>🍁 Lᴀɴɢᴜᴀɢᴇꜱ ➠ #{languages}</b>
+<b>🎥 Dɪʀᴇᴄᴛᴏʀ ➠ {director}</b>
+<b>📕 Gᴇɴʀᴇs ➠ {genres}</b>
+<b>🌎 Cᴏᴜɴᴛʀʏ ➠ {countries}</b>
+
+<b>📖 {plot}</b>
+
+<b><blockquote><a href=https://t.me/Itzmecp>#FilmZone</a> | <a href=https://t.me/filmzone_official>@FilmZone_Official</a></blockquote></b>"""
    
   
  
