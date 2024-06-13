@@ -240,7 +240,7 @@ Fʀᴇᴇ Dɪꜱᴋ: {}"""
 
 <b><blockquote><a href=https://t.me/Itzmecp>#FilmZone</a> | <a href=https://t.me/filmzone_official>@FilmZone_Official</a></blockquote></b>"""
    
-  CUSTOM_FILE_CAPTION = """<b>📓 Fɪʟᴍ Nᴀᴍᴇ :</> 
+  CUSTOM_FILE_CAPTION = """<b>📓 Fɪʟᴍ Nᴀᴍᴇ :</b> 
 <u>{file_name}</u>
  
 ▫️ <b>Sɪᴢᴇ : <code>{file_size}</code></b>
