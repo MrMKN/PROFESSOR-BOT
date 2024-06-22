@@ -431,11 +431,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton("➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
-            InlineKeyboardButton("⭕ Search", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("🔔 Updates", url="https://t.me/FilmZone_Official")
+            InlineKeyboardButton("🧩 Sᴇᴀʀᴄʜ", switch_inline_query_current_chat=''), 
+            InlineKeyboardButton("✨️ Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/FilmZone_Official")
             ],[      
-            InlineKeyboardButton("🌸 Help", callback_data="help"),
-            InlineKeyboardButton("☘️ About", callback_data="about")
+            InlineKeyboardButton("🎐 Hᴇʟᴘ", callback_data="help"),
+            InlineKeyboardButton("🎭 Aʙᴏᴜᴛ", callback_data="about")
         ]]
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), START_MESSAGE.format(user=query.from_user.mention, bot=client.mention), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
        
