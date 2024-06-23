@@ -436,7 +436,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[      
             InlineKeyboardButton("• ʜᴇʟᴘ •", callback_data="help"),
             InlineKeyboardButton("• ᴀʙᴏᴜᴛ •", callback_data="about")
-        ]]
+        ],[
+            InlineKeyboardButton("• ᴀɴɪᴍᴇ4ᴜ •", url="http://t.me/Anime4YouLk")
+        ]] 
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), START_MESSAGE.format(user=query.from_user.mention, bot=client.mention), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
        
     elif query.data == "help":
