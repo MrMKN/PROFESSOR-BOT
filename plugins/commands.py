@@ -34,15 +34,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton("• ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ •", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            InlineKeyboardButton("➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
-            InlineKeyboardButton("• ꜱᴇᴀʀᴄʜ •", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("• ᴜᴘᴅᴀᴛᴇꜱ •", url="https://t.me/FilmZone_Official")
+            InlineKeyboardButton("⭕ Sᴇᴀʀᴄʜ", switch_inline_query_current_chat=''), 
+            InlineKeyboardButton("🔔 Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/FilmZone_Official")
             ],[      
-            InlineKeyboardButton("• ʜᴇʟᴘ •", callback_data="help"),
-            InlineKeyboardButton("• ᴀʙᴏᴜᴛ •", callback_data="about")
+            InlineKeyboardButton("☘ Hᴇʟᴘ", callback_data="help"),
+            InlineKeyboardButton("🎭 Aʙᴏᴜᴛ", callback_data="about")
         ],[
-            InlineKeyboardButton("• ᴀɴɪᴍᴇ4ᴜ •", url="http://t.me/Anime4YouLk")
+            InlineKeyboardButton("🧩 Aɴɪᴍᴇ4U 🧩", url="http://t.me/Anime4YouLk")
         ]] 
         m = await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ") 
         await asyncio.sleep(2)
@@ -72,15 +72,15 @@ async def start(client, message):
         
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton("• ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ •", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            InlineKeyboardButton("➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
-            InlineKeyboardButton("• ꜱᴇᴀʀᴄʜ •", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("• ᴜᴘᴅᴀᴛᴇꜱ •", url="https://t.me/FilmZone_Official")
+            InlineKeyboardButton("⭕ Sᴇᴀʀᴄʜ", switch_inline_query_current_chat=''), 
+            InlineKeyboardButton("🔔 Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/FilmZone_Official")
             ],[      
-            InlineKeyboardButton("• ʜᴇʟᴘ •", callback_data="help"),
-            InlineKeyboardButton("• ᴀʙᴏᴜᴛ •", callback_data="about")
+            InlineKeyboardButton("☘ Hᴇʟᴘ", callback_data="help"),
+            InlineKeyboardButton("🎭 Aʙᴏᴜᴛ", callback_data="about")
       ],[
-            InlineKeyboardButton("• ᴀɴɪᴍᴇ4ᴜ •", url="http://t.me/Anime4YouLk")
+            InlineKeyboardButton("🧩 Aɴɪᴍᴇ4U 🧩", url="http://t.me/Anime4YouLk")
         ]] 
         m = await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ")
         await asyncio.sleep(2)
@@ -213,7 +213,7 @@ async def start(client, message):
         chat_id=message.from_user.id, 
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('• ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ •', url=f'https://t.me/FilmZone_Official') ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('▫️️ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ▫️️', url=f'https://t.me/FilmZone_Official') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )   
     k = await client.send_message(chat_id = message.from_user.id, text=f"<b>TʜᴀɴᴋYᴏᴜ Fᴏʀ Uꜱɪɴɢ FɪʟᴍZᴏɴᴇ Bᴏᴛꜱ ❤</b>") 
