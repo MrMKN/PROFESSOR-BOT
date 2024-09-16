@@ -7,6 +7,9 @@ from utils import get_file_id
 
 @Client.on_message(filters.command("telegraph") & filters.private)
 async def telegraph_upload(bot, update):
+    # Service Stopped
+    return await update.reply("🥲 This service is stopped due to https://t.me/durov/343")
+    
     replied = update.reply_to_message
     if not replied:
         return await update.reply_text("Rᴇᴘʟʏ Tᴏ A Pʜᴏᴛᴏ Oʀ Vɪᴅᴇᴏ Uɴᴅᴇʀ 5ᴍʙ")

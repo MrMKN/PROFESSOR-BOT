@@ -36,7 +36,7 @@
 - [x] Url Shortner In Autofilter
 - [x] Custom Button Lock
 - [x] Image Editor & Background Remover
-- [x] Telegraph, Pin, Json, Password Generator
+- [x] Pin, Json, Password Generator
 - [x] Ban, Mute, Unmute, Etc... Group Manager
 - [x] Custom Welcome Message
 - [x] Advanced Admin Panel
