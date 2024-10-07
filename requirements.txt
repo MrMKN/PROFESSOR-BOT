@@ -7,11 +7,11 @@ requests==2.30.0
 bs4==0.0.1
 
 #---database---#
-pymongo>=4.5.0,<5.0
+pymongo>=4.5
 dnspython==2.3.0
 marshmallow==3.20.1
 umongo==3.1.0
-motor==3.3.1
+motor>=3.4.0    # Updated motor to a version compatible with pymongo>=4.5
 
 #---ytdl----#
 youtube-search-python
@@ -34,6 +34,11 @@ wheel
 ujson
 wget
 pytz
+
+
+
+
+
 
 
 
