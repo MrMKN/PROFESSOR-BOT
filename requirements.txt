@@ -7,7 +7,7 @@ requests==2.30.0
 bs4==0.0.1
 
 #---database---#
-pymongo==4.4.1
+pymongo>=4.5.0,<5.0
 dnspython==2.3.0
 marshmallow==3.20.1
 umongo==3.1.0
@@ -34,6 +34,7 @@ wheel
 ujson
 wget
 pytz
+
 
 
 
