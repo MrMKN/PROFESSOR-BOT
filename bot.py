@@ -6,7 +6,7 @@ from database.ia_filterdb import Media
 from typing import Union, Optional, AsyncGenerator
 from utils import temp, __repo__, __license__, __copyright__, __version__
 from info import API_ID, API_HASH, BOT_TOKEN, LOG_CHANNEL, UPTIME, LOG_MSG
-from pyrogram.errors import FloodWait  # Import FloodWait error
+from pyrogram.errors import FloodWait
 import asyncio  # Import asyncio for delays
 
 # Get logging configurations
@@ -45,26 +45,31 @@ class Bot(Client):
             self.uptime = UPTIME
             curr = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
             date = curr.strftime('%d %B, %Y')
-            tame = curr.strftime('%I:%M:%S %p')
+            time = curr.strftime('%I:%M:%S %p')
 
             # Log successful startup
-            logging.info(LOG_MSG.format(me.first_name, date, tame, __repo__, __version__, __license__, __copyright__))
+            logging.info(LOG_MSG.format(me.first_name, date, time, __repo__, __version__, __license__, __copyright__))
             
             # Try sending a startup message to LOG_CHANNEL
             try:
                 await self.send_message(
                     LOG_CHANNEL, 
-                    text=LOG_MSG.format(me.first_name, date, tame, __repo__, __version__, __license__, __copyright__), 
+                    text=LOG_MSG.format(me.first_name, date, time, __repo__, __version__, __license__, __copyright__), 
                     disable_web_page_preview=True
                 )   
             except Exception as e:
-                logging.warning(f"Bot Isn't Able To Send Message To LOG_CHANNEL \n{e}")
+                logging.warning(f"Bot isn't able to send message to LOG_CHANNEL \n{e}")
         
             # Web server starts on port 8080
-            app = web.AppRunner(web.Application(client_max_size=30000000))
-            await app.setup()
-            await web.TCPSite(app, "0.0.0.0", 8080).start()
-            logging.info("Web Response Is Running......🕸️")
+            try:
+                app = web.Application(client_max_size=30000000)
+                runner = web.AppRunner(app)
+                await runner.setup()
+                site = web.TCPSite(runner, "0.0.0.0", 8080)
+                await site.start()
+                logging.info("Web response is running on port 8080 🕸️")
+            except Exception as e:
+                logging.error(f"Error starting web server: {e}")
 
         except FloodWait as e:
             # Handle FloodWait exception and wait for the required duration
@@ -72,9 +77,12 @@ class Bot(Client):
             await asyncio.sleep(e.value)  # Wait before retrying
             await self.start()  # Retry starting the bot
 
+        except Exception as e:
+            logging.error(f"Error during bot startup: {e}")
+
     async def stop(self, *args):
         await super().stop()
-        logging.info(f"Bot Is Restarting ⟳...")
+        logging.info(f"Bot is stopping ⟳...")
 
     async def iter_messages(self, chat_id: Union[int, str], limit: int, offset: int = 0) -> Optional[AsyncGenerator["types.Message", None]]:                       
         current = offset
@@ -87,9 +95,9 @@ class Bot(Client):
                 yield message
                 current += 1
 
-        
-Bot().run()
 
+if __name__ == '__main__':
+    Bot().run()
 
 
 
