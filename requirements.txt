@@ -7,11 +7,11 @@ requests==2.30.0
 bs4==0.0.1
 
 #---database---#
-pymongo==4.4.1
-dnspython==2.3.0
-marshmallow==3.20.1
-umongo==3.1.0
-motor==3.3.1
+pymongo
+dnspython
+marshmallow
+umongo
+motor
 
 #---ytdl----#
 youtube-search-python
