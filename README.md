@@ -88,12 +88,30 @@
 </details>
 
 <details>
+<summary><b>Deploy to VPS</b></summary>
+
+```bash
+apt update && apt upgrade -y
+
+apt install git -y  
+
+git clone https://github.com/MrMKN/PROFESSOR-BOT 
+
+cd PROFESSOR-BOT
+
+bash vps.sh
+```
+</details>
+
+<details>
 <summary><b>Basic Commands</b></summary>
 
 ```
 start - check bot alive
 settings - get settings 
 logs - to get the rescent errors
+restart - restart the server
+update - update from git latest 
 stats - to get status of files in db.
 filter - add manual filters
 filters - view filters

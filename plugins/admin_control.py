@@ -365,21 +365,27 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
     else:
         await quer_y.message.edit(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
    
-   
-@Client.on_message(filters.command('logs') & filters.user(ADMINS))
-async def log_file(bot, msg):
-    try: await message.reply_document('BotLog.txt')
+ 
+@Client.on_message(filters.command('log') & filters.user(ADMINS))
+async def log_file_sned(client, message):
+    try: await message.reply_document('log.txt')
     except Exception as e: await message.reply(str(e))
 
-
 @Client.on_message(filters.command("restart") & filters.user(ADMINS))
-async def restart_bot(bot, msg):
-    await msg.reply("Rᴇꜱᴛᴀᴛɪɴɢ........")
-    await asyncio.sleep(2)
-    await sts.delete()
+async def restart_bot(client, message):
+    await message.reply("Rᴇꜱᴛᴀᴛɪɴɢ........")
+    try: os.remove('log.txt')
+    except: pass 
     os.execl(sys.executable, sys.executable, *sys.argv)
 
-
+@Client.on_message(filters.command("update") & filters.user(ADMINS))
+async def update_gitpull(client, message):
+    try:
+        os.system("git pull")
+        await message.reply_text("ᴜᴩᴅᴀᴛᴇᴅ & ʀᴇꜱᴛᴀʀᴛɪɴɢ...")
+        os.execl(sys.executable, sys.executable, *sys.argv)
+    except Exception as e:
+        await message.reply(e)
 
         
 

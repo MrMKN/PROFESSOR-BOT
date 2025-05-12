@@ -1,0 +1,7 @@
+.venv
+__pycache__
+*.session
+*.session-journal
+*log
+log.txt
+BotLog.txt

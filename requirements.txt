@@ -1,5 +1,5 @@
 #--Main----#
-pyrofork==2.3.45
+pyrofork
 tgcrypto==1.2.5
 aiofiles==22.1.0     
 aiohttp==3.10.11
@@ -7,11 +7,11 @@ requests==2.30.0
 bs4==0.0.1
 
 #---database---#
-pymongo
-dnspython
-marshmallow
-umongo
-motor
+pymongo==4.11.1
+dnspython==2.7.0
+marshmallow==3.20.1
+umongo==3.1.0
+motor==3.7.0   
 
 #---ytdl----#
 youtube-search-python
