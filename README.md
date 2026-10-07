@@ -1,156 +1,102 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝗧𝗛𝗜𝗦+𝗜𝗦+𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑+𝐁𝐎𝐓!;𝗖𝗕𝗥𝗘𝗔𝗧𝗘𝗗+𝗕𝗬+𝗠𝗞𝗡+𝗕𝗢𝗧𝗭™;𝗔+𝗣𝗢𝗪𝗘𝗥𝗙𝗨𝗟𝗟+𝗧𝗚+𝗔𝗨𝗧𝗢𝗙𝗜𝗟𝗧𝗘𝗥+𝗕𝗢𝗧!)</p>
-<p align="center">
+# 🚀 Mr.Guardian_bot (Optimized for Heroku)
 
-<h1 align="center">
-  <b> 𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑 𝐁𝐎𝐓</b>
-</h1>
+Advanced Telegram Message Forwarding & Cloning Bot with UserBot support, auto-rebranding, anti-ban protection, and duplicate filtering.
 
-[![Stars](https://img.shields.io/github/stars/MrMKN/PROFESSOR-BOT?style=flat-square&color=yellow)](https://github.com/MrMKN/PROFESSOR-BOT/stargazers)
-[![Forks](https://img.shields.io/github/forks/MrMKN/PROFESSOR-BOT?style=flat-square&color=orange)](https://github.com/MrMKN/PROFESSOR-BOT/fork)
-[![Size](https://img.shields.io/github/repo-size/MrMKN/PROFESSOR-BOT?style=flat-square&color=green)](https://github.com/MrMKN/PROFESSOR-BOT)   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/MrMKN/PROFESSOR-BOT)   
-[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/MrMKN/PROFESSOR-BOT/blob/main/LICENSE)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-[![Sparkline](https://stars.medv.io/MrMKN/PROFESSOR-BOT.svg)](https://stars.medv.io/MrMKN/PROFESSOR-BOT)
+---
 
-<details>
-<summary><b>Features</b></summary>
+## 🌟 Key Features
 
-- [x] Auto Filter
-- [x] Manual Filter
-- [x] IMDB
-- [x] Admin Commands
-- [x] Broadcast
-- [x] Index
-- [x] IMDB Search
-- [x] Inline Search
-- [x] Random Pics
-- [x] Ids And User Info
-- [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
-- [x] Spelling Check Feature
-- [x] Custom File Caption
-- [x] Group Broadcast 
-- [x] AutoFilter Auto Delete
-- [x] Junk Group & Users Clearing On Database
-- [x] Global Filter
-- [x] Url Shortner In Autofilter
-- [x] Custom Button Lock
-- [x] Image Editor & Background Remover
-- [x] Pin, Json, Password Generator
-- [x] Ban, Mute, Unmute, Etc... Group Manager
-- [x] Custom Welcome Message
-- [x] Advanced Admin Panel
-- [x] Photo Changing In All Buttons
-- [x] Custom Start Message
-- [x] Custom Button Alter Message
-- [x] Advanced Status (Disk, Cpu, Ram, Uptime..) In Image Type
-</details>
+- **Public & Private Forwarding:** Forward messages from public channels via Bot, or from private/restricted channels using a connected UserBot (Pyrogram String Session).
+- **Auto-Rebranding:** Automatically replaces old channel usernames/links with your target channel (default: `@moviesguardianss`).
+- **High Speed with Anti-Flood Protection:** Optimized to ~1.8s delay (~33 msgs/min) with randomized human-like jitter and automated FloodWait backoff to keep accounts safe from bans.
+- **Hardware Acceleration:** Native `tgcrypto` support for fast MTProto AES encryption.
+- **Auto-Restart & Resume:** Ongoing forwarding jobs resume safely upon Heroku dyno restarts using MongoDB persistence.
+- **Duplicate & Type Filtering:** Skip duplicate files, filter by keywords, extensions, or media types.
+- **Heroku Ready:** Includes `Procfile`, `runtime.txt`, `app.json`, and `.gitignore` for seamless deployment from GitHub.
 
-<details>
-<summary><b>Variables</b></summary>
-  
-### Required Variables
-* `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
-* `API_ID`: Get this value from [telegram.org](https://my.telegram.org/apps)
-* `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
-* `CHANNELS`: Username or ID of channel or group. Separate multiple IDs by space
-* `ADMINS`: Username or ID of Admin. Separate multiple Admins by space
-* `DATABASE_URL`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/1G1XwEOnxxo)
-* `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/1G1XwEOnxxo)
-* `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
-* `SUPPORT_CHAT` : Username of a Support Group / ADMIN. ( Should be username without @ and not ID
-  
-### Optional Variables
-* `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
-* `USE_CAPTION_FILTER` : Whether bot should use captions to improve search results. (True False)
-* `CUSTOM_FILE_CAPTION` : A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding
-* `CACHE_TIME` : The maximum amount of time in seconds that the result of the inline query may be cached on the server
-* `IMDB` : Imdb, the view of information when making True/False
-* `SINGLE_BUTTON` : choose b/w single or double buttons 
-* `P_TTI_SHOW_OFF` : Customize Result Buttons to Callback or Url by (True = url / False = callback)
-### Url Shortner Variable
-* `SHORT_URL` : Url Of Shortner Site You Use
-* `SHORT_API` : Api Key Of Shortner Which You Use
-</details>
+---
 
-<details>
-<summary><b>Deploy to Heroku</b></summary>
+## 🛠️ Heroku Deployment Guide (from GitHub)
 
-<a href="https://youtu.be/uv0WHxwHwfo"><img src="https://img.shields.io/badge/watch%20Heroku%20Tutorial-red.svg?logo=Youtube"></a>                
+### Method 1: Using the Heroku Dashboard & GitHub
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrMKN/PROFESSOR-BOT)
-</details>
+1. **Fork or Push this repository to your GitHub account**:
+   - Ensure `.env` is **never committed** (it is already protected in `.gitignore`).
+2. **Go to Heroku Dashboard**:
+   - Click **New** ➔ **Create new app**.
+   - Under the **Deploy** tab, select **GitHub** as the deployment method.
+   - Search for your repository and click **Connect**.
+3. **Configure Environment Variables (Config Vars)**:
+   - Go to **Settings** ➔ **Reveal Config Vars** and add the following keys:
 
-<details>
-<summary><b>Deploy to Koyeb</b></summary>
+| Config Var | Description | Required | Example |
+| :--- | :--- | :--- | :--- |
+| `API_ID` | Telegram API ID from [my.telegram.org](https://my.telegram.org) | **Yes** | `17030067` |
+| `API_HASH` | Telegram API Hash from [my.telegram.org](https://my.telegram.org) | **Yes** | `df64deb205...` |
+| `BOT_TOKEN` | Bot Token from [@BotFather](https://t.me/BotFather) | **Yes** | `8924751186:AAH...` |
+| `BOT_OWNER` | Numeric Telegram User ID (from [@userinfobot](https://t.me/userinfobot)) | **Yes** | `8371005605` |
+| `DATABASE_URI` | MongoDB Connection URI from [MongoDB Atlas](https://mongodb.com) | **Yes** | `mongodb+srv://user:pass@cluster0...` |
+| `DATABASE_NAME` | MongoDB database name | No | `Cluster0` |
+| `STRING_SESSION` | Pyrogram String Session for UserBot (starts with `BQED...`) | No | `BQED27MAM...` |
+| `CHANNEL_USERNAME` | Target channel username for auto-branding | No | `@moviesguardianss` |
+| `FORWARD_SLEEP` | Delay per message in seconds | No | `1.8` |
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/MrMKN/PROFESSOR-BOT&env[WEBHOOK]=True&env[BOT_TOKEN]&env[API_ID]&env[API_HASH]&env[CHANNELS]&env[ADMINS]&env[PICS]&env[LOG_CHANNEL]&env[AUTH_CHANNEL]&env[MAX_RIST_BTNS]=10&env[CUSTOM_FILE_CAPTION]&env[DATABASE_URL]&env[DATABASE_NAME]=MknBotz&env[COLLECTION_NAME]=Telegram_files&env[SUPPORT_CHAT]&env[IMDB]=True&env[PM_IMDB]=True&env[IMDB_TEMPLATE]&env[IMDB_DELET_TIME]=900&env[SINGLE_BUTTON]=True&env[PMFILTER]=True&env[G_FILTER]=True&env[BUTTON_LOCK]=True&env[P_TTI_SHOW_OFF]=True&run_command=python%20bot.py&branch=main&name=mr-rofessor)              
-</details>
+4. **Deploy & Enable Dyno**:
+   - Back in the **Deploy** tab, click **Deploy Branch** (or enable **Automatic Deploys**).
+   - Once deployed, go to the **Resources** tab.
+   - Enable the **`worker: python3 main.py`** dyno and turn off any unused dynos.
 
-<details>
-<summary><b>Deploy to VPS</b></summary>
+---
+
+### Method 2: Using Heroku CLI
 
 ```bash
-apt update && apt upgrade -y
+# 1. Login to Heroku
+heroku login
 
-apt install git -y  
+# 2. Create app
+heroku create your-forward-bot-app --stack heroku-22
 
-git clone https://github.com/MrMKN/PROFESSOR-BOT 
+# 3. Set Config Vars
+heroku config:set API_ID=17030067
+heroku config:set API_HASH=df64deb205933fbe14e50237b5ab68f2
+heroku config:set BOT_TOKEN=8924751186:AAH3AK-HEHgig0GfsiNTq5yoLZ3UV5kAbxA
+heroku config:set BOT_OWNER=8371005605
+heroku config:set DATABASE_URI="mongodb+srv://user:pass@cluster0.mongodb.net/?appName=Cluster0"
+heroku config:set DATABASE_NAME=Cluster0
+heroku config:set CHANNEL_USERNAME=@moviesguardianss
+heroku config:set FORWARD_SLEEP=1.8
 
-cd PROFESSOR-BOT
+# 4. Deploy code
+git push heroku main
 
-bash vps.sh
-```
-</details>
+# 5. Scale worker dyno
+heroku ps:scale worker=1
 
-<details>
-<summary><b>Basic Commands</b></summary>
-
-```
-start - check bot alive
-settings - get settings 
-logs - to get the rescent errors
-restart - restart the server
-update - update from git latest 
-stats - to get status of files in db.
-filter - add manual filters
-filters - view filters
-connect - connect to PM.
-disconnect - disconnect from PM
-connections - check all connections
-del - delete a filter
-delall - delete all filters
-deleteall - delete all index(autofilter)
-delete - delete a specific file from index.
-info - get user info
-id - get tg ids.
-imdb - fetch info from imdb.
-users - to get list of my users and ids.
-chats - to get list of the my chats and ids 
-leave  - to leave from a chat.
-disable  -  do disable a chat.
-enable - re-enable chat.
-ban_user  - to ban a user.
-unban_user  - to unban a user.
-channel - to get list of total connected channels
-broadcast - to broadcast a message to all Eva Maria users
+# 6. Check logs
+heroku logs --tail
 ```
 
-</details>
+---
 
-## TELAGRAM SUPPORT 
+## 🤖 Bot Commands
 
-* [![MKN BOTZ](https://img.shields.io/static/v1?label=MKN&message=BOTZ&color=critical)](https://t.me/mkn_bots_updates)
+```text
+/start - Check if the bot is alive
+/forward - Start a new forwarding task
+/settings - Configure userbot, channels, caption, and filters
+/unequify - Remove duplicate media from channels
+/stop - Stop ongoing task
+/reset - Reset your settings
+/restart - Restart server (Owner only)
+/broadcast - Broadcast message to all users (Owner only)
+```
 
-## Credit 💞
+---
 
-* [![TEAM EVA-MARIA](https://img.shields.io/static/v1?label=TEAM&message=EVA-MARIA&color=yellow)](https://t.me/TeamEvamaria)
+## 🔒 Security Note
 
-* [![BASE REPO](https://img.shields.io/static/v1?label=BASE&message=REPO&color=green)](https://t.me/TeamEvamaria)
-
-
-## Disclaimer
-[![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
-Licensed under [GNU AGPL 3.0.](https://github.com/MrMKN/PROFESSOR-BOT/blob/main/LICENSE)
-Selling The Codes To Other People For Money Is *Strictly Prohibited*. (its external alert)
-
+- **Never** commit `.env` or `*.session` files to public GitHub repositories.
+- If you regenerate a bot token or string session, update your Heroku Config Vars accordingly.
